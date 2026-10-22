@@ -1,0 +1,406 @@
+import type { Chapter } from "./types";
+
+// Chapitre 3 — « La création de l'homme »
+// Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
+// et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
+
+export const chapitre3: Chapter = {
+  id: "c3",
+  number: 3,
+  title: "La création de l'homme",
+  theme: "Avant d'être homme ou femme, l'être humain est un esprit créé à l'image de Dieu.",
+  portions: [
+    {
+      id: "c3p1",
+      title: "Être humain avant d'être homme",
+      reading: [
+        "Pour comprendre ce qu'est un homme, il faut d'abord comprendre ce qu'est l'être humain dans le grand plan de Dieu. Et il y a une distinction essentielle : être « homme » au sens d'humanité, et être un homme au sens masculin.",
+        "Les deux premiers chapitres de la Genèse fonctionnent comme une annonce suivie d'une explication. Genèse 1 déclare ce que Dieu a fait ; Genèse 2 explique comment Il l'a fait.",
+        "En Genèse 1, Dieu dit : « Faisons l'homme à notre image. » Et Dieu est Esprit. L'être humain est donc d'abord un esprit, éternel comme son Créateur. À ce stade, il n'est pas encore question de masculin ou de féminin : l'esprit n'a pas de sexe.",
+        "Rien d'autre dans la création n'a reçu ce privilège : ni les plantes, ni les animaux, ni même les anges. Seul l'être humain porte l'image de Dieu.",
+      ],
+      keyTruth: "Avant d'être un homme ou une femme, je suis un esprit créé à l'image de Dieu.",
+      verse: {
+        ref: "Genèse 1:27",
+        text: "Dieu créa l'homme à son image, il le créa à l'image de Dieu, il créa l'homme et la femme.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c3p1e1",
+          prompt: "Associe chaque chapitre de la Genèse à son rôle.",
+          pairs: [
+            ["Genèse 1", "Déclare ce que Dieu a fait"],
+            ["Genèse 2", "Explique comment Il l'a fait"],
+          ],
+          explain: "L'un annonce, l'autre détaille : ensemble ils révèlent le plan de Dieu pour l'humanité.",
+        },
+        {
+          kind: "truefalse",
+          id: "c3p1e2",
+          statement: "Les anges ont eux aussi été créés à l'image de Dieu.",
+          answer: false,
+          explain: "Seul l'être humain a reçu ce privilège dans toute la création.",
+        },
+        {
+          kind: "fill",
+          id: "c3p1e3",
+          before: "Dieu est Esprit : l'être humain est donc d'abord un",
+          after: ", éternel comme son Créateur.",
+          options: ["esprit", "corps", "animal"],
+          answer: 0,
+          explain: "Créé à l'image de Dieu, l'être humain partage sa nature spirituelle.",
+        },
+      ],
+      mirror: {
+        question: "Te vois-tu d'abord comme un corps, un rôle… ou comme un esprit créé à l'image de Dieu ?",
+        choices: ["Surtout comme un corps", "Surtout par mon rôle", "Comme un esprit à son image", "Je ne me suis jamais posé la question"],
+      },
+      prayer: "Père, merci de m'avoir créé à Ton image : apprends-moi à me voir comme Tu me vois.",
+    },
+    {
+      id: "c3p2",
+      title: "Une maison prête pour l'enfant",
+      reading: [
+        "Pourquoi Dieu a-t-il créé l'être humain ? Parce que Dieu est amour, et que l'amour veut donner. Il désirait des enfants qui lui ressemblent, pour les combler de tout ce qu'Il est et de tout ce qu'Il a.",
+        "Quand des parents attendent un bébé, ils préparent tout avant sa naissance : la chambre, le lit, les vêtements. L'enfant n'est pas encore là, mais tout est pensé pour lui. C'est exactement ce que Dieu a fait : avant l'être humain, Il a préparé l'univers comme une maison pour ses enfants.",
+        "On croit souvent que Dieu a créé le monde, puis qu'Il a eu l'idée de l'homme. C'est l'inverse : Il a d'abord voulu l'homme, et c'est pour lui qu'Il a créé le monde. Il nous a choisis avant même la fondation du monde.",
+        "Attention : l'être humain n'est pas le centre de l'univers, Dieu l'est. Mais nous en sommes la raison. Les étoiles, la lumière, les couleurs, l'eau douce : tout a été réglé avec soin pour nous accueillir.",
+      ],
+      keyTruth: "Dieu n'a pas créé le monde puis pensé à moi : Il m'a voulu d'abord, et Il a préparé le monde pour moi.",
+      verse: {
+        ref: "Psaume 8:4-5",
+        text: "Quand je contemple les cieux, ouvrage de tes mains, la lune et les étoiles que tu as créées : qu'est-ce que l'homme, pour que tu te souviennes de lui ? Et le fils de l'homme, pour que tu prennes garde à lui ?",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c3p2e1",
+          prompt: "Dans quel ordre Dieu a-t-il pensé les choses ?",
+          options: [
+            "Il a d'abord voulu l'homme, puis a créé le monde pour lui",
+            "Il a créé le monde, puis a eu l'idée de l'homme",
+            "Il a tout créé au hasard",
+          ],
+          answer: 0,
+          explain: "L'univers a été préparé comme une maison pour des enfants déjà désirés.",
+        },
+        {
+          kind: "truefalse",
+          id: "c3p2e2",
+          statement: "L'être humain est le centre de l'univers.",
+          answer: false,
+          explain: "Dieu est le centre de tout. L'être humain n'en est pas le centre, mais la raison.",
+        },
+        {
+          kind: "fill",
+          id: "c3p2e3",
+          before: "Dieu a créé l'être humain parce qu'Il est",
+          after: ", et que l'amour veut donner.",
+          options: ["amour", "seul", "puissant"],
+          answer: 0,
+          explain: "L'amour cherche quelqu'un à combler : c'est la source de notre création.",
+        },
+      ],
+      mirror: {
+        question: "Comment te sens-tu en lisant que Dieu a préparé le monde en pensant à toi ?",
+        choices: ["Ému", "Surpris", "J'ai du mal à y croire", "Reconnaissant", "Indifférent pour l'instant"],
+      },
+      prayer: "Seigneur, qu'est-ce que l'homme pour que Tu penses à lui ? Merci de m'avoir désiré avant même de créer le monde.",
+    },
+    {
+      id: "c3p3",
+      title: "Fait pour la communion",
+      reading: [
+        "Dieu a créé l'être humain esprit, comme Lui, pour une raison précise : pouvoir vivre avec Lui une vraie relation, comme dans une famille. On ne peut communier qu'avec quelqu'un de même nature.",
+        "Dieu est Créateur, tout-puissant, saint. Mais Il a toujours voulu être connu d'abord comme un Père. Notre esprit religieux a parfois du mal à l'accepter : Il veut qu'on s'approche de Lui comme un enfant s'approche d'un père qui l'aime.",
+        "Dieu et l'être humain ont été faits l'un pour l'autre. C'est pour cela qu'on peut avoir beaucoup d'amis, beaucoup de succès, offrir beaucoup de cadeaux, et rester insatisfait. Notre capacité d'aimer a été conçue pour trouver son accomplissement en Dieu.",
+        "Tant que Dieu n'a pas la première place, il manquera toujours quelque chose.",
+      ],
+      keyTruth: "Mon cœur a été conçu pour Dieu : tant qu'Il n'a pas la première place, il me manquera toujours quelque chose.",
+      verse: {
+        ref: "Jean 4:24",
+        text: "Dieu est Esprit, et il faut que ceux qui l'adorent l'adorent en esprit et en vérité.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c3p3e1",
+          prompt: "Pourquoi l'être humain peut-il vivre une vraie communion avec Dieu ?",
+          options: ["Parce qu'il est esprit, comme Dieu", "Parce qu'il est plus fort que les animaux", "Parce qu'il va à l'église"],
+          answer: 0,
+          explain: "On ne communie qu'avec quelqu'un de même nature : Dieu nous a faits esprit.",
+        },
+        {
+          kind: "fill",
+          id: "c3p3e2",
+          before: "Dieu veut d'abord être connu comme un",
+          after: ".",
+          options: ["Père", "juge", "maître"],
+          answer: 0,
+          explain: "Il est tout-puissant, mais Il veut qu'on vienne à Lui comme des enfants.",
+        },
+        {
+          kind: "truefalse",
+          id: "c3p3e3",
+          statement: "Beaucoup d'amis et de succès suffisent à combler pleinement le cœur humain.",
+          answer: false,
+          explain: "Notre capacité d'aimer a été faite pour trouver son accomplissement en Dieu.",
+        },
+      ],
+      mirror: {
+        question: "Quand tu pries, t'adresses-tu à Dieu plutôt comme à un juge, un patron… ou un Père ?",
+        choices: ["Un juge", "Un patron", "Un Père", "Je ne prie pas souvent", "Ça dépend des jours"],
+      },
+      prayer: "Abba, Père, je viens à Toi comme Ton enfant : prends la première place dans mon cœur.",
+    },
+    {
+      id: "c3p4",
+      title: "Refléter sa lumière",
+      reading: [
+        "Créé à l'image de Dieu, l'être humain est aussi appelé à refléter son caractère. Physiquement, nous sommes des enfants d'hommes ; spirituellement, nous sommes appelés enfants du Très-Haut, porteurs de sa nature.",
+        "Deux traits du caractère de Dieu sont au cœur de cet appel : l'amour et la lumière. Nous sommes faits pour les manifester.",
+        "Mais il y a une condition : on ne peut pas refléter Dieu en étant coupé de Lui. Comme une lampe qui ne brille que branchée, l'être humain ne révèle la lumière de Dieu que lorsqu'il reste en communion avec Lui. Celui qui demeure dans l'amour demeure en Dieu.",
+        "Ta lampe de fidélité dans ChristHub n'est qu'une image. La vraie lumière, c'est celle de Dieu en toi, qui brille quand tu restes près de Lui.",
+      ],
+      keyTruth: "Je suis fait pour refléter l'amour et la lumière de Dieu, mais je ne brille que relié à Lui.",
+      verse: {
+        ref: "Matthieu 5:14",
+        text: "Vous êtes la lumière du monde. Une ville située sur une montagne ne peut être cachée.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c3p4e1",
+          prompt: "Associe chaque idée à son explication.",
+          pairs: [
+            ["Enfants d'hommes", "Notre nature physique"],
+            ["Enfants du Très-Haut", "Notre nature spirituelle"],
+            ["Une lampe branchée", "La communion qui nous fait briller"],
+          ],
+          explain: "Nous portons la nature de Dieu, mais nous ne la manifestons qu'en restant reliés à Lui.",
+        },
+        {
+          kind: "choice",
+          id: "c3p4e2",
+          prompt: "Quels sont les deux traits de Dieu que nous sommes appelés à refléter ?",
+          options: ["L'amour et la lumière", "La force et la richesse", "La sévérité et la peur"],
+          answer: 0,
+          explain: "Dieu est amour et Dieu est lumière : c'est ce que nous sommes faits pour manifester.",
+        },
+        {
+          kind: "truefalse",
+          id: "c3p4e3",
+          statement: "On peut refléter la lumière de Dieu tout en restant coupé de Lui.",
+          answer: false,
+          explain: "Comme une lampe débranchée, on ne brille pas sans la communion avec Dieu.",
+        },
+      ],
+      mirror: {
+        question: "Dans quel endroit de ta vie ta lumière est-elle la plus cachée en ce moment ?",
+        choices: ["Au travail", "À la maison", "Avec mes amis", "Sur les réseaux", "En moi-même"],
+      },
+      prayer: "Seigneur, garde-moi relié à Toi, pour que Ta lumière brille à travers moi là où je suis.",
+    },
+    {
+      id: "c3p5",
+      title: "Partager son règne",
+      reading: [
+        "« Faisons l'homme à notre image, et qu'il domine… » Dieu n'a jamais voulu régner seul. L'amour ne pense pas ainsi : l'égoïste veut toute la gloire, tout le pouvoir ; celui qui aime veut partager.",
+        "Cette domination a été confiée à l'être humain en tant qu'esprit, avant même la distinction entre homme et femme. Spirituellement, l'homme et la femme ont donc la même responsabilité envers la terre.",
+        "Un détail qu'on oublie souvent : Dieu n'a pas créé l'être humain pour le ciel, mais pour la terre. Comme Dieu règne sur l'invisible, l'être humain devait gérer le visible, en communion constante avec Lui.",
+        "Adorer Dieu est essentiel. Mais la louange ne doit pas devenir une excuse pour négliger le reste. Il vient un moment où il faut sortir et montrer, dans le travail, la famille et la société, ce que notre relation avec Dieu change concrètement.",
+      ],
+      keyTruth: "Dieu partage son règne avec l'être humain : ma foi doit se voir dans la façon dont je prends soin de la terre et des autres.",
+      verse: {
+        ref: "Genèse 1:26",
+        text: "Puis Dieu dit : Faisons l'homme à notre image, selon notre ressemblance, et qu'il domine sur les poissons de la mer, sur les oiseaux du ciel, sur le bétail, sur toute la terre, et sur tous les reptiles qui rampent sur la terre.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c3p5e1",
+          prompt: "Pourquoi Dieu a-t-il voulu partager son autorité ?",
+          options: ["Parce que l'amour aime partager", "Parce qu'Il était fatigué", "Parce qu'Il ne pouvait pas tout faire"],
+          answer: 0,
+          explain: "L'égoïsme garde tout pour lui ; l'amour veut que les autres aient part à ce qu'il possède.",
+        },
+        {
+          kind: "truefalse",
+          id: "c3p5e2",
+          statement: "La mission de dominer la terre a été donnée seulement à l'homme masculin.",
+          answer: false,
+          explain: "Elle a été donnée à l'être humain-esprit, présent dans l'homme et dans la femme.",
+        },
+        {
+          kind: "fill",
+          id: "c3p5e3",
+          before: "Dieu n'a pas créé l'être humain pour le ciel, mais pour la",
+          after: ".",
+          options: ["terre", "guerre", "mer"],
+          answer: 0,
+          explain: "Comme Dieu règne sur l'invisible, l'être humain devait gérer le visible avec Lui.",
+        },
+      ],
+      mirror: {
+        question: "Dans quel domaine ta foi reste-t-elle surtout « à l'église » sans se voir dans ta vie ?",
+        choices: ["Mon travail", "Mon argent", "Ma façon de parler", "Ma famille", "Mon engagement dans la société"],
+      },
+      prayer: "Père, apprends-moi à exercer avec amour la part de responsabilité que Tu m'as confiée sur la terre.",
+    },
+    {
+      id: "c3p6",
+      title: "Fils, pas employé",
+      reading: [
+        "Quand Dieu partage son autorité, ce n'est pas avec des employés, mais avec ses enfants. Il ne t'a pas créé pour être un serviteur, mais un fils qui participe à l'entreprise familiale.",
+        "Il y a une grande différence entre travailler pour Dieu et travailler avec Dieu. L'Écriture nous appelle des ouvriers avec Lui : des collaborateurs, des partenaires.",
+        "Un employé ne connaît pas les comptes de l'entreprise, demande des augmentations et craint d'être renvoyé. Un fils, lui, sait ce que fait son père et partage ses projets.",
+        "C'est exactement ce que Jésus a dit à ses disciples avant de partir : je ne vous appelle plus serviteurs, mais amis, car je vous ai fait connaître tout ce que mon Père m'a confié.",
+      ],
+      keyTruth: "Je ne travaille pas pour Dieu comme un employé : je travaille avec Lui, comme un fils dans l'entreprise de son Père.",
+      verse: {
+        ref: "Jean 15:15",
+        text: "Je ne vous appelle plus serviteurs, parce que le serviteur ne sait pas ce que fait son maître ; mais je vous ai appelés amis, parce que je vous ai fait connaître tout ce que j'ai appris de mon Père.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c3p6e1",
+          prompt: "Employé ou fils ? Associe chaque attitude.",
+          pairs: [
+            ["L'employé", "Craint d'être renvoyé"],
+            ["Le fils", "Partage les projets de son père"],
+            ["L'ami de Jésus", "Connaît ce que fait le Père"],
+          ],
+          explain: "Dieu ne cherche pas des salariés inquiets, mais des enfants associés à son œuvre.",
+        },
+        {
+          kind: "fill",
+          id: "c3p6e2",
+          before: "Dieu ne veut pas que je travaille pour Lui, mais",
+          after: "Lui.",
+          options: ["avec", "contre", "loin de"],
+          answer: 0,
+          explain: "Nous sommes des ouvriers avec Dieu : des partenaires de son œuvre.",
+        },
+        {
+          kind: "choice",
+          id: "c3p6e3",
+          prompt: "Pourquoi Jésus appelle-t-il ses disciples « amis » plutôt que « serviteurs » ?",
+          options: [
+            "Parce qu'il leur a fait connaître ce que le Père lui a confié",
+            "Parce qu'ils ne travaillaient plus",
+            "Parce qu'ils étaient ses égaux en tout",
+          ],
+          answer: 0,
+          explain: "Le serviteur ignore ce que fait son maître ; l'ami est mis dans la confidence.",
+        },
+      ],
+      mirror: {
+        question: "Dans ta relation avec Dieu, te sens-tu plutôt employé ou fils ?",
+        choices: ["Plutôt employé", "Plutôt fils", "Entre les deux", "Je découvre"],
+      },
+      prayer: "Père, merci de m'appeler Ton enfant et Ton ami : je veux travailler avec Toi à Ton œuvre.",
+    },
+    {
+      id: "c3p7",
+      title: "Le Père pourvoit",
+      reading: [
+        "Si tes parents possédaient une entreprise prospère et te confiaient sa direction, te demanderais-tu chaque matin si tu auras de quoi manger ? Non : tu fais partie de la famille.",
+        "C'est ce que Jésus enseigne : ne vous inquiétez pas de ce que vous mangerez ou boirez. Remarque qu'il ne dit pas « le patron sait ce dont vous avez besoin », mais « votre Père céleste le sait ».",
+        "Et l'entreprise de Dieu est immense. Ses ressources ne servent pas seulement à nos besoins de chaque jour : elles sont aussi là pour faire avancer son Royaume. Quand nous cherchons d'abord ce Royaume, les ressources suivent.",
+        "Le but de l'être humain va même au-delà de cette vie : Dieu nous destine à régner avec le Christ, à faire régner sa justice. Ce n'est pas une mission temporaire, c'est une vocation éternelle.",
+      ],
+      keyTruth: "Je n'ai pas à vivre dans l'inquiétude : mon Père connaît mes besoins quand je cherche d'abord son Royaume.",
+      verse: {
+        ref: "Matthieu 6:33",
+        text: "Cherchez premièrement le royaume et la justice de Dieu ; et toutes ces choses vous seront données par-dessus.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c3p7e1",
+          prompt: "Selon Jésus, qui connaît nos besoins ?",
+          options: ["Notre Père céleste", "Notre patron", "Personne"],
+          answer: 0,
+          explain: "Jésus ne parle pas d'un patron mais d'un Père qui sait de quoi ses enfants ont besoin.",
+        },
+        {
+          kind: "order",
+          id: "c3p7e2",
+          prompt: "Remets dans l'ordre l'enseignement de Jésus.",
+          items: ["Ne pas s'inquiéter du lendemain", "Chercher d'abord le Royaume de Dieu", "Recevoir le reste par-dessus"],
+          explain: "La priorité donnée au Royaume libère de l'inquiétude.",
+        },
+        {
+          kind: "truefalse",
+          id: "c3p7e3",
+          statement: "La mission de l'être humain s'arrête à la fin de cette vie.",
+          answer: false,
+          explain: "Dieu nous destine à régner avec le Christ : c'est une vocation éternelle.",
+        },
+      ],
+      mirror: {
+        question: "Quelle inquiétude matérielle occupe le plus ton esprit en ce moment ?",
+        choices: ["L'argent", "Le travail", "Le logement", "La santé", "L'avenir de ma famille"],
+      },
+      prayer: "Père, je dépose devant Toi mon inquiétude, et je choisis de chercher d'abord Ton Royaume.",
+    },
+    {
+      id: "c3p8",
+      title: "Créé, puis formé",
+      reading: [
+        "Dieu a donc voulu un être à aimer et à associer à son œuvre sur terre. Mais la terre est physique, et l'esprit ne l'est pas. Il fallait à l'être humain un corps pour habiter la terre et en prendre soin.",
+        "Alors Dieu a placé l'être humain-esprit dans deux « maisons » : l'homme et la femme. Tous deux portent le même esprit, la même essence. Lorsqu'Il les créa, Il les appela ensemble « homme ».",
+        "L'hébreu de la Genèse utilise deux verbes différents. Créer (bara) : faire exister à partir de rien. Former (asah) : façonner à partir de quelque chose qui existe déjà. L'esprit humain a été créé, sorti de Dieu lui-même ; le corps de l'homme et de la femme a été formé, à partir de la terre.",
+        "Pourquoi deux formes au lieu d'une ? Parce que Dieu voulait accomplir deux buts distincts. Homme et femme sont différents, mais de même valeur, et chacun a un accès direct à Dieu.",
+      ],
+      keyTruth: "L'homme et la femme portent le même esprit créé par Dieu : différents dans leur forme, égaux dans leur essence.",
+      verse: {
+        ref: "Genèse 5:2",
+        text: "Il créa l'homme et la femme, il les bénit, et il les appela du nom d'homme, lorsqu'ils furent créés.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c3p8e1",
+          prompt: "Associe chaque verbe hébreu à son sens.",
+          pairs: [
+            ["Bara (créer)", "Faire exister à partir de rien"],
+            ["Asah (former)", "Façonner à partir de ce qui existe"],
+          ],
+          explain: "L'esprit humain a été créé ; le corps de l'homme et de la femme a été formé.",
+        },
+        {
+          kind: "choice",
+          id: "c3p8e2",
+          prompt: "Pourquoi Dieu a-t-il placé l'être humain dans deux formes, l'homme et la femme ?",
+          options: ["Pour accomplir deux buts distincts", "Parce que l'un vaut plus que l'autre", "Par hasard"],
+          answer: 0,
+          explain: "Deux formes pour deux buts, mais une seule et même essence.",
+        },
+        {
+          kind: "truefalse",
+          id: "c3p8e3",
+          statement: "L'homme et la femme ont chacun un accès direct à Dieu.",
+          answer: true,
+          explain: "Tous deux portent l'esprit humain : chacun peut adorer Dieu et répond personnellement devant Lui.",
+        },
+        {
+          kind: "fill",
+          id: "c3p8e4",
+          before: "L'homme et la femme sont différents dans leur forme, mais égaux dans leur",
+          after: ".",
+          options: ["essence", "force", "rôle"],
+          answer: 0,
+          explain: "Le même esprit habite l'un et l'autre.",
+        },
+      ],
+      mirror: {
+        question: "Ta façon de considérer les femmes (ou les hommes) reflète-t-elle cette égale valeur devant Dieu ?",
+        choices: ["Oui, vraiment", "Pas toujours", "J'ai des préjugés à travailler", "Je n'y avais jamais pensé"],
+      },
+      prayer: "Créateur, apprends-moi à honorer en chaque homme et chaque femme l'esprit que Tu as créé.",
+    },
+  ],
+};

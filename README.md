@@ -14,7 +14,7 @@ manqués : 1, 3, 7 puis 16 jours).
 
 Module « Le but et la puissance de l'homme » — MVP : chapitre 1 (« Qu'est-ce qu'un vrai homme ? »), **inspiré du livre
 *Understanding the Purpose and Power of Men* de Myles Munroe** (Whitaker House, 2001),
-en **8 portions**, puis chapitre 2 (« Sept principes du but ») en 8 portions. Pour aller plus loin, procure-toi le livre officiel.
+en **8 portions**, puis chapitres 2 (« Sept principes du but ») et 3 (« La création de l'homme »), 8 portions chacun. Pour aller plus loin, procure-toi le livre officiel.
 
 Le texte de l'application est une **paraphrase libre en français**, écrite avec nos
 propres mots : ce n'est pas une traduction du livre, et le livre lui-même n'est pas
@@ -26,7 +26,8 @@ ChristHub n'est pas affilié à l'auteur ni à l'éditeur.
 ```bash
 npm install
 npm run dev      # http://localhost:6778
-npm run build    # vérification TypeScript + build dans dist/
+npm run build    # TypeScript + vérification du contenu + build dans dist/
+npm run check:content  # vérifie seulement le contenu (identifiants, réponses, phrases)
 ```
 
 - `src/data/` : le contenu (un fichier par chapitre, voir `types.ts`).

@@ -24,7 +24,6 @@ export type Tab = "chemin" | "mediter" | "profil";
 
 /** Coming chapters, shown locked on the path. */
 const NEXT_CHAPTERS = [
-  "La création de l'homme",
   "Le dessein de Dieu pour l'homme",
   "Régner plutôt que dominer",
   "Visionnaire et leader",
