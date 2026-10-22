@@ -1,5 +1,6 @@
 import type { Book, Exercise, Portion } from "./types";
 import { chapitre1 } from "./chapitre1";
+import { chapitre2 } from "./chapitre2";
 
 export const book: Book = {
   id: "munroe-purpose-power-men",
@@ -8,7 +9,7 @@ export const book: Book = {
   author: "Myles Munroe",
   publisher: "Whitaker House",
   year: 2001,
-  chapters: [chapitre1],
+  chapters: [chapitre1, chapitre2],
 };
 
 /** Small print shown with the course: what it is, and where to go deeper. */

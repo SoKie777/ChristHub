@@ -24,7 +24,6 @@ export type Tab = "chemin" | "mediter" | "profil";
 
 /** Coming chapters, shown locked on the path. */
 const NEXT_CHAPTERS = [
-  "Sept principes du but",
   "La création de l'homme",
   "Le dessein de Dieu pour l'homme",
   "Régner plutôt que dominer",
@@ -140,9 +139,11 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
         <p className="course-deeper">{credits.deeper}</p>
       </section>
 
-      {book.chapters.map((chapter) => {
+      {book.chapters.map((chapter, chapterIndex) => {
         const done = chapter.portions.filter((p) => progress.portions[p.id]).length;
-        const currentIndex = chapter.portions.findIndex((p) => !progress.portions[p.id]);
+        // A chapter opens once every portion of the previous one is done.
+        const opened = chapterIndex === 0 || book.chapters[chapterIndex - 1].portions.every((p) => progress.portions[p.id]);
+        const currentIndex = opened ? chapter.portions.findIndex((p) => !progress.portions[p.id]) : -2;
         const allDone = currentIndex === -1;
         const checkpoint = progress.checkpoints[chapter.id];
         return (
@@ -231,7 +232,7 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
         <section key={title} className="chapter locked">
           <div className="chapter-banner">
             <div>
-              <p className="chapter-kicker">Chapitre {i + 2} · bientôt</p>
+              <p className="chapter-kicker">Chapitre {book.chapters.length + i + 1} · bientôt</p>
               <h2>{title}</h2>
             </div>
             <LockIcon size={26} />
