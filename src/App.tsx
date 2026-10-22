@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { allPortions, findExercise } from "./data/book";
-import type { Chapter, Exercise, Portion } from "./data/types";
+import type { Book, Chapter, Exercise, Portion } from "./data/types";
 import { dayKey } from "./lib/day";
 import { setSoundEnabled } from "./lib/feedback";
 import {
@@ -37,7 +37,8 @@ const initialState = () => {
 export default function App() {
   const [{ progress, notice }, setState] = useState(initialState);
   const [screen, setScreen] = useState<Screen>({ name: "home" });
-  const [tab, setTab] = useState<Tab>("chemin");
+  // Straight to the path when a book is already open, to the library otherwise.
+  const [tab, setTab] = useState<Tab>(() => (progress.currentBook ? "chemin" : "livres"));
 
   useEffect(() => {
     saveProgress(progress);
@@ -57,6 +58,12 @@ export default function App() {
   const goHome = () => {
     if (history.state?.christhub) history.back();
     setScreen({ name: "home" });
+  };
+
+  const openBook = (book: Book) => {
+    setProgress({ ...progress, currentBook: book.id });
+    setTab("chemin");
+    window.scrollTo(0, 0);
   };
 
   const startPortion = (portion: Portion, index: number) => setScreen({ name: "session", mode: { kind: "learn", portion, index } });
@@ -173,7 +180,11 @@ export default function App() {
       onStartCheckpoint={startCheckpoint}
       onStartReview={startReview}
       onUpdate={setProgress}
-      onReset={() => setState({ progress: emptyProgress(), notice: null })}
+      onOpenBook={openBook}
+      onReset={() => {
+        setState({ progress: emptyProgress(), notice: null });
+        setTab("livres");
+      }}
     />
   );
 }

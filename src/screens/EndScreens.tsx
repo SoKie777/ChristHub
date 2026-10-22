@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { credits } from "../data/book";
+import { bookOfPortion, creditsFor } from "../data/book";
+import { Mascot } from "../components/Mascots";
 import type { Portion } from "../data/types";
 import { GraceIcon, LampIcon, ShareIcon, StarIcon, XpIcon } from "../components/icons";
 import { WEEKDAY_LETTERS, dayKey, weekOf } from "../lib/day";
@@ -75,7 +76,9 @@ function ResultPage({ summary }: { summary: EndSummary }) {
   return (
     <section className="end-page pop">
       <div className="end-burst">
-        {summary.perfect || summary.passed ? <StarIcon size={72} className="gold" /> : <LampIcon size={84} />}
+        <Mascot who="biblo" mood={summary.mode === "checkpoint" && !summary.passed ? "think" : "cheer"} size={104} />
+        {(summary.perfect || summary.passed) && <StarIcon size={40} className="gold end-star" />}
+        <Mascot who="crucy" mood={summary.mode === "checkpoint" && !summary.passed ? "happy" : "cheer"} size={92} />
       </div>
       <h1 className="end-title">{title}</h1>
       {summary.mode === "checkpoint" && !summary.passed && (
@@ -154,6 +157,7 @@ function StreakPage({ summary, progress }: { summary: EndSummary; progress: Prog
 
 function TruthPage({ portion }: { portion: Portion }) {
   const [copied, setCopied] = useState(false);
+  const book = bookOfPortion(portion.id);
   const share = async () => {
     const text = `« ${portion.verse.text} » (${portion.verse.ref})\n\n${portion.keyTruth}\n\nChristHub`;
     try {
@@ -180,7 +184,7 @@ function TruthPage({ portion }: { portion: Portion }) {
       <button className="btn ghost" onClick={share}>
         <ShareIcon size={18} /> {copied ? "Copié !" : "Partager"}
       </button>
-      <p className="source">{credits.deeper}</p>
+      {book && <p className="source">{creditsFor(book).deeper}</p>}
     </section>
   );
 }

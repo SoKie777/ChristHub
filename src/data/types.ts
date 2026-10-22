@@ -43,5 +43,11 @@ export interface Book {
   author: string;
   publisher: string;
   year: number;
+  /** One or two sentences shown in the library. */
+  blurb: string;
+  /** Cover gradient in the library. */
+  cover: [string, string];
   chapters: Chapter[];
+  /** Titles of the chapters not written yet, shown locked on the path. */
+  upcoming: string[];
 }

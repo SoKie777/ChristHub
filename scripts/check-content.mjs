@@ -3,13 +3,14 @@
 import { createServer } from "vite";
 
 const server = await createServer({ server: { middlewareMode: true }, appType: "custom", logLevel: "silent" });
-const { book } = await server.ssrLoadModule("/src/data/book.ts");
+const { books } = await server.ssrLoadModule("/src/data/book.ts");
 await server.close();
 
 const ids = new Set();
 const problems = [];
 let exercises = 0;
 
+for (const book of books)
 for (const chapter of book.chapters) {
   for (const portion of chapter.portions) {
     for (const id of [portion.id, ...portion.exercises.map((e) => e.id)]) {
@@ -32,8 +33,12 @@ for (const chapter of book.chapters) {
   }
 }
 
-for (const c of book.chapters)
-  console.log(`Chapitre ${c.number} : ${c.portions.length} portions, ${c.portions.reduce((n, p) => n + p.exercises.length, 0)} exercices`);
+for (const book of books) {
+  if (!book.blurb || book.cover.length !== 2) problems.push(`${book.id} : fiche de bibliothèque incomplète`);
+  console.log(book.courseTitle);
+  for (const c of book.chapters)
+    console.log(`  Chapitre ${c.number} : ${c.portions.length} portions, ${c.portions.reduce((n, p) => n + p.exercises.length, 0)} exercices`);
+}
 console.log(`Total : ${exercises} exercices.`);
 if (problems.length) {
   console.error(`${problems.length} problème(s) :\n- ${problems.join("\n- ")}`);

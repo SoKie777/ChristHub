@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { allPortions, book, credits } from "../data/book";
+import { bookPortions, books, creditsFor, findBook } from "../data/book";
+import { Mascot, MascotSays } from "../components/Mascots";
 import { UpdateCard } from "../components/UpdateCard";
-import type { Chapter, Portion } from "../data/types";
+import type { Book, Chapter, Portion } from "../data/types";
 import {
   BookIcon,
   BrainIcon,
@@ -19,22 +20,10 @@ import { WEEKDAY_LETTERS, addDays, dayKey } from "../lib/day";
 import { sfx } from "../lib/feedback";
 import { MAX_GRACES, dueReviews, lampLevel, type Progress } from "../lib/progress";
 
-// Home: the book path (Chemin), spaced review (Méditer) and the profile.
+// Home: the library (Livres), the book path (Chemin), spaced review (Méditer)
+// and the profile.
 
-export type Tab = "chemin" | "mediter" | "profil";
-
-/** Coming chapters, shown locked on the path. */
-const NEXT_CHAPTERS = [
-  "Le dessein de Dieu pour l'homme",
-  "Régner plutôt que dominer",
-  "Visionnaire et leader",
-  "Enseignant et cultivateur",
-  "Pourvoyeur et protecteur",
-  "L'homme et sa sexualité",
-  "Différences entre l'homme et la femme",
-  "Être un bon père",
-  "Les clés pour devenir un vrai homme",
-];
+export type Tab = "livres" | "chemin" | "mediter" | "profil";
 
 interface Props {
   progress: Progress;
@@ -46,6 +35,7 @@ interface Props {
   onStartCheckpoint: (chapter: Chapter) => void;
   onStartReview: (free: boolean) => void;
   onUpdate: (p: Progress) => void;
+  onOpenBook: (book: Book) => void;
   onReset: () => void;
 }
 
@@ -81,6 +71,7 @@ export function Home(props: Props) {
       )}
 
       <main className="home-body">
+        {tab === "livres" && <LibraryTab {...props} />}
         {tab === "chemin" && <PathTab {...props} />}
         {tab === "mediter" && <ReviewTab {...props} />}
         {tab === "profil" && <ProfileTab {...props} />}
@@ -89,6 +80,7 @@ export function Home(props: Props) {
       <nav className="tabbar">
         {(
           [
+            ["livres", "Livres", BookIcon],
             ["chemin", "Chemin", PathIcon],
             ["mediter", "Méditer", BrainIcon],
             ["profil", "Profil", UserIcon],
@@ -114,10 +106,84 @@ export function Home(props: Props) {
 
 const OFFSETS = [0, 58, 88, 58, 0, -58, -88, -58];
 
-function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
+function LibraryTab({ progress, onOpenBook }: Props) {
+  return (
+    <div className="library-tab">
+      <MascotSays who="biblo" mood="happy" size={92}>
+        Quel livre veux-tu méditer aujourd'hui ?
+      </MascotSays>
+      <h1 className="section-title big">Bibliothèque</h1>
+      <div className="books">
+        {books.map((book) => {
+          const portions = bookPortions(book);
+          const done = portions.filter((p) => progress.portions[p.id]).length;
+          const total = book.chapters.length + book.upcoming.length;
+          const current = progress.currentBook === book.id;
+          return (
+            <button
+              key={book.id}
+              className={`book-card ${current ? "current" : ""}`}
+              onClick={() => {
+                sfx.tap();
+                onOpenBook(book);
+              }}
+            >
+              <span className="book-cover" style={{ background: `linear-gradient(160deg, ${book.cover[0]}, ${book.cover[1]})` }}>
+                <BookIcon size={34} />
+              </span>
+              <span className="book-info">
+                <strong>{book.courseTitle}</strong>
+                <span className="book-author">
+                  {book.author} · {book.chapters.length}/{total} chapitres disponibles
+                </span>
+                <span className="book-blurb">{book.blurb}</span>
+                <span className="book-bar">
+                  <i style={{ width: `${portions.length ? (done / portions.length) * 100 : 0}%` }} />
+                </span>
+                <span className="book-cta">{done === 0 ? "Commencer" : current ? "Continuer" : "Reprendre"}</span>
+              </span>
+            </button>
+          );
+        })}
+        <div className="book-card soon">
+          <span className="book-cover">
+            <LockIcon size={28} />
+          </span>
+          <span className="book-info">
+            <strong>D'autres livres arrivent</strong>
+            <span className="book-blurb">La bibliothèque s'agrandira au fil des mises à jour.</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** The companion stands on the free side of the current node. */
+const mascotSide = (i: number) => (OFFSETS[i % OFFSETS.length] > 0 || i % OFFSETS.length === 4 ? "on-left" : "on-right");
+
+function PathTab(props: Props) {
+  const { progress, onTab } = props;
+  const book = findBook(progress.currentBook);
+  if (!book)
+    return (
+      <div className="path-tab empty">
+        <MascotSays who="biblo" mood="think">
+          Choisis d'abord un livre dans la bibliothèque.
+        </MascotSays>
+        <button className="btn primary" onClick={() => onTab("livres")}>
+          Ouvrir la bibliothèque
+        </button>
+      </div>
+    );
+  return <BookPath {...props} book={book} />;
+}
+
+function BookPath({ progress, onStartPortion, onStartCheckpoint, onTab, book }: Props & { book: Book }) {
   const [open, setOpen] = useState<string | null>(null);
   const todayXp = progress.xpByDay[dayKey()] ?? 0;
   const goal = progress.dailyGoal;
+  const credits = creditsFor(book);
 
   return (
     <div className="path-tab">
@@ -133,9 +199,12 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
         </div>
       </section>
 
-      {allPortions.every((p) => progress.portions[p.id]) && <UpdateCard finished />}
+      {bookPortions(book).every((p) => progress.portions[p.id]) && <UpdateCard finished />}
 
       <section className="course-head">
+        <button className="switch-book" onClick={() => onTab("livres")}>
+          <BookIcon size={16} /> Changer de livre
+        </button>
         <h1 className="course-title">{book.courseTitle}</h1>
         <p className="course-kicker">{credits.inspired}</p>
         <p className="course-deeper">{credits.deeper}</p>
@@ -168,6 +237,14 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
                 return (
                   <li key={portion.id} className="path-row" style={{ transform: `translateX(${OFFSETS[i % OFFSETS.length]}px)` }}>
                     {state === "current" && open !== portion.id && <span className="start-bubble">COMMENCER</span>}
+                    {state === "current" && (
+                      <Mascot
+                        who={chapterIndex % 2 ? "crucy" : "biblo"}
+                        mood="happy"
+                        size={70}
+                        className={`path-mascot ${mascotSide(i)}`}
+                      />
+                    )}
                     <button
                       className={`node ${state} ${record?.perfect ? "perfect" : ""}`}
                       aria-label={portion.title}
@@ -230,7 +307,7 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
         );
       })}
 
-      {NEXT_CHAPTERS.map((title, i) => (
+      {book.upcoming.map((title, i) => (
         <section key={title} className="chapter locked">
           <div className="chapter-banner">
             <div>
@@ -248,12 +325,12 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
 
 function ReviewTab({ progress, onStartReview }: Props) {
   const due = dueReviews(progress).length;
-  const learned = book.chapters.flatMap((c) => c.portions).filter((p) => progress.portions[p.id]);
+  const learned = books.flatMap(bookPortions).filter((p) => progress.portions[p.id]);
   const waiting = Object.keys(progress.review).length;
   return (
     <div className="review-tab">
       <section className="review-hero">
-        <BrainIcon size={44} />
+        <Mascot who="biblo" mood="think" size={88} />
         <h2>Méditer à nouveau</h2>
         <p>
           Les vérités que tu as manquées reviennent au bon moment : le lendemain, puis 3, 7 et 16 jours plus tard. Les XP sont
@@ -294,6 +371,7 @@ function ReviewTab({ progress, onStartReview }: Props) {
 }
 
 function ProfileTab({ progress, onUpdate, onReset }: Props) {
+  const credits = creditsFor(findBook(progress.currentBook) ?? books[0]);
   const [confirmReset, setConfirmReset] = useState(false);
   const lamp = lampLevel(progress.streak.count);
   const done = Object.keys(progress.portions).length;

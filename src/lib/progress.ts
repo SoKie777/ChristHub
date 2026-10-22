@@ -44,6 +44,8 @@ export interface Progress {
   journal: JournalEntry[];
   dailyGoal: number;
   soundOn: boolean;
+  /** Book open on the path; null until the learner picks one in the library. */
+  currentBook: string | null;
 }
 
 export const MAX_GRACES = 2;
@@ -75,6 +77,7 @@ export const emptyProgress = (): Progress => ({
   journal: [],
   dailyGoal: 20,
   soundOn: true,
+  currentBook: null,
 });
 
 export const loadProgress = (): Progress => {

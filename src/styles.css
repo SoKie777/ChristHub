@@ -1215,6 +1215,7 @@ button:disabled {
 .verdict {
   position: sticky;
   bottom: 0;
+  overflow: visible;
   padding: 16px 18px calc(18px + env(safe-area-inset-bottom));
   animation: rise 0.22s ease-out;
 }
@@ -1432,10 +1433,13 @@ button:disabled {
 }
 
 .end-burst {
-  display: grid;
-  place-items: center;
-  width: 140px;
-  height: 140px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  min-width: 240px;
+  padding: 10px 0 0;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255, 213, 74, 0.25), transparent 70%);
   animation: glow 2s ease-in-out infinite;
@@ -1655,6 +1659,314 @@ button:disabled {
 }
 
 /* ---------- Motion ---------- */
+
+/* ---------- Mascots ---------- */
+
+.mascot {
+  display: inline-block;
+  line-height: 0;
+  flex: none;
+}
+
+.mascot svg {
+  overflow: visible;
+  animation: idle 2.6s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
+
+.mascot .eyes {
+  animation: blink 4.2s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.mascot .wave {
+  animation: wave 1.6s ease-in-out infinite;
+}
+
+.mascot.mood-cheer svg {
+  animation: hop 0.9s ease-in-out infinite;
+}
+
+.mascot.mood-sad svg {
+  animation: droop 2.4s ease-in-out infinite;
+}
+
+.mascot.crucy svg {
+  animation-delay: -1.3s;
+}
+
+.mascot-says {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px;
+}
+
+.mascot-says.right {
+  flex-direction: row-reverse;
+}
+
+.bubble {
+  position: relative;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 2px solid var(--line);
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background: var(--surface);
+  border-left: 2px solid var(--line);
+  border-bottom: 2px solid var(--line);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.mascot-says.right .bubble::before {
+  left: auto;
+  right: -9px;
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.path-mascot {
+  position: absolute;
+  top: -8px;
+  pointer-events: none;
+}
+
+.path-mascot.on-left {
+  right: calc(100% + 26px);
+}
+
+.path-mascot.on-right {
+  left: calc(100% + 26px);
+}
+
+.verdict-mascot {
+  position: absolute;
+  right: 14px;
+  top: -58px;
+}
+
+.mirror-duo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+}
+
+.ring-center {
+  grid-auto-flow: row;
+  align-content: center;
+}
+
+.ring-center b {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.end-star {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  translate: -50% 0;
+}
+
+/* ---------- Library ---------- */
+
+.section-title.big {
+  font-size: 24px;
+  margin-top: 18px;
+}
+
+.books {
+  display: grid;
+  gap: 14px;
+}
+
+.book-card {
+  display: flex;
+  gap: 14px;
+  align-items: stretch;
+  padding: 14px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 2px solid var(--surface-2);
+  box-shadow: 0 5px 0 var(--surface-2);
+  text-align: left;
+}
+
+.book-card.current {
+  border-color: var(--brand-dark);
+  box-shadow: 0 5px 0 var(--brand-dark);
+}
+
+.book-card:active:not(.soon) {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 var(--surface-2);
+}
+
+.book-card.soon {
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.book-cover {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 74px;
+  min-height: 100px;
+  border-radius: 8px 12px 12px 8px;
+  background: var(--surface-2);
+  color: #fff;
+  box-shadow:
+    inset 6px 0 0 rgba(0, 0, 0, 0.22),
+    0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.book-info {
+  display: grid;
+  gap: 4px;
+  align-content: start;
+  min-width: 0;
+}
+
+.book-info strong {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.book-author {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--brand);
+}
+
+.book-blurb {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.book-bar {
+  height: 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.book-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  background: var(--gold);
+}
+
+.book-cta {
+  justify-self: start;
+  margin-top: 4px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.switch-book {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: 2px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.path-tab.empty {
+  display: grid;
+  gap: 18px;
+  padding-top: 30px;
+}
+
+@keyframes idle {
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+  50% {
+    transform: translateY(-3px) scaleY(1.015);
+  }
+}
+
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  30% {
+    transform: translateY(-10px) scale(0.97, 1.04);
+  }
+  60% {
+    transform: translateY(0) scale(1.04, 0.96);
+  }
+}
+
+@keyframes droop {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-14deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot svg,
+  .mascot .eyes,
+  .mascot .wave {
+    animation: none;
+  }
+}
 
 @keyframes bob {
   0%,

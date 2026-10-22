@@ -3,6 +3,7 @@ import type { Exercise, Portion } from "../data/types";
 import { ExerciseView, correctText, grade, isComplete, type Answer } from "../components/ExerciseView";
 import { BookIcon, CheckIcon, CloseIcon, MirrorIcon, PrayIcon } from "../components/icons";
 import { sfx } from "../lib/feedback";
+import { Mascot } from "../components/Mascots";
 
 // One session. « learn »: Lire → Consolider → Miroir → Prier for one portion.
 // « review » and « checkpoint »: exercises only.
@@ -170,6 +171,7 @@ export function Session({ mode, onExit, onFinish }: Props) {
 
       {verdict && step.type === "exercise" && (
         <div className={`verdict ${verdict.correct ? "good" : "bad"}`} role="status">
+          <Mascot who={verdict.correct ? "biblo" : "crucy"} mood={verdict.correct ? "cheer" : "sad"} size={64} className="verdict-mascot" />
           <div className="verdict-head">
             <span className="verdict-badge">{verdict.correct ? <CheckIcon size={22} /> : <CloseIcon size={20} />}</span>
             <strong>{verdict.correct ? verdict.praise : "Pas tout à fait…"}</strong>
@@ -245,8 +247,11 @@ function MirrorStep({
 }) {
   return (
     <section className="mirror">
-      <div className="mirror-glass">
-        <MirrorIcon size={40} />
+      <div className="mirror-duo">
+        <Mascot who="biblo" mood="think" size={72} />
+        <div className="mirror-glass">
+          <MirrorIcon size={40} />
+        </div>
       </div>
       <p className="step-kicker center">Face au miroir</p>
       <h2 className="mirror-q">{portion.mirror.question}</h2>
@@ -307,7 +312,16 @@ function PrayStep({ portion, onAmen }: { portion: Portion; onAmen: () => void })
           <circle cx="60" cy="60" r={r} className="ring-bg" />
           <circle cx="60" cy="60" r={r} className="ring-fg" strokeDasharray={circ} strokeDashoffset={circ * (1 - ratio)} />
         </svg>
-        <div className="ring-center">{phase === "ready" ? <PrayIcon size={40} /> : phase === "praying" ? left : "✓"}</div>
+        <div className="ring-center">
+          {phase === "praying" ? (
+            <>
+              <Mascot who="crucy" mood="pray" size={58} />
+              <b>{left}</b>
+            </>
+          ) : (
+            <Mascot who="crucy" mood={phase === "done" ? "cheer" : "happy"} size={74} />
+          )}
+        </div>
       </div>
       {phase === "ready" && (
         <button className="btn primary" onClick={start}>
