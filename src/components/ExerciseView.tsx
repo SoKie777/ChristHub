@@ -149,8 +149,10 @@ function FillView({ exercise, answer, locked, onChange }: ViewProps<"fill">) {
     <div className="exercise">
       <p className="exercise-label">Complète la phrase</p>
       <p className="fill-sentence">
-        {exercise.before}{" "}
-        <span className={`blank ${selected !== null ? "filled" : ""}`}>{selected !== null ? exercise.options[selected] : " "}</span>{" "}
+        {exercise.before}
+        {/«$/.test(exercise.before) ? " " : " "}
+        <span className={`blank ${selected !== null ? "filled" : ""}`}>{selected !== null ? exercise.options[selected] : " "}</span>
+        {/^[.,)]/.test(exercise.after) ? "" : /^[»;:!?]/.test(exercise.after) ? " " : " "}
         {exercise.after}
       </p>
       <div className="chips">
