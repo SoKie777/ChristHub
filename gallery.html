@@ -1,6 +1,0 @@
-<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="/src/styles.css"></head><body><div id="root"></div>
-<script type="module">
-import React from "react"; import { createRoot } from "react-dom/client"; import { Session } from "/src/screens/Session.tsx"; import { findExercise } from "/src/data/book.ts";
-const ids = new URLSearchParams(location.search).get("ids").split(",");
-createRoot(document.getElementById("root")).render(React.createElement(Session,{mode:{kind:"review",exercises:ids.map(i=>findExercise(i).exercise)},onExit(){},onFinish(){}}));
-</script></body></html>
