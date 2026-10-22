@@ -1,0 +1,387 @@
+import type { Chapter } from "./types";
+
+// Chapitre 5 : « Régner plutôt que dominer »
+// Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
+// et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
+
+export const chapitre5: Chapter = {
+  id: "c5",
+  number: 5,
+  title: "Régner plutôt que dominer",
+  theme: "Dieu a créé l'homme et la femme pour régner ensemble sur la terre, pas pour se dominer l'un l'autre.",
+  portions: [
+    {
+      id: "c5p1",
+      title: "Ensemble pour régner",
+      reading: [
+        "L'homme et la femme ont tous deux été créés à l'image de Dieu. Leur égalité vient de là : le même esprit habite l'un et l'autre. Ils sont faits de la même substance, mais de façon différente, parce que chacun a une part précise du plan à accomplir.",
+        "Dans la pensée de Dieu, leurs forces devaient s'additionner, et même se multiplier. Comme deux musiciens qui jouent chacun leur partition : ensemble, ils produisent une harmonie qu'aucun des deux ne pourrait créer seul.",
+        "Alors pourquoi tant de rivalité entre les hommes et les femmes ? Pourquoi la mission de régner sur la terre ressemble-t-elle si souvent à une lutte pour savoir qui dominera l'autre ?",
+        "La réponse tient en une phrase : Dieu a créé l'homme et la femme pour dominer la terre, pas pour se dominer l'un l'autre.",
+      ],
+      keyTruth: "Dieu nous a créés pour dominer la terre ensemble, pas pour nous dominer l'un l'autre.",
+      verse: {
+        ref: "Ecclésiaste 4:9",
+        text: "Deux valent mieux qu'un, parce qu'ils retirent un bon salaire de leur travail.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c5p1e1",
+          prompt: "Sur quoi repose l'égalité entre l'homme et la femme ?",
+          options: ["Sur leur force physique", "Sur le fait que le même esprit, créé à l'image de Dieu, habite l'un et l'autre", "Sur les lois de la société"],
+          answer: 1,
+          explain: "Tous deux portent l'image de Dieu : leur valeur est la même.",
+        },
+        {
+          kind: "fill",
+          id: "c5p1e2",
+          before: "Dieu a créé l'homme et la femme pour dominer la",
+          after: ", pas pour se dominer l'un l'autre.",
+          options: ["terre", "maison", "conversation"],
+          answer: 0,
+          explain: "La domination a été confiée sur la création, jamais sur une autre personne.",
+        },
+        {
+          kind: "truefalse",
+          id: "c5p1e3",
+          statement: "Ensemble, l'homme et la femme peuvent accomplir plus que la somme de ce qu'ils feraient séparément.",
+          answer: true,
+          explain: "Leurs forces différentes se complètent et se multiplient.",
+        },
+      ],
+      mirror: {
+        question: "Dans tes relations avec l'autre sexe, vis-tu plutôt la coopération ou la compétition ?",
+        choices: ["La coopération", "La compétition", "Un peu des deux", "Je n'y avais jamais pensé"],
+      },
+      prayer: "Seigneur, apprends-moi à régner avec les autres, et non sur les autres.",
+    },
+    {
+      id: "c5p2",
+      title: "Le doute semé",
+      reading: [
+        "Genèse 3 raconte comment le plan a été attaqué. Le serpent s'approche d'Ève, qui ne semble même pas surprise de l'entendre parler. Peut-être n'était-ce pas leur première conversation.",
+        "Sa première arme est une question : « Dieu a-t-il réellement dit… ? » Il ne nie pas tout de suite la parole de Dieu ; il la rend floue. Il pousse Ève à douter de ce qu'elle a entendu.",
+        "Ève répond presque correctement. Alors le serpent passe à la deuxième attaque : il salit l'intention de Dieu. « Vous ne mourrez pas. Dieu sait que vous seriez comme Lui. » Autrement dit : Dieu vous cache quelque chose, Il ne veut pas votre bien.",
+        "C'est toujours la même stratégie : d'abord faire douter de ce que Dieu a dit, puis faire douter de son cœur. Ève a mangé, Adam l'a suivie de son plein gré, et tout a basculé.",
+      ],
+      keyTruth: "L'ennemi commence toujours par me faire douter de ce que Dieu a dit, puis de la bonté de son cœur.",
+      verse: {
+        ref: "Genèse 3:1",
+        text: "Le serpent était le plus rusé de tous les animaux des champs, que l'Éternel Dieu avait faits. Il dit à la femme : Dieu a-t-il réellement dit : Vous ne mangerez pas de tous les arbres du jardin ?",
+      },
+      exercises: [
+        {
+          kind: "order",
+          id: "c5p2e1",
+          prompt: "Remets dans l'ordre la stratégie du serpent.",
+          items: ["Faire douter de la parole de Dieu", "Salir l'intention de Dieu", "Pousser à désobéir"],
+          explain: "D'abord « Dieu a-t-il dit ? », puis « Dieu vous cache quelque chose », enfin la chute.",
+        },
+        {
+          kind: "truefalse",
+          id: "c5p2e2",
+          statement: "Adam a mangé le fruit parce qu'Ève l'y a forcé.",
+          answer: false,
+          explain: "Adam l'a suivie de son plein gré : chacun était responsable de son choix.",
+        },
+        {
+          kind: "choice",
+          id: "c5p2e3",
+          prompt: "Que suggère le serpent quand il dit « Vous ne mourrez pas » ?",
+          options: ["Que Dieu ment et ne veut pas leur bien", "Que le fruit est empoisonné", "Qu'il faut demander l'avis d'Adam"],
+          answer: 0,
+          explain: "Il attaque l'intégrité de Dieu en faisant croire qu'Il leur cache quelque chose de bon.",
+        },
+      ],
+      mirror: {
+        question: "Y a-t-il une parole de Dieu dont tu as commencé à douter ?",
+        choices: ["Son amour pour moi", "Son pardon", "Ses promesses", "Ses commandements", "Pas en ce moment"],
+      },
+      prayer: "Père, quand le doute murmure, rappelle-moi ce que Tu as dit, et que ton cœur est bon.",
+    },
+    {
+      id: "c5p3",
+      title: "Chercher son but ailleurs",
+      reading: [
+        "Le serpent promettait : « Vous serez comme Dieu. » Mais Adam et Ève l'étaient déjà ! Ils avaient été créés à son image et reflétaient sa gloire. On leur a vendu ce qu'ils possédaient déjà.",
+        "Quant à la connaissance du bien et du mal, Dieu savait qu'il y avait des choses qu'ils n'étaient pas encore prêts à porter. Comme pour la domination, Il voulait les y préparer pas à pas.",
+        "La vraie racine de la chute est là : ils ont cessé de regarder vers leur Créateur pour connaître leur but, et se sont tournés vers eux-mêmes. Ils ont cru mieux savoir que Dieu pourquoi ils existaient.",
+        "Et quand on rejette le but d'une chose, on finit par en abuser. Se croyant sages, ils sont devenus fous : ils ont perdu une grande partie de ce que Dieu leur avait donné.",
+      ],
+      keyTruth: "Je n'ai pas à chercher ailleurs ce que Dieu m'a déjà donné : mon but se trouve dans sa pensée, pas dans la mienne.",
+      verse: {
+        ref: "Romains 1:22",
+        text: "Se vantant d'être sages, ils sont devenus fous.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c5p3e1",
+          statement: "Avant la chute, Adam et Ève n'étaient pas encore à l'image de Dieu.",
+          answer: false,
+          explain: "Ils l'étaient déjà : le serpent leur a promis ce qu'ils possédaient.",
+        },
+        {
+          kind: "choice",
+          id: "c5p3e2",
+          prompt: "Quelle est la racine profonde de la chute ?",
+          options: [
+            "Ils avaient faim",
+            "Ils ont cherché leur but en eux-mêmes plutôt qu'en Dieu",
+            "Le jardin ne leur plaisait plus",
+          ],
+          answer: 1,
+          explain: "Ils ont cru mieux connaître leur raison d'être que Celui qui les avait créés.",
+        },
+        {
+          kind: "fill",
+          id: "c5p3e3",
+          before: "Quand on rejette le but d'une chose, on finit par en",
+          after: ".",
+          options: ["abuser", "profiter", "rire"],
+          answer: 0,
+          explain: "Un des principes du but : là où le but est ignoré ou rejeté, l'abus est inévitable.",
+        },
+      ],
+      mirror: {
+        question: "Où cherches-tu le plus souvent le sens de ta vie ?",
+        choices: ["Dans la réussite", "Dans le regard des autres", "Dans mes propres idées", "Dans la Parole de Dieu"],
+      },
+      prayer: "Seigneur, je ne veux plus chercher ailleurs ce que Tu m'as déjà donné : révèle-moi mon but.",
+    },
+    {
+      id: "c5p4",
+      title: "Ce que la chute a brisé",
+      reading: [
+        "Les conséquences ne se sont pas fait attendre. Quand Dieu interroge Adam, il accuse aussitôt : « La femme que Tu m'as donnée… » Ève, à son tour, accuse le serpent. Le jeu des reproches commence.",
+        "La relation entre l'homme et la femme se déforme. Ils étaient faits pour régner côte à côte ; désormais, l'un cherchera à dominer et l'autre à retenir. Ce n'était pas le plan de Dieu, c'est le fruit du péché.",
+        "La relation avec la terre se brise aussi. Hors du jardin, le sol produit des épines, et vivre devient une lutte. L'ennemi voulait empêcher le jardin de s'étendre sur le monde.",
+        "Mais au moment même de la chute, Dieu promet un Libérateur qui écrasera la tête du serpent. Ce Libérateur, c'est Jésus-Christ. Par Lui, l'homme et la femme peuvent retrouver le plan d'origine.",
+      ],
+      keyTruth: "Le péché a tout abîmé, mais en Jésus, Dieu restaure son plan d'origine.",
+      verse: {
+        ref: "Genèse 3:15",
+        text: "Je mettrai inimitié entre toi et la femme, entre ta postérité et sa postérité : celle-ci t'écrasera la tête, et tu lui blesseras le talon.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c5p4e1",
+          prompt: "Associe chaque relation à ce que la chute y a provoqué.",
+          pairs: [
+            ["Avec Dieu", "La séparation"],
+            ["Entre l'homme et la femme", "Les reproches et la domination"],
+            ["Avec la terre", "Les épines et la lutte"],
+          ],
+          explain: "La chute a touché toutes les relations, mais Dieu a aussitôt promis un Libérateur.",
+        },
+        {
+          kind: "truefalse",
+          id: "c5p4e2",
+          statement: "La domination de l'homme sur la femme faisait partie du plan de Dieu dès le départ.",
+          answer: false,
+          explain: "Ils étaient faits pour régner ensemble : la domination est une conséquence du péché.",
+        },
+        {
+          kind: "choice",
+          id: "c5p4e3",
+          prompt: "Quand Dieu a-t-il promis un Libérateur ?",
+          options: ["Des siècles après la chute", "Au moment même de la chute", "Seulement à Noël"],
+          answer: 1,
+          explain: "Dès Genèse 3:15, Dieu annonce celui qui écrasera la tête du serpent.",
+        },
+      ],
+      mirror: {
+        question: "Quand quelque chose va mal, as-tu tendance à accuser les autres ?",
+        choices: ["Souvent", "Parfois", "Rarement", "Je reconnais ma part"],
+      },
+      prayer: "Jésus, merci d'être venu réparer ce que le péché a brisé : restaure en moi le plan du Père.",
+    },
+    {
+      id: "c5p5",
+      title: "La peur de paraître faible",
+      reading: [
+        "Chaque homme, qu'il ait dix ou quatre-vingt-dix ans, porte en lui un désir profond de prouver qu'il est fort. Ce désir n'est pas mauvais : Dieu l'a placé en lui pour qu'il puisse conduire, protéger et pourvoir.",
+        "Mais le péché l'a tordu. Pour beaucoup d'hommes, rien n'est plus effrayant que de passer pour faible. Cette peur les pousse à vouloir toujours avoir le dessus : l'agressivité, la compétition à outrance, parfois la violence.",
+        "Certains ont des muscles, mais sont faibles dans leur discipline, leur cœur et leur sens des responsabilités. Les gros bras servent alors à cacher le vide. Et entre copains, on se rassure en se vantant de qui « commande à la maison ».",
+        "Ce besoin est le même partout dans le monde, quelles que soient la langue ou la couleur de peau. La bonne nouvelle, c'est que la vraie force ne se prouve pas en écrasant les autres.",
+      ],
+      keyTruth: "Je n'ai rien à prouver : la vraie force ne vient pas de mes muscles, mais de Dieu.",
+      verse: {
+        ref: "2 Corinthiens 12:9",
+        text: "Et il m'a dit : Ma grâce te suffit, car ma puissance s'accomplit dans la faiblesse.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c5p5e1",
+          statement: "Le désir de l'homme d'être fort est mauvais en soi.",
+          answer: false,
+          explain: "Dieu l'a placé en lui pour conduire, protéger et pourvoir ; c'est le péché qui l'a tordu.",
+        },
+        {
+          kind: "choice",
+          id: "c5p5e2",
+          prompt: "Qu'est-ce qui pousse beaucoup d'hommes à l'agressivité ?",
+          options: ["La peur de paraître faible", "Le manque de sommeil", "L'amour de leur famille"],
+          answer: 0,
+          explain: "La peur d'être vu comme faible pousse à vouloir toujours avoir le dessus.",
+        },
+        {
+          kind: "fill",
+          id: "c5p5e3",
+          before: "La puissance de Dieu s'accomplit dans la",
+          after: ".",
+          options: ["faiblesse", "colère", "richesse"],
+          answer: 0,
+          explain: "Paul l'a appris : la grâce de Dieu suffit là où notre force s'arrête.",
+        },
+      ],
+      mirror: {
+        question: "Dans quel domaine ressens-tu le plus le besoin de prouver ta force ?",
+        choices: ["Au travail", "Dans mon couple", "Avec mes amis", "Dans le sport", "Je ne ressens pas ce besoin"],
+      },
+      prayer: "Seigneur, libère-moi du besoin de prouver ma force : ta grâce me suffit.",
+    },
+    {
+      id: "c5p6",
+      title: "La force sous contrôle",
+      reading: [
+        "Être vraiment fort, c'est développer tout le potentiel que Dieu a mis en soi, pour le but pour lequel on a été créé. Jésus était l'homme le plus fort qui ait vécu, et pourtant Il était doux. La douceur, c'est la force sous contrôle.",
+        "Ce n'est pas parce qu'on porte le pantalon, qu'on parle fort ou qu'on est le plus grand qu'on est à la tête d'un foyer. Les femmes aussi portent des pantalons ! La position de l'homme lui vient de Dieu, et sa force est là pour servir cette mission.",
+        "Pense à un pays. Un président élu gouverne avec autorité : il en a reçu le droit. Un dictateur qui prend le pouvoir par la force n'a que du pouvoir. L'autorité est un droit confié ; le pouvoir, une force imposée.",
+        "Un homme qui frappe sa femme ou terrorise ses enfants en disant « c'est moi le chef » n'exerce pas une autorité : il abuse d'un pouvoir. Et quand on abuse de son pouvoir, on perd son autorité légitime.",
+      ],
+      keyTruth: "La vraie force, c'est la puissance sous contrôle : dès que j'écrase quelqu'un, je perds mon autorité.",
+      verse: {
+        ref: "Proverbes 16:32",
+        text: "Celui qui est lent à la colère vaut mieux qu'un héros, et celui qui est maître de lui-même, que celui qui prend des villes.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c5p6e1",
+          prompt: "Associe chaque notion à sa définition.",
+          pairs: [
+            ["Autorité", "Un droit confié"],
+            ["Pouvoir", "Une force imposée"],
+            ["Douceur", "La force sous contrôle"],
+          ],
+          explain: "Le président élu a l'autorité, le dictateur n'a que le pouvoir.",
+        },
+        {
+          kind: "choice",
+          id: "c5p6e2",
+          prompt: "Que se passe-t-il quand un homme abuse de son pouvoir ?",
+          options: ["Il gagne le respect", "Il perd son autorité légitime", "Il devient un meilleur chef"],
+          answer: 1,
+          explain: "L'abus de pouvoir fait sortir de la position que Dieu avait confiée.",
+        },
+        {
+          kind: "truefalse",
+          id: "c5p6e3",
+          statement: "Jésus était à la fois l'homme le plus fort et un homme doux.",
+          answer: true,
+          explain: "Sa douceur n'était pas de la faiblesse, mais une puissance parfaitement maîtrisée.",
+        },
+      ],
+      mirror: {
+        question: "Comment réagis-tu quand tu sens la colère monter ?",
+        choices: ["J'explose", "Je me renferme", "Je respire et je prie", "Ça dépend des jours"],
+      },
+      prayer: "Seigneur, rends-moi maître de moi-même, doux et fort comme Toi.",
+    },
+    {
+      id: "c5p7",
+      title: "Suivre, pas forcer",
+      reading: [
+        "Beaucoup d'hommes brandissent le verset : « Femmes, soyez soumises à vos maris. » Mais être soumis, c'est choisir librement de suivre. La soumission est un acte de celui qui se soumet, jamais un ordre arraché par la force ou la peur.",
+        "Le verset dit : « comme au Seigneur ». Jésus n'a jamais frappé, humilié ni menacé personne pour qu'on le suive. Il nous a attendus, patiemment, et nous L'avons suivi parce que son amour nous a conquis. Il dit simplement : « Suis-moi. »",
+        "Pense à un guide dans une grotte : on le suit parce qu'il connaît le chemin dans le noir, et on reste libre de faire demi-tour. Un mari qui vit comme le Christ n'a pas besoin d'exiger quoi que ce soit : on a envie de le suivre.",
+        "Et soyons clairs : la soumission ne veut jamais dire subir des coups. Face à la violence, il faut se mettre à l'abri et demander de l'aide. Le respect ne s'exige pas : il se gagne, en aimant, en pardonnant et en écoutant comme Jésus.",
+      ],
+      keyTruth: "Le respect ne s'exige pas, il se gagne : on suit volontiers celui qui aime comme Jésus.",
+      verse: {
+        ref: "1 Jean 4:18",
+        text: "La crainte n'est pas dans l'amour, mais l'amour parfait bannit la crainte.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c5p7e1",
+          prompt: "Qu'est-ce que la soumission dans la Bible ?",
+          options: ["Obéir par peur des coups", "Un choix libre de suivre", "Un ordre que le mari peut imposer"],
+          answer: 1,
+          explain: "Personne ne peut être forcé à se soumettre : c'est un acte de la volonté.",
+        },
+        {
+          kind: "truefalse",
+          id: "c5p7e2",
+          statement: "Une femme frappée par son mari doit rester et subir pour être « soumise ».",
+          answer: false,
+          explain: "Jamais. Face à la violence, il faut se protéger et demander de l'aide.",
+        },
+        {
+          kind: "fill",
+          id: "c5p7e3",
+          before: "Jésus n'a jamais forcé personne. À ses disciples, Il dit simplement :",
+          after: ".",
+          options: ["Suis-moi", "Obéis-moi", "Tais-toi"],
+          answer: 0,
+          explain: "Il conduit et on Le suit, parce que son amour nous attire.",
+        },
+      ],
+      mirror: {
+        question: "Les personnes autour de toi te suivent-elles par confiance ou par crainte ?",
+        choices: ["Par confiance", "Par crainte", "Je ne sais pas", "Je ne conduis personne pour l'instant"],
+      },
+      prayer: "Jésus, apprends-moi à conduire comme Toi : par l'amour, jamais par la peur.",
+    },
+    {
+      id: "c5p8",
+      title: "Égaux et différents",
+      reading: [
+        "L'homme et la femme ont reçu la même mission : régner. Mais parce que leurs corps et leurs rôles diffèrent, ils l'exercent de façons différentes. La place de chacun vient du but de Dieu, pas du diplôme ni du salaire.",
+        "On confond souvent « différent » et « inférieur ». Une femme n'est pas moins qu'un homme parce qu'elle est une femme, et un homme n'est pas plus qu'une femme parce qu'il est un homme. Différent veut simplement dire différent.",
+        "Paul l'exprime ainsi : dans le Seigneur, la femme n'est pas sans l'homme, ni l'homme sans la femme. La femme a été tirée de l'homme, et tout homme naît d'une femme. Chacun a besoin de l'autre.",
+        "Retenons cinq vérités : régner n'est pas dominer ; on règne sur le monde, pas sur les personnes ; le respect se gagne ; l'homme et la femme sont égaux et différents ; ils ont besoin l'un de l'autre.",
+      ],
+      keyTruth: "Différent ne veut pas dire inférieur : l'homme et la femme sont égaux, différents, et ont besoin l'un de l'autre.",
+      verse: {
+        ref: "1 Corinthiens 11:11",
+        text: "Toutefois, dans le Seigneur, la femme n'est point sans l'homme, ni l'homme sans la femme.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c5p8e1",
+          statement: "Être différent, c'est forcément être inférieur ou supérieur.",
+          answer: false,
+          explain: "Différent veut simplement dire différent : les différences servent le but de Dieu.",
+        },
+        {
+          kind: "fill",
+          id: "c5p8e2",
+          before: "La place de chacun vient du but de Dieu, pas du",
+          after: "ni du diplôme.",
+          options: ["salaire", "cœur", "Créateur"],
+          answer: 0,
+          explain: "Ce n'est pas l'évolution de la société qui définit la position, mais le but de Dieu.",
+        },
+        {
+          kind: "order",
+          id: "c5p8e3",
+          prompt: "Remets dans l'ordre l'argument de Paul.",
+          items: ["La femme a été tirée de l'homme", "Tout homme naît d'une femme", "Donc chacun a besoin de l'autre"],
+          explain: "Dans le Seigneur, ni l'homme ni la femme ne sont indépendants l'un de l'autre.",
+        },
+      ],
+      mirror: {
+        question: "As-tu parfois regardé l'autre sexe comme inférieur ou comme un rival ?",
+        choices: ["Comme inférieur", "Comme un rival", "Comme un partenaire", "Je dois y réfléchir"],
+      },
+      prayer: "Père, merci pour la richesse de nos différences : apprends-moi à honorer celles et ceux que Tu as placés près de moi.",
+    },
+  ],
+};
