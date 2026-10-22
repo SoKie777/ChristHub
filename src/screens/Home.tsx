@@ -199,7 +199,7 @@ function BookPath({ progress, onStartPortion, onStartCheckpoint, onTab, book }: 
         </div>
       </section>
 
-      {bookPortions(book).every((p) => progress.portions[p.id]) && <UpdateCard finished />}
+      {bookPortions(book).every((p) => progress.portions[p.id]) && <UpdateCard finished bookComplete={book.upcoming.length === 0} />}
 
       <section className="course-head">
         <button className="switch-book" onClick={() => onTab("livres")}>

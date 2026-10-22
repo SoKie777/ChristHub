@@ -8,13 +8,15 @@ la boucle :
 Le tout avec des mécaniques de jeu qui aident à tenir : série de fidélité (la lampe),
 Grâces pour protéger un jour manqué, XP, combos, portions parfaites, chemin du livre,
 point de contrôle par chapitre et « Méditer à nouveau » (révision espacée des points
-manqués : 1, 3, 7 puis 16 jours).
+manqués : 1, 3, 7 puis 16 jours). Une bibliothèque permet de choisir son livre, et
+deux compagnons accompagnent chaque séance : Biblo (la Bible) et Crucy (la croix).
 
 ## Contenu
 
-Module « Le but et la puissance de l'homme » : MVP, chapitre 1 (« Qu'est-ce qu'un vrai homme ? »), **inspiré du livre
-*Understanding the Purpose and Power of Men* de Myles Munroe** (Whitaker House, 2001),
-en **8 portions**, puis chapitres 2 (« Sept principes du but ») et 3 (« La création de l'homme »), 8 portions chacun. Pour aller plus loin, procure-toi le livre officiel.
+Module « Le but et la puissance de l'homme », **inspiré du livre
+*Understanding the Purpose and Power of Men* de Myles Munroe** (Whitaker House, 2001) :
+le livre complet, **12 chapitres de 8 portions** (96 portions, près de 300 exercices).
+Pour aller plus loin, procure-toi le livre officiel.
 
 Le texte de l'application est une **paraphrase libre en français**, écrite avec nos
 propres mots : ce n'est pas une traduction du livre, et le livre lui-même n'est pas
@@ -30,7 +32,8 @@ npm run build    # TypeScript + vérification du contenu + build dans dist/
 npm run check:content  # vérifie seulement le contenu (identifiants, réponses, phrases)
 ```
 
-- `src/data/` : le contenu (un fichier par chapitre, voir `types.ts`).
+- `src/data/` : le contenu (un fichier par chapitre, voir `types.ts`) ; `book.ts` tient la bibliothèque.
+- `src/components/Mascots.tsx` : Biblo et Crucy, en SVG, avec leurs humeurs.
 - `src/lib/progress.ts` : série, Grâces, XP, révision espacée (stocké dans le téléphone).
 - `src/screens/` : chemin, séance, écrans de fin.
 - `android/` : l'appli Android (WebView qui embarque `dist/`).

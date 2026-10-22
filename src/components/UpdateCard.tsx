@@ -4,8 +4,9 @@ import { CrownIcon } from "./icons";
 
 // « Tu as tout terminé » card on the path (checks right away), or a small
 // « Vérifier les mises à jour » block in the profile (checks on demand).
+// `bookComplete`: the whole book is written, so no more chapters will come for it.
 
-export function UpdateCard({ finished }: { finished: boolean }) {
+export function UpdateCard({ finished, bookComplete = false }: { finished: boolean; bookComplete?: boolean }) {
   const [status, setStatus] = useState<UpdateStatus | null>(null);
 
   const check = () => {
@@ -22,7 +23,7 @@ export function UpdateCard({ finished }: { finished: boolean }) {
       {finished && (
         <>
           <CrownIcon size={34} className="gold" />
-          <h3>Tu as terminé tout ce que contient ta version !</h3>
+          <h3>{bookComplete ? "Tu as terminé tout le livre, gloire à Dieu !" : "Tu as terminé tout ce que contient ta version !"}</h3>
         </>
       )}
 
@@ -35,7 +36,7 @@ export function UpdateCard({ finished }: { finished: boolean }) {
       {status?.state === "available" && (
         <>
           <p>
-            La version <b>{status.version}</b> est disponible{finished ? ", avec la suite du parcours" : ""}. Ta progression sera
+            La version <b>{status.version}</b> est disponible{finished ? (bookComplete ? ", peut-être avec de nouveaux livres" : ", avec la suite du parcours") : ""}. Ta progression sera
             conservée.
           </p>
           <a className="btn primary" href={DOWNLOAD_URL} target="_blank" rel="noopener">
@@ -46,7 +47,12 @@ export function UpdateCard({ finished }: { finished: boolean }) {
       )}
       {status?.state === "current" && (
         <p>
-          Tu as la dernière version{finished ? ". De nouveaux chapitres arrivent bientôt : reviens méditer chaque jour pour garder ta lampe allumée !" : "."}
+          Tu as la dernière version
+          {finished
+            ? bookComplete
+              ? ". D'autres livres rejoindront bientôt la bibliothèque : en attendant, continue de méditer chaque jour pour garder ta lampe allumée !"
+              : ". De nouveaux chapitres arrivent bientôt : reviens méditer chaque jour pour garder ta lampe allumée !"
+            : "."}
         </p>
       )}
       {status?.state === "offline" && (
