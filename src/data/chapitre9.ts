@@ -1,0 +1,382 @@
+import type { Chapter } from "./types";
+
+// Chapitre 9 : « L'homme et sa sexualité »
+// Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
+// et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
+
+export const chapitre9: Chapter = {
+  id: "c9",
+  number: 9,
+  title: "L'homme et sa sexualité",
+  theme: "La sexualité est une idée de Dieu : un don précieux, protégé par l'alliance du mariage.",
+  portions: [
+    {
+      id: "c9p1",
+      title: "Qui nous a appris ?",
+      reading: [
+        "Comment as-tu découvert la sexualité ? Par des copains, des films, un manuel de biologie, la pornographie, ou des expériences de jeunesse ? Presque personne ne répond : « par mes parents ».",
+        "Aucune de ces sources n'est fiable. Les copains répètent des rumeurs. Les films vendent du rêve et créent des attentes irréalistes. La biologie explique la mécanique mais pas le cœur. La pornographie est conçue pour rendre dépendant et faire de l'argent : ses images s'impriment dans l'esprit et deviennent des chaînes.",
+        "Et chaque expérience crée un appétit. Plus on le nourrit, plus il réclame. C'est pour cela qu'il est si dangereux de découvrir un don aussi précieux sans en connaître le but.",
+        "L'Église et les familles ont souvent gardé le silence, comme si le sujet était sale. Inutile de s'en vouloir : c'est ainsi que beaucoup ont grandi. Mais on peut renouveler sa pensée par la Parole, et devenir pour ses enfants une source fiable.",
+      ],
+      keyTruth: "Ma vision de la sexualité doit être renouvelée par la Parole de Dieu, pas façonnée par les écrans ou les rumeurs.",
+      verse: {
+        ref: "Romains 12:2",
+        text: "Ne vous conformez pas au siècle présent, mais soyez transformés par le renouvellement de l'intelligence, afin que vous discerniez quelle est la volonté de Dieu, ce qui est bon, agréable et parfait.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c9p1e1",
+          prompt: "Associe chaque source à sa limite.",
+          pairs: [
+            ["Les copains", "Des rumeurs"],
+            ["Les films", "Des attentes irréalistes"],
+            ["La pornographie", "Une dépendance qui enchaîne"],
+          ],
+          explain: "Aucune de ces sources ne transmet le but que Dieu a donné à la sexualité.",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p1e2",
+          statement: "Plus on nourrit un désir, plus il réclame.",
+          answer: true,
+          explain: "Chaque expérience crée une capacité, et l'appétit grandit avec l'usage.",
+        },
+        {
+          kind: "choice",
+          id: "c9p1e3",
+          prompt: "Qui devrait être la première source d'un enfant sur ce sujet ?",
+          options: ["Internet", "Ses parents, à la lumière de la Parole", "Ses camarades de classe"],
+          answer: 1,
+          explain: "Un enfant bien enseigné pourra reconnaître les fausses idées qu'il entendra ailleurs.",
+        },
+      ],
+      mirror: {
+        question: "D'où vient principalement ce que tu crois sur la sexualité ?",
+        choices: ["Des copains", "Des écrans", "De mes expériences", "De mes parents", "De la Bible"],
+      },
+      prayer: "Seigneur, renouvelle ma pensée : efface les mensonges que j'ai appris et enseigne-moi ta vérité.",
+    },
+    {
+      id: "c9p2",
+      title: "Une idée de Dieu",
+      reading: [
+        "Dieu n'est pas gêné par la sexualité : c'est Lui qui l'a inventée. Après avoir créé l'homme et la femme, Il a regardé tout ce qu'Il avait fait et a dit que c'était très bon. Un livre entier de la Bible, le Cantique des cantiques, célèbre l'amour entre un homme et une femme.",
+        "Pourquoi ce don ? Parce que l'unité est au cœur de Dieu. La Bible ose comparer l'union d'un mari et de sa femme à l'amour entre le Christ et son Église. C'est dire combien Dieu considère ce don comme précieux.",
+        "Ce n'est donc pas la sexualité qui pose problème, mais son mauvais usage. Ce que Dieu avait conçu comme une joie profonde est devenu source de foyers brisés et de blessures à travers le monde.",
+        "Retrouver le regard de Dieu, c'est sortir de deux mensonges à la fois : celui qui dit que c'est sale, et celui qui dit que tout est permis.",
+      ],
+      keyTruth: "La sexualité n'est ni sale ni banale : c'est un don très bon, imaginé par Dieu Lui-même.",
+      verse: {
+        ref: "Genèse 1:31",
+        text: "Dieu vit tout ce qu'il avait fait et voici, cela était très bon.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c9p2e1",
+          statement: "Dieu considère la sexualité comme quelque chose de sale.",
+          answer: false,
+          explain: "C'est Lui qui l'a créée, et Il a dit que c'était très bon.",
+        },
+        {
+          kind: "choice",
+          id: "c9p2e2",
+          prompt: "À quoi la Bible compare-t-elle l'union d'un mari et de sa femme ?",
+          options: ["À un contrat commercial", "À l'amour entre le Christ et son Église", "À une simple habitude"],
+          answer: 1,
+          explain: "Cette image montre combien Dieu considère ce don comme précieux.",
+        },
+        {
+          kind: "fill",
+          id: "c9p2e3",
+          before: "Ce n'est pas la sexualité qui pose problème, mais son mauvais",
+          after: ".",
+          options: ["usage", "nom", "créateur"],
+          answer: 0,
+          explain: "Dieu ne s'oppose qu'à ce qui détruit ceux qu'Il aime.",
+        },
+      ],
+      mirror: {
+        question: "Quel regard as-tu porté jusqu'ici sur la sexualité ?",
+        choices: ["Quelque chose de sale", "Quelque chose de banal", "Un don de Dieu", "Je ne sais pas trop"],
+      },
+      prayer: "Père, merci pour ce don très bon : donne-moi ton regard, loin de la honte comme de la banalité.",
+    },
+    {
+      id: "c9p3",
+      title: "Une alliance, pas une expérience",
+      reading: [
+        "Dieu a placé l'union sexuelle dans le mariage pour trois raisons : donner la vie, sceller une alliance entre un homme et une femme, et permettre de vivre ce don pleinement, sans regrets ni blessures.",
+        "« Ils deviendront une seule chair. » L'union du corps n'est pas un simple moment : c'est un engagement. Dans la Bible, l'alliance la plus forte est scellée par le sang, et Dieu a inscrit cette notion d'alliance jusque dans le corps humain. Voilà pourquoi ce don est réservé à l'engagement solennel du mariage.",
+        "Dans la loi de Moïse, un jeune marié était dispensé d'armée et de toute charge pendant un an. Sa seule mission : rendre heureuse sa femme. Dieu a pris soin que l'amour des jeunes couples ait de la place !",
+        "Remarque : le texte ne dit pas « se faire plaisir », mais « rendre heureuse sa femme ». La convoitise pense à elle-même ; l'amour pense à l'autre. Et quand on donne, les deux reçoivent.",
+      ],
+      keyTruth: "L'union des corps est une alliance, pas une expérience : l'amour vrai cherche d'abord le bonheur de l'autre.",
+      verse: {
+        ref: "Genèse 2:24",
+        text: "C'est pourquoi l'homme quittera son père et sa mère, et s'attachera à sa femme, et ils deviendront une seule chair.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c9p3e1",
+          prompt: "Laquelle de ces raisons ne fait PAS partie des trois raisons données ?",
+          options: ["Donner la vie", "Sceller une alliance", "Prouver sa virilité"],
+          answer: 2,
+          explain: "Les trois raisons : donner la vie, sceller une alliance, vivre ce don pleinement sans blessures.",
+        },
+        {
+          kind: "fill",
+          id: "c9p3e2",
+          before: "Pendant sa première année de mariage, le jeune marié devait rendre",
+          after: "sa femme.",
+          options: ["heureuse", "obéissante", "célèbre"],
+          answer: 0,
+          explain: "Deutéronome 24:5 : Dieu protégeait le bonheur des jeunes couples.",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p3e3",
+          statement: "La convoitise pense à l'autre, l'amour pense à soi.",
+          answer: false,
+          explain: "C'est l'inverse : la convoitise pense à elle-même, l'amour cherche le bien de l'autre.",
+        },
+      ],
+      mirror: {
+        question: "Dans tes relations, cherches-tu d'abord à recevoir ou à donner ?",
+        choices: ["À recevoir", "À donner", "Les deux", "Je ne me suis jamais posé la question"],
+      },
+      prayer: "Seigneur, apprends-moi un amour qui donne au lieu de prendre, et qui respecte l'alliance.",
+    },
+    {
+      id: "c9p4",
+      title: "Des limites qui protègent",
+      reading: [
+        "Dieu ne pose pas des barrières pour nous gâcher la vie. Ses limites sont là pour nous préserver, comme la rambarde d'un pont n'empêche pas de traverser mais de tomber.",
+        "La première limite, c'est l'alliance du mariage entre un homme et une femme. Pas de période d'essai : la Bible parle de se réjouir de « la femme de sa jeunesse ». À l'intérieur de cette alliance, on peut vivre ce don sans honte, sans peur d'être découvert, en paix.",
+        "Paul l'écrit ainsi : tout m'est permis, mais tout n'est pas utile. La vraie question n'est pas « ai-je le droit ? » mais « est-ce bon pour moi ? ». Le corps est fait pour la sexualité, mais pas pour l'impureté.",
+        "Quand on franchit ces limites, la première chose qu'on perd, c'est la paix. La culpabilité pèse sur le corps et l'âme. Et rien d'humain ne peut l'effacer : seul le pardon de Jésus en libère.",
+      ],
+      keyTruth: "Les limites de Dieu ne sont pas là pour me priver, mais pour me protéger et me garder en paix.",
+      verse: {
+        ref: "1 Corinthiens 6:12",
+        text: "Tout m'est permis, mais tout n'est pas utile ; tout m'est permis, mais je ne me laisserai asservir par quoi que ce soit.",
+      },
+      exercises: [
+        {
+          kind: "fill",
+          id: "c9p4e1",
+          before: "Tout m'est permis, mais tout n'est pas",
+          after: ".",
+          options: ["utile", "interdit", "facile"],
+          answer: 0,
+          explain: "La bonne question n'est pas « ai-je le droit ? » mais « est-ce bon pour moi ? ».",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p4e2",
+          statement: "Les limites de Dieu sur la sexualité servent surtout à nous priver de plaisir.",
+          answer: false,
+          explain: "Elles nous protègent, comme la rambarde d'un pont.",
+        },
+        {
+          kind: "choice",
+          id: "c9p4e3",
+          prompt: "Qu'est-ce qu'on perd en premier quand on franchit les limites de Dieu ?",
+          options: ["Son argent", "Sa paix", "Ses amis"],
+          answer: 1,
+          explain: "La culpabilité s'installe, et seul le pardon de Jésus en libère.",
+        },
+      ],
+      mirror: {
+        question: "Y a-t-il un domaine où tu cherches à savoir « jusqu'où tu as le droit d'aller » ?",
+        choices: ["Oui", "Peut-être", "Non", "Je préfère en parler à Dieu seul"],
+      },
+      prayer: "Père, je choisis tes limites comme une protection : rends-moi la paix là où je l'ai perdue.",
+    },
+    {
+      id: "c9p5",
+      title: "Ton corps est un temple",
+      reading: [
+        "Face à l'impureté sexuelle, la Bible ne dit pas « discute avec la tentation » mais « fuis ». Comme on s'éloigne d'une épidémie : on ne reste pas à côté pour voir si on va l'attraper.",
+        "Paul explique que les autres péchés restent extérieurs au corps, alors que l'impureté sexuelle touche le corps lui-même. On ne devient pas « une seule chair » avec quelqu'un qu'on insulte, mais bien avec quelqu'un avec qui on s'unit. C'est pour cela que les ruptures après une relation intime laissent des blessures si profondes.",
+        "Ton corps appartient deux fois à Dieu : Il l'a créé, puis Il l'a racheté à un grand prix. Il est le temple du Saint-Esprit.",
+        "Honorer Dieu dans son corps, c'est attendre le mariage, puis rester fidèle à sa femme. Les mains qui se lèvent pour adorer Dieu peuvent aussi caresser son épouse : dans l'alliance, les deux sont saints.",
+      ],
+      keyTruth: "Mon corps appartient deux fois à Dieu : Il l'a créé et Il l'a racheté. Je veux L'honorer avec.",
+      verse: {
+        ref: "1 Corinthiens 6:19-20",
+        text: "Ne savez-vous pas que votre corps est le temple du Saint-Esprit qui est en vous, que vous avez reçu de Dieu, et que vous ne vous appartenez point à vous-mêmes ? Car vous avez été rachetés à un grand prix. Glorifiez donc Dieu dans votre corps et dans votre esprit, qui appartiennent à Dieu.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c9p5e1",
+          prompt: "Que conseille la Bible face à l'impureté sexuelle ?",
+          options: ["Discuter avec la tentation", "Fuir", "Tester ses limites"],
+          answer: 1,
+          explain: "On s'éloigne comme d'une épidémie, sans rester à côté.",
+        },
+        {
+          kind: "order",
+          id: "c9p5e2",
+          prompt: "Remets dans l'ordre les deux raisons pour lesquelles ton corps appartient à Dieu.",
+          items: ["Il l'a créé", "Il l'a racheté à un grand prix"],
+          explain: "Créé puis racheté : il est doublement à Lui.",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p5e3",
+          statement: "Une relation intime peut se terminer sans laisser aucune trace dans l'âme.",
+          answer: false,
+          explain: "On devient « une seule chair » : la rupture laisse des blessures profondes.",
+        },
+      ],
+      mirror: {
+        question: "Comment considères-tu ton corps aujourd'hui ?",
+        choices: ["Comme le temple de Dieu", "Comme ma propriété", "Je ne l'aime pas beaucoup", "Je n'y pense pas"],
+      },
+      prayer: "Saint-Esprit, mon corps est ta demeure : aide-moi à fuir ce qui la souille et à honorer Dieu en lui.",
+    },
+    {
+      id: "c9p6",
+      title: "Aimer, pas seulement « faire l'amour »",
+      reading: [
+        "L'union sexuelle est le signe visible d'une réalité invisible : se donner tout entier à l'autre et pour l'autre. Notre monde cherche le plaisir sans l'amour, l'amour sans le mariage, et le mariage sans responsabilités.",
+        "Le monde dit « faire l'amour », comme on réalise une performance. Dieu dit simplement « aimer ». Si l'union des corps produisait l'amour, ceux qui la pratiquent le plus seraient les plus aimés du monde. Ce n'est pas le cas.",
+        "La sexualité exprime l'amour, elle ne le crée pas. Un couple dont l'un des deux ne peut plus avoir de relations intimes peut rester profondément uni, parce que son amour va bien au-delà de la chambre.",
+        "Le désir monte, culmine et redescend avec les années. Un mariage fondé seulement sur lui finit par s'éteindre. Mais un amour fondé sur Dieu grandit : le plus beau témoignage d'un homme, c'est d'aimer sa femme comme le Christ aime l'Église.",
+      ],
+      keyTruth: "L'union des corps exprime l'amour, elle ne le crée pas : je veux aimer, pas seulement désirer.",
+      verse: {
+        ref: "1 Corinthiens 13:4",
+        text: "La charité est patiente, elle est pleine de bonté ; la charité n'est point envieuse ; la charité ne se vante point, elle ne s'enfle point d'orgueil.",
+      },
+      exercises: [
+        {
+          kind: "fill",
+          id: "c9p6e1",
+          before: "La sexualité exprime l'amour, elle ne le",
+          after: "pas.",
+          options: ["crée", "cache", "mérite"],
+          answer: 0,
+          explain: "L'amour vient d'abord ; l'union des corps en est l'expression.",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p6e2",
+          statement: "Un mariage fondé seulement sur le désir physique est solide pour toujours.",
+          answer: false,
+          explain: "Le désir fluctue : seul un amour enraciné en Dieu continue de grandir.",
+        },
+        {
+          kind: "choice",
+          id: "c9p6e3",
+          prompt: "Quel est le plus beau témoignage d'un homme marié ?",
+          options: ["Prêcher dans les rues", "Aimer sa femme comme le Christ aime l'Église", "Avoir une grande maison"],
+          answer: 1,
+          explain: "Paul compare l'amour du Christ pour l'Église à celui d'un mari dévoué.",
+        },
+      ],
+      mirror: {
+        question: "Pour toi, l'amour, c'est surtout…",
+        choices: ["Un sentiment", "Une attirance", "Un engagement", "Un don de soi", "Je cherche encore"],
+      },
+      prayer: "Seigneur, apprends-moi à aimer d'un amour patient et fidèle, qui se donne au lieu de prendre.",
+    },
+    {
+      id: "c9p7",
+      title: "Les pièges de la routine",
+      reading: [
+        "Beaucoup d'hommes veulent faire ce qui est juste, mais certains pièges les guettent. Le premier : oublier que sa femme est différente. Son corps a ses rythmes, la fatigue et le stress pèsent sur elle. Un mari qui l'oublie se vexe, se replie, et la distance s'installe. La patience et l'aide concrète au quotidien font des merveilles.",
+        "Deuxième piège : la voix du plaisir. Après des années de routine, un homme peut se mettre à chercher ailleurs ce qui pourrait égayer sa vie. Comme les sirènes de la légende, cette voix mène au naufrage.",
+        "Troisième piège : l'attrait de la nouveauté. Une relation « nouvelle » et mystérieuse semble promettre de retrouver sa jeunesse. Mais la nouveauté devient vite familière, et il faudrait sans cesse recommencer.",
+        "Le remède : veiller sur son cœur, passer du temps de qualité avec sa femme, parler à des frères de confiance, demander à Dieu une vision renouvelée. Notre soif de mystère trouve sa vraie réponse en Dieu, qu'on n'aura jamais fini de découvrir.",
+      ],
+      keyTruth: "Quand la routine s'installe, je ne cherche pas ailleurs : je laisse Dieu renouveler ma vie et mon couple.",
+      verse: {
+        ref: "Psaume 103:5",
+        text: "C'est lui qui rassasie de biens ta vieillesse, qui te fait rajeunir comme l'aigle.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c9p7e1",
+          prompt: "Associe chaque piège à sa description.",
+          pairs: [
+            ["Oublier les différences", "Se vexer au lieu de comprendre"],
+            ["La voix du plaisir", "Chercher ailleurs pour fuir la routine"],
+            ["L'attrait de la nouveauté", "Croire qu'une nouvelle relation rendra la jeunesse"],
+          ],
+          explain: "Connaître ces pièges aide à ne pas y tomber.",
+        },
+        {
+          kind: "choice",
+          id: "c9p7e2",
+          prompt: "Où notre soif de mystère trouve-t-elle sa vraie réponse ?",
+          options: ["Dans une nouvelle relation", "En Dieu, qu'on n'a jamais fini de découvrir", "Dans les voyages"],
+          answer: 1,
+          explain: "La nouveauté humaine devient vite familière ; Dieu, jamais.",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p7e3",
+          statement: "Parler de ses difficultés à des frères de confiance aide à résister.",
+          answer: true,
+          explain: "On ne se bat pas seul : le soutien et la prière des autres protègent.",
+        },
+      ],
+      mirror: {
+        question: "Quel piège te semble le plus proche de toi ?",
+        choices: ["Oublier les différences", "La voix du plaisir", "L'attrait de la nouveauté", "Aucun pour l'instant"],
+      },
+      prayer: "Seigneur, renouvelle ma jeunesse comme celle de l'aigle, et garde mon cœur fidèle dans la routine.",
+    },
+    {
+      id: "c9p8",
+      title: "Waouh… Holà !",
+      reading: [
+        "Même un chrétien rempli de l'Esprit reste un homme. Voir une belle femme provoque une réaction naturelle. Le nier, c'est se rendre vulnérable. Le corps dit « Waouh ! », mais l'Esprit répond « Holà ! » : c'est Lui qu'il faut écouter.",
+        "Le piège le plus dangereux est celui de l'ego : le besoin d'être admiré. Un déjeuner agréable, un compliment sincère, « j'aimerais épouser un homme comme toi »… et l'ego est flatté. Les infidélités commencent rarement d'un coup : par petits pas, on s'éloigne un peu, on revient, puis un jour on ne revient plus.",
+        "Le Saint-Esprit nous donne la force, mais Il ne fait pas le travail à notre place. La Bible dit : que chacun apprenne à garder son corps dans la sainteté. Concrètement : ne te mets pas dans des situations à risque, reste proche de ta femme, et fuis quand c'est nécessaire.",
+        "Ta valeur, cherche-la en Dieu, qui t'a couronné de gloire. Et quel que soit ton passé, il n'est pas ton avenir : en Christ, il y a le pardon, la liberté et un nouveau départ.",
+      ],
+      keyTruth: "Ma valeur vient de Dieu, pas des regards qu'on pose sur moi : je garde mon corps, et mon passé n'est pas mon avenir.",
+      verse: {
+        ref: "1 Thessaloniciens 4:3-4",
+        text: "Ce que Dieu veut, c'est votre sanctification ; c'est que vous vous absteniez de l'impudicité ; c'est que chacun de vous sache posséder son corps dans la sainteté et l'honnêteté.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c9p8e1",
+          prompt: "Comment commencent la plupart des infidélités ?",
+          options: ["D'un seul coup, sans prévenir", "Par de petits pas qui éloignent peu à peu", "Par hasard"],
+          answer: 1,
+          explain: "On s'éloigne un peu, on revient, puis un jour on ne revient plus.",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p8e2",
+          statement: "Être rempli du Saint-Esprit rend totalement insensible à la tentation.",
+          answer: false,
+          explain: "L'Esprit donne la force de résister, mais chacun doit apprendre à garder son corps.",
+        },
+        {
+          kind: "order",
+          id: "c9p8e3",
+          prompt: "Remets dans l'ordre la bonne réaction face à l'attirance.",
+          items: ["Reconnaître la réaction naturelle", "Écouter l'Esprit qui dit « Holà ! »", "S'éloigner de la situation"],
+          explain: "Ne pas nier, ne pas céder : reconnaître, écouter l'Esprit, s'éloigner.",
+        },
+      ],
+      mirror: {
+        question: "De quoi as-tu besoin aujourd'hui dans ce domaine ?",
+        choices: ["De pardon", "De force", "D'un frère à qui parler", "De rester vigilant", "De remercier Dieu"],
+      },
+      prayer: "Père, merci : mon passé n'est pas mon avenir. Garde mon cœur et mon corps dans ta sainteté.",
+    },
+  ],
+};
