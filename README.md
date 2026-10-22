@@ -12,8 +12,9 @@ manqués : 1, 3, 7 puis 16 jours).
 
 ## Contenu
 
-MVP : chapitre 1 (« Qu'est-ce qu'un vrai homme ? ») de *Understanding the Purpose and
-Power of Men* de Myles Munroe, en **8 portions**.
+MVP : chapitre 1 (« Qu'est-ce qu'un vrai homme ? »), **inspiré du livre
+*Understanding the Purpose and Power of Men* de Myles Munroe** (Whitaker House, 2001),
+en **8 portions**. Pour aller plus loin, procure-toi le livre officiel.
 
 Le texte de l'application est une **paraphrase libre en français**, écrite avec nos
 propres mots : ce n'est pas une traduction du livre, et le livre lui-même n'est pas

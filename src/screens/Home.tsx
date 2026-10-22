@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { book } from "../data/book";
+import { book, credits } from "../data/book";
 import type { Chapter, Portion } from "../data/types";
 import {
   BookIcon,
@@ -134,6 +134,11 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
         </div>
       </section>
 
+      <section className="course-head">
+        <p className="course-kicker">{credits.inspired}</p>
+        <p className="course-deeper">{credits.deeper}</p>
+      </section>
+
       {book.chapters.map((chapter) => {
         const done = chapter.portions.filter((p) => progress.portions[p.id]).length;
         const currentIndex = chapter.portions.findIndex((p) => !progress.portions[p.id]);
@@ -232,7 +237,7 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
           </div>
         </section>
       ))}
-      <p className="source">{book.source}</p>
+      <p className="source">{credits.legal}</p>
     </div>
   );
 }
@@ -401,7 +406,13 @@ function ProfileTab({ progress, onUpdate, onReset }: Props) {
           </div>
         )}
       </div>
-      <p className="source">{book.source}</p>
+      <p className="source">
+        {credits.inspired}.
+        <br />
+        {credits.deeper}
+        <br />
+        {credits.legal}
+      </p>
     </div>
   );
 }

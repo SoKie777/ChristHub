@@ -3,11 +3,18 @@ import { chapitre1 } from "./chapitre1";
 
 export const book: Book = {
   id: "munroe-purpose-power-men",
-  title: "Le but et la puissance de l'homme",
+  title: "Understanding the Purpose and Power of Men",
   author: "Myles Munroe",
-  source:
-    "Paraphrase libre et non officielle des idées de « Understanding the Purpose and Power of Men » (Myles Munroe, Whitaker House, 2001). Versets : Louis Segond 1910.",
+  publisher: "Whitaker House",
+  year: 2001,
   chapters: [chapitre1],
+};
+
+/** Small print shown with the course: what it is, and where to go deeper. */
+export const credits = {
+  inspired: `Inspiré du livre « ${book.title} » de ${book.author}`,
+  deeper: `Pour aller plus loin, procure-toi le livre officiel de ${book.author} (${book.publisher}).`,
+  legal: `ChristHub n'est pas affilié à l'auteur ni à l'éditeur : les textes sont une paraphrase libre. Versets : Louis Segond 1910.`,
 };
 
 export const allPortions: Portion[] = book.chapters.flatMap((c) => c.portions);

@@ -36,8 +36,10 @@ export interface Chapter {
 
 export interface Book {
   id: string;
+  /** Official title of the book the course is inspired by. */
   title: string;
   author: string;
-  source: string;
+  publisher: string;
+  year: number;
   chapters: Chapter[];
 }

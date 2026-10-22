@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { credits } from "../data/book";
 import type { Portion } from "../data/types";
 import { GraceIcon, LampIcon, ShareIcon, StarIcon, XpIcon } from "../components/icons";
 import { WEEKDAY_LETTERS, dayKey, weekOf } from "../lib/day";
@@ -179,6 +180,7 @@ function TruthPage({ portion }: { portion: Portion }) {
       <button className="btn ghost" onClick={share}>
         <ShareIcon size={18} /> {copied ? "Copié !" : "Partager"}
       </button>
+      <p className="source">{credits.deeper}</p>
     </section>
   );
 }
