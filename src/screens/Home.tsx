@@ -58,9 +58,9 @@ export function Home(props: Props) {
     <div className="home">
       <header className="topbar">
         <div className="brand" aria-label="ChristHub">
-          <span className="brand-christ">Chris</span>
-          <span className="brand-cross">†</span>
-          <span className="brand-hub">hub</span>
+          <img className="brand-mark" src={`${import.meta.env.BASE_URL}mark.png`} alt="" width={30} height={30} />
+          <span className="brand-christ">Christ</span>
+          <span className="brand-hub">Hub</span>
         </div>
         <div className="counters">
           <span className={`counter lamp ${practisedToday ? "" : "dim"}`} title={lamp.name}>
@@ -135,6 +135,7 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
       </section>
 
       <section className="course-head">
+        <h1 className="course-title">{book.courseTitle}</h1>
         <p className="course-kicker">{credits.inspired}</p>
         <p className="course-deeper">{credits.deeper}</p>
       </section>

@@ -36,6 +36,8 @@ export interface Chapter {
 
 export interface Book {
   id: string;
+  /** Our French title for the module. */
+  courseTitle: string;
   /** Official title of the book the course is inspired by. */
   title: string;
   author: string;

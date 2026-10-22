@@ -3,6 +3,7 @@ import { chapitre1 } from "./chapitre1";
 
 export const book: Book = {
   id: "munroe-purpose-power-men",
+  courseTitle: "Le but et la puissance de l'homme",
   title: "Understanding the Purpose and Power of Men",
   author: "Myles Munroe",
   publisher: "Whitaker House",
