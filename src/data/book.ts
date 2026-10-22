@@ -8,6 +8,7 @@ import { chapitre6 } from "./chapitre6";
 import { chapitre7 } from "./chapitre7";
 import { chapitre8 } from "./chapitre8";
 import { chapitre9 } from "./chapitre9";
+import { chapitre10 } from "./chapitre10";
 
 // French typography: non-breaking spaces inside « » and before : ; ? !, so that
 // punctuation never starts a line on a narrow phone screen.
@@ -37,9 +38,8 @@ const munroeMen: Book = deepTypo({
   year: 2001,
   blurb: "Découvre pourquoi Dieu a créé l'homme, ce qu'Il attend de lui et comment devenir l'homme qu'Il avait en tête.",
   cover: ["#00e5f0", "#0067a8"],
-  chapters: [chapitre1, chapitre2, chapitre3, chapitre4, chapitre5, chapitre6, chapitre7, chapitre8, chapitre9],
+  chapters: [chapitre1, chapitre2, chapitre3, chapitre4, chapitre5, chapitre6, chapitre7, chapitre8, chapitre9, chapitre10],
   upcoming: [
-    "Différences entre l'homme et la femme",
     "Être un bon père",
     "Les clés pour devenir un vrai homme",
   ],
