@@ -1,0 +1,382 @@
+import type { Chapter } from "./types";
+
+// Chapitre 8 : « Pourvoyeur et protecteur »
+// Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
+// et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
+
+export const chapitre8: Chapter = {
+  id: "c8",
+  number: 8,
+  title: "Pourvoyeur et protecteur",
+  theme: "Dieu a donné à l'homme de quoi pourvoir aux besoins des siens et veiller sur eux.",
+  portions: [
+    {
+      id: "c8p1",
+      title: "L'adoration avant le travail",
+      reading: [
+        "Dieu a confié le travail à l'homme avant la chute, et Il l'a béni. Le travail a trois raisons d'être : faire avancer les projets de Dieu, permettre à l'homme de s'épanouir en utilisant ses dons, et subvenir à ses besoins et à ceux dont il a la charge.",
+        "Mais l'ordre compte. La première place de l'homme, c'est la présence de Dieu. C'est dans l'adoration qu'il reçoit sa vision, sa vocation et son travail. Quand le travail empiète sur la relation avec Dieu, l'homme sort de son but.",
+        "Autre détail du récit : Adam a reçu un travail avant de recevoir une épouse. Avant de chercher une femme, un homme a besoin de découvrir ce que Dieu l'appelle à faire.",
+        "Bâtir une carrière sans Dieu, c'est comme construire une maison sans fondation : on peut s'épuiser à la tâche pour rien.",
+      ],
+      keyTruth: "Mon travail est un cadeau de Dieu, mais il ne doit jamais passer avant ma relation avec Lui.",
+      verse: {
+        ref: "Psaume 127:1",
+        text: "Si l'Éternel ne bâtit la maison, ceux qui la bâtissent travaillent en vain.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c8p1e1",
+          prompt: "Laquelle de ces raisons n'est PAS une des trois raisons d'être du travail ?",
+          options: ["Faire avancer les projets de Dieu", "Prouver qu'on vaut mieux que les autres", "Subvenir aux besoins de sa famille"],
+          answer: 1,
+          explain: "Le travail sert les projets de Dieu, l'épanouissement de l'homme et la provision des siens.",
+        },
+        {
+          kind: "order",
+          id: "c8p1e2",
+          prompt: "Remets dans l'ordre ce qu'Adam a reçu.",
+          items: ["La présence de Dieu", "Un travail", "Une épouse"],
+          explain: "La relation avec Dieu d'abord, puis la vocation, puis la famille.",
+        },
+        {
+          kind: "truefalse",
+          id: "c8p1e3",
+          statement: "Quand le travail empiète sur la relation avec Dieu, l'homme accomplit mieux son but.",
+          answer: false,
+          explain: "C'est dans l'adoration que l'homme reçoit sa vision et sa vocation.",
+        },
+      ],
+      mirror: {
+        question: "Ces derniers temps, qu'est-ce qui passe en premier dans tes journées ?",
+        choices: ["Dieu", "Mon travail", "Mes loisirs", "Les urgences", "Ça change tout le temps"],
+      },
+      prayer: "Seigneur, bâtis Toi-même ma maison, et garde-moi de laisser mon travail prendre ta place.",
+    },
+    {
+      id: "c8p2",
+      title: "Sept ans comme quelques jours",
+      reading: [
+        "Dieu a confié à l'homme la responsabilité première de pourvoir aux besoins de sa famille. Dans l'Ancien Testament, un homme qui voulait se marier devait montrer au père de la jeune femme qu'il était capable de subvenir à ses besoins.",
+        "Jacob a travaillé sept ans pour épouser Rachel, puis sept de plus. Et la Bible dit que ces années lui ont paru quelques jours, tant il l'aimait. Un homme qui travaille sept ans pour une femme a peu de chances de la quitter ensuite.",
+        "Certaines femmes portent seules la charge du foyer parce qu'elles ont rencontré un profiteur plutôt qu'un pourvoyeur. Et beaucoup de familles courent tellement qu'on finit par se croiser comme des bateaux dans la nuit : plus de confort, mais moins de temps ensemble.",
+        "Il ne s'agit pas d'empêcher une femme de développer ses talents, ni de culpabiliser les couples qui ont besoin de deux salaires. Si c'est ton cas, pas de honte : avance simplement vers ce qui est le meilleur pour ta famille, pas à pas, avec Dieu.",
+      ],
+      keyTruth: "Pourvoir aux besoins des miens est une responsabilité que Dieu m'a confiée, et l'amour la rend légère.",
+      verse: {
+        ref: "Genèse 29:20",
+        text: "Ainsi Jacob servit sept années pour Rachel : et elles furent à ses yeux comme quelques jours, parce qu'il l'aimait.",
+      },
+      exercises: [
+        {
+          kind: "fill",
+          id: "c8p2e1",
+          before: "Pour Jacob, sept années de travail ont paru comme quelques",
+          after: ", parce qu'il aimait Rachel.",
+          options: ["jours", "siècles", "minutes"],
+          answer: 0,
+          explain: "L'amour transforme l'effort en joie.",
+        },
+        {
+          kind: "truefalse",
+          id: "c8p2e2",
+          statement: "Un couple qui a besoin de deux salaires est en faute devant Dieu.",
+          answer: false,
+          explain: "Pas de honte : il s'agit d'avancer pas à pas vers ce qui est le meilleur pour la famille.",
+        },
+        {
+          kind: "choice",
+          id: "c8p2e3",
+          prompt: "Dans l'Ancien Testament, que devait montrer un homme avant de se marier ?",
+          options: ["Qu'il était le plus fort du village", "Qu'il pouvait subvenir aux besoins de sa future épouse", "Qu'il savait cuisiner"],
+          answer: 1,
+          explain: "Le père s'assurait que sa fille serait entourée de soin avant de la confier.",
+        },
+      ],
+      mirror: {
+        question: "Quelle est ta situation par rapport à cette responsabilité ?",
+        choices: ["Je pourvois avec joie", "Je traverse une période difficile", "Je cherche du travail", "Je me prépare pour plus tard"],
+      },
+      prayer: "Père, donne-moi un amour qui rende légers les efforts que je fais pour ceux qui comptent sur moi.",
+    },
+    {
+      id: "c8p3",
+      title: "Voir les besoins avant qu'ils arrivent",
+      reading: [
+        "Un pourvoyeur ne se contente pas d'attendre : il se prépare. Cela peut vouloir dire explorer d'autres métiers, reprendre des études ou se former davantage pour mieux servir sa famille.",
+        "Beaucoup d'hommes vivent en mode crise : ils attendent que les problèmes d'argent leur tombent dessus. Un pourvoyeur, lui, anticipe. Il pense déjà à ce dont sa famille aura besoin dans cinq ou dix ans, et il agit aujourd'hui.",
+        "C'est exactement ce que Jésus a fait pour nous. Avant même notre naissance, notre salut était préparé. Il a anticipé notre plus grand besoin, parce qu'Il nous aime.",
+        "Cette capacité de planifier peut aussi servir le mal : certains passent des mois à préparer une escroquerie. Conduite par l'Esprit de Dieu, elle devient un trésor pour toute la famille.",
+      ],
+      keyTruth: "Un vrai pourvoyeur ne vit pas en mode crise : il anticipe les besoins des siens, comme Jésus a anticipé les miens.",
+      verse: {
+        ref: "Proverbes 21:5",
+        text: "Les projets de l'homme diligent ne mènent qu'à l'abondance, mais celui qui agit avec précipitation n'arrive qu'à la disette.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c8p3e1",
+          prompt: "Qu'est-ce qui distingue un pourvoyeur d'un homme qui vit en mode crise ?",
+          options: ["Il gagne plus d'argent", "Il anticipe les besoins avant qu'ils arrivent", "Il ne dépense jamais rien"],
+          answer: 1,
+          explain: "Le pourvoyeur pense à demain et agit dès aujourd'hui.",
+        },
+        {
+          kind: "truefalse",
+          id: "c8p3e2",
+          statement: "Jésus a préparé notre salut avant même notre naissance.",
+          answer: true,
+          explain: "Il a anticipé notre plus grand besoin, par amour.",
+        },
+        {
+          kind: "fill",
+          id: "c8p3e3",
+          before: "Les projets de l'homme diligent mènent à",
+          after: ".",
+          options: ["l'abondance", "l'échec", "l'ennui"],
+          answer: 0,
+          explain: "Proverbes 21:5 oppose la diligence à la précipitation.",
+        },
+      ],
+      mirror: {
+        question: "As-tu un plan pour les besoins de ta famille dans les années à venir ?",
+        choices: ["Oui, bien établi", "Une vague idée", "Je vis au jour le jour", "Je n'ai pas encore de famille"],
+      },
+      prayer: "Seigneur, donne-moi la sagesse de préparer l'avenir des miens, en m'appuyant sur Toi.",
+    },
+    {
+      id: "c8p4",
+      title: "Le besoin de donner",
+      reading: [
+        "Au cœur du désir de pourvoir, il y a un besoin profond : celui de donner. Un homme a besoin de quelqu'un à qui offrir ce qu'il a. Quand on l'en empêche, c'est une partie de lui qui s'éteint.",
+        "Perdre son travail n'est donc pas, pour un homme, qu'un souci financier. C'est comme si on lui retirait une part de sa raison d'être. Certains s'effondrent, d'autres fuient leurs responsabilités. C'est mal, mais cela révèle une blessure profonde.",
+        "Imagine un homme qui appelle sa femme pour lui annoncer son licenciement. Si elle répond « Je m'y attendais, de toute façon c'est moi qui porte tout », il n'aura plus envie de rentrer.",
+        "Mais si elle répond : « Dieu est notre source. Je t'aime pour qui tu es, pas pour ce que tu m'achètes », elle lui rend sa dignité. Le lendemain, il sera prêt à accepter n'importe quel travail pour se relever.",
+      ],
+      keyTruth: "Donner fait partie de ma nature d'homme, et ma dignité ne disparaît pas quand je traverse l'épreuve.",
+      verse: {
+        ref: "Actes 20:35",
+        text: "Il y a plus de bonheur à donner qu'à recevoir.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c8p4e1",
+          prompt: "Pourquoi la perte d'un emploi est-elle si difficile pour beaucoup d'hommes ?",
+          options: ["Seulement à cause de l'argent", "Parce qu'elle touche leur besoin profond de pourvoir et de donner", "Parce qu'ils s'ennuient"],
+          answer: 1,
+          explain: "Pourvoir fait partie de leur raison d'être : la perte touche leur identité.",
+        },
+        {
+          kind: "truefalse",
+          id: "c8p4e2",
+          statement: "Une parole d'encouragement peut aider un homme à se relever après un licenciement.",
+          answer: true,
+          explain: "Être respecté et aimé pour qui on est redonne le courage de repartir.",
+        },
+        {
+          kind: "fill",
+          id: "c8p4e3",
+          before: "Il y a plus de bonheur à donner qu'à",
+          after: ".",
+          options: ["recevoir", "garder", "gagner"],
+          answer: 0,
+          explain: "Paroles de Jésus rapportées par Paul en Actes 20:35.",
+        },
+      ],
+      mirror: {
+        question: "Comment réagis-tu quand tu ne peux pas donner autant que tu voudrais ?",
+        choices: ["Je me sens inutile", "Je me renferme", "Je fais confiance à Dieu", "Je n'ai jamais vécu ça"],
+      },
+      prayer: "Seigneur, Tu es ma source : quand je manque, rappelle-moi que ma valeur vient de Toi.",
+    },
+    {
+      id: "c8p5",
+      title: "Le gardien du jardin",
+      reading: [
+        "Dieu a demandé à Adam de cultiver le jardin, mais aussi de le garder. Garder les plantes, les animaux, la femme qui allait venir, et surtout la présence de Dieu qui remplissait ce lieu. L'homme est comme un gardien : quand il arrive, chacun devrait se sentir en sécurité.",
+        "Pas besoin d'être marié pour cela. Toute femme qui croise ton chemin devrait se sentir en sécurité avec toi. Si l'une d'elles se confie à toi, abattue et vulnérable, ton rôle est de la conduire vers Dieu et de la traiter comme une sœur, jamais de profiter de sa fragilité.",
+        "Quand tu fréquentes quelqu'un, protéger, ce n'est pas l'emmener la nuit dans un endroit isolé. Garde les choses dans la lumière. Il faut un homme fort pour garder ses mains pour lui ; n'importe quel homme faible peut se laisser mener par ses pulsions.",
+        "Dans une famille, la présence du père et du mari devrait apaiser. Quand il parle, tout le monde se sent rassuré : « Ça va aller, Dieu est avec nous, et je suis là. »",
+      ],
+      keyTruth: "Partout où je vais, ceux qui m'entourent devraient se sentir en sécurité, et la présence de Dieu protégée.",
+      verse: {
+        ref: "Proverbes 4:23",
+        text: "Garde ton cœur plus que toute autre chose, car de lui viennent les sources de la vie.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c8p5e1",
+          statement: "Un homme n'a besoin d'être protecteur qu'une fois marié.",
+          answer: false,
+          explain: "Toute femme qui croise son chemin devrait pouvoir se sentir en sécurité avec lui.",
+        },
+        {
+          kind: "choice",
+          id: "c8p5e2",
+          prompt: "Qu'est-ce qui montre la vraie force d'un homme dans une relation ?",
+          options: ["Céder à toutes ses envies", "Garder ses mains pour lui et la relation dans la lumière", "Impressionner par ses muscles"],
+          answer: 1,
+          explain: "Se maîtriser demande bien plus de force que de céder.",
+        },
+        {
+          kind: "fill",
+          id: "c8p5e3",
+          before: "Dans le jardin, Adam devait garder les plantes, les animaux et surtout la",
+          after: "de Dieu.",
+          options: ["présence", "maison", "loi"],
+          answer: 0,
+          explain: "Le jardin était rempli de la présence de Dieu : c'était le trésor à protéger.",
+        },
+      ],
+      mirror: {
+        question: "Les femmes de ton entourage se sentent-elles en sécurité avec toi ?",
+        choices: ["Oui, je crois", "Je ne sais pas", "Pas toujours", "Je dois changer quelque chose"],
+      },
+      prayer: "Seigneur, fais de moi un gardien fidèle : que chacun se sente en sécurité en ma présence.",
+    },
+    {
+      id: "c8p6",
+      title: "Une force pour protéger",
+      reading: [
+        "Dieu a donné à l'homme une force physique pour défendre et protéger. Le lieu le plus sûr pour une femme devrait être les bras de son mari. Pourtant, certains retournent cette force contre ceux qu'ils devraient protéger.",
+        "Frapper une femme ou un enfant, c'est trahir la raison même pour laquelle Dieu a donné cette force. Imagine-t-on Jésus gifler son Église ? Celui qui maltraite les siens abuse de ce que Dieu lui a confié. Si tu subis des violences, parle-en et mets-toi à l'abri : ce n'est jamais la volonté de Dieu.",
+        "L'homme a aussi un instinct protecteur. Jésus le décrit avec l'image d'une poule qui rassemble ses poussins sous ses ailes et se dresse face au danger. Dieu défend les siens avec cette ardeur.",
+        "Mal orienté, cet instinct devient jalousie maladive, contrôle ou rivalité de quartier. Bien orienté, il se tourne contre le vrai ennemi : le mal, le péché, l'œuvre du diable. On ne se bat pas contre les gens, mais pour eux.",
+      ],
+      keyTruth: "Ma force m'a été donnée pour protéger, jamais pour blesser : je me bats contre le mal, pas contre les personnes.",
+      verse: {
+        ref: "Éphésiens 5:29",
+        text: "Car jamais personne n'a haï sa propre chair ; mais il la nourrit et en prend soin, comme Christ le fait pour l'Église.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c8p6e1",
+          prompt: "Pourquoi Dieu a-t-il donné à l'homme sa force physique ?",
+          options: ["Pour imposer sa volonté", "Pour défendre et protéger", "Pour gagner les disputes"],
+          answer: 1,
+          explain: "La force est un outil de protection, jamais d'oppression.",
+        },
+        {
+          kind: "match",
+          id: "c8p6e2",
+          prompt: "Associe chaque instinct à sa forme bien ou mal orientée.",
+          pairs: [
+            ["Bien orienté", "Combattre le mal et protéger les siens"],
+            ["Mal orienté", "Jalousie, contrôle et violence"],
+          ],
+          explain: "Le même instinct peut bâtir ou détruire selon qu'il est soumis à Dieu ou non.",
+        },
+        {
+          kind: "truefalse",
+          id: "c8p6e3",
+          statement: "Subir des violences dans son foyer peut être la volonté de Dieu.",
+          answer: false,
+          explain: "Jamais. Il faut en parler et se mettre à l'abri.",
+        },
+      ],
+      mirror: {
+        question: "Comment utilises-tu ta force, physique ou morale, envers tes proches ?",
+        choices: ["Pour les protéger", "Parfois pour imposer", "Je dois demander pardon à quelqu'un", "Je préfère ne pas répondre"],
+      },
+      prayer: "Seigneur, que ma force soit toujours un refuge pour les miens, et jamais une menace.",
+    },
+    {
+      id: "c8p7",
+      title: "Regarder le problème en face",
+      reading: [
+        "Dieu a aussi donné à l'homme une capacité à réfléchir posément face au danger. Il observe avant de s'engager, il analyse ce qu'il voit, il planifie avec précision et il pèse les conséquences de chaque choix.",
+        "C'est pour cela que beaucoup d'hommes s'assoient au fond de l'église pendant des semaines avant de s'engager : ils vérifient que tout cela est vrai. Ce n'est pas de la froideur, c'est de la prudence.",
+        "Face aux dettes ou à une perte d'emploi, un homme ne devrait ni s'effondrer, ni noyer ses soucis dans l'alcool, ni fuir. Il peut regarder chaque problème en face : celui-ci, je le règle en trois semaines ; celui-là en trois mois ; pour cet autre, je vais négocier avec la banque.",
+        "Cette assurance ne vient pas de l'orgueil. Elle est solide parce qu'elle repose sur la Parole de Dieu.",
+      ],
+      keyTruth: "Face aux difficultés, je ne fuis pas : je regarde chaque problème en face avec un plan et avec Dieu.",
+      verse: {
+        ref: "Luc 14:28",
+        text: "Car, lequel de vous, s'il veut bâtir une tour, ne s'assied d'abord pour calculer la dépense et voir s'il a de quoi la terminer ?",
+      },
+      exercises: [
+        {
+          kind: "order",
+          id: "c8p7e1",
+          prompt: "Remets dans l'ordre la façon de réfléchir décrite dans cette portion.",
+          items: ["Observer", "Analyser", "Planifier", "Peser les conséquences"],
+          explain: "Une pensée posée aide à affronter les problèmes sans paniquer.",
+        },
+        {
+          kind: "truefalse",
+          id: "c8p7e2",
+          statement: "Face aux dettes, la meilleure réaction est de fuir pour ne pas y penser.",
+          answer: false,
+          explain: "Un homme regarde chaque problème en face et établit un plan, avec Dieu.",
+        },
+        {
+          kind: "choice",
+          id: "c8p7e3",
+          prompt: "Sur quoi repose l'assurance d'un homme face aux difficultés ?",
+          options: ["Sur son orgueil", "Sur la Parole de Dieu", "Sur la chance"],
+          answer: 1,
+          explain: "Sa confiance est solide parce qu'elle s'appuie sur Dieu.",
+        },
+      ],
+      mirror: {
+        question: "Y a-t-il un problème que tu évites de regarder en face en ce moment ?",
+        choices: ["Des dettes", "Un conflit", "Ma santé", "Une décision importante", "Pas en ce moment"],
+      },
+      prayer: "Seigneur, donne-moi le courage de regarder mes problèmes en face, et la sagesse de les résoudre avec Toi.",
+    },
+    {
+      id: "c8p8",
+      title: "Ne jamais baisser les bras",
+      reading: [
+        "Dieu a mis dans l'homme un esprit qui refuse d'être vaincu, une envie de se dépasser. On l'appelle souvent l'ego. En soi, il n'est pas mauvais : il fait partie de l'équipement que Dieu donne pour conduire.",
+        "Beaucoup dépensent cette énergie à soutenir une équipe de sport qu'ils n'ont jamais vue jouer en vrai. Mais ce feu n'est pas fait pour le canapé : il est fait pour traverser les tempêtes de la vie et montrer à ses enfants comment rester fidèle quand c'est dur.",
+        "Un ego racheté dit : « Rien ne peut me vaincre, car mon Dieu pourvoira à tous mes besoins. » Licencié ? « Dieu doit avoir quelque chose de meilleur pour moi. » Ce n'est pas de l'arrogance, c'est de la foi.",
+        "Visionnaire, leader, enseignant, cultivateur, pourvoyeur, protecteur : Dieu t'a équipé pour tout cela. Il t'a même donné son Esprit. Accomplis pleinement le service qu'Il t'a confié.",
+      ],
+      keyTruth: "Dieu m'a équipé pour traverser les tempêtes : avec Lui, je ne baisse pas les bras.",
+      verse: {
+        ref: "Colossiens 4:17",
+        text: "Prends garde au ministère que tu as reçu dans le Seigneur, afin de le bien remplir.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c8p8e1",
+          statement: "L'envie de se dépasser est mauvaise en soi.",
+          answer: false,
+          explain: "Soumise à Dieu, elle aide à conduire les siens à travers les épreuves.",
+        },
+        {
+          kind: "choice",
+          id: "c8p8e2",
+          prompt: "Que dit un « ego racheté » face à un licenciement ?",
+          options: ["Ma vie est finie", "Dieu doit avoir quelque chose de meilleur pour moi", "C'est la faute de tout le monde"],
+          answer: 1,
+          explain: "La confiance en Dieu transforme l'épreuve en tremplin.",
+        },
+        {
+          kind: "match",
+          id: "c8p8e3",
+          prompt: "Associe chaque mission à ce qu'elle signifie.",
+          pairs: [
+            ["Visionnaire", "Recevoir la direction de Dieu"],
+            ["Cultivateur", "Faire grandir ce qui est confié"],
+            ["Pourvoyeur", "Anticiper les besoins des siens"],
+            ["Protecteur", "Veiller sur ceux qui lui sont confiés"],
+          ],
+          explain: "Dieu a équipé l'homme pour chacune de ces missions.",
+        },
+      ],
+      mirror: {
+        question: "Dans quelle tempête as-tu besoin de ne pas baisser les bras en ce moment ?",
+        choices: ["Au travail", "En famille", "Dans ma santé", "Dans ma foi", "Tout va bien en ce moment"],
+      },
+      prayer: "Père, quand tout pousse à abandonner, rappelle-moi que Tu m'as équipé pour tenir debout.",
+    },
+  ],
+};
