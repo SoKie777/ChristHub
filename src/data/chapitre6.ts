@@ -1,0 +1,387 @@
+import type { Chapter } from "./types";
+
+// Chapitre 6 : « Visionnaire et leader »
+// Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
+// et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
+
+export const chapitre6: Chapter = {
+  id: "c6",
+  number: 6,
+  title: "Visionnaire et leader",
+  theme: "Recevoir de Dieu une vision, puis conduire les siens vers elle en serviteur.",
+  portions: [
+    {
+      id: "c6p1",
+      title: "Sans vision, on s'égare",
+      reading: [
+        "La première mission de l'homme est d'être visionnaire. Elle vient en premier, car sans elle il ne peut ni conduire, ni enseigner, ni cultiver, ni pourvoir, ni protéger.",
+        "Avoir une vision est devenu rare. Beaucoup d'hommes avancent sans but, ou courent avec acharnement après une vision empruntée à la société, à la mode du moment, ou à ce que d'autres attendent d'eux.",
+        "Dans la Bible, la vision est une révélation : on ne l'invente pas, on la reçoit de Dieu. Avoir une vision, c'est voir déjà où mène son but et avancer vers lui. Un homme qui se marie et dit « on verra bien où on arrivera » n'a pas de vision.",
+        "Abraham ne connaissait pas tout le chemin vers le pays promis. Mais il savait où Dieu l'envoyait, et chaque pas l'en rapprochait. On n'a pas besoin de voir tout l'itinéraire pour connaître la destination.",
+      ],
+      keyTruth: "Une vraie vision ne s'invente pas : elle se reçoit de Dieu, et elle me fait avancer vers mon but.",
+      verse: {
+        ref: "Proverbes 29:18",
+        text: "Quand il n'y a pas de révélation, le peuple est sans frein ; heureux s'il observe la loi !",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c6p1e1",
+          prompt: "Pourquoi la mission de visionnaire vient-elle en premier ?",
+          options: [
+            "Parce qu'elle est la plus facile",
+            "Parce que sans elle, les autres missions ne peuvent pas s'accomplir",
+            "Parce qu'elle rapporte de l'argent",
+          ],
+          answer: 1,
+          explain: "Sans vision, on ne sait ni où conduire, ni quoi enseigner, ni pourquoi pourvoir.",
+        },
+        {
+          kind: "truefalse",
+          id: "c6p1e2",
+          statement: "Pour avoir une vision, il faut connaître chaque étape du chemin à l'avance.",
+          answer: false,
+          explain: "Abraham ne connaissait pas tout l'itinéraire, mais il connaissait la destination.",
+        },
+        {
+          kind: "fill",
+          id: "c6p1e3",
+          before: "Dans la Bible, une vision ne s'invente pas : elle se",
+          after: "de Dieu.",
+          options: ["reçoit", "achète", "copie"],
+          answer: 0,
+          explain: "Le mot hébreu évoque un rêve, une révélation : c'est Dieu qui la donne.",
+        },
+      ],
+      mirror: {
+        question: "Sais-tu aujourd'hui vers où Dieu conduit ta vie ?",
+        choices: ["Oui, clairement", "J'ai une petite idée", "Pas vraiment", "Je suis la vision des autres"],
+      },
+      prayer: "Seigneur, je ne veux plus avancer au hasard : révèle-moi la vision que Tu as pour ma vie.",
+    },
+    {
+      id: "c6p2",
+      title: "L'exemple de Jésus",
+      reading: [
+        "Personne n'a eu une vision plus claire que Jésus. À douze ans déjà, Il savait qu'Il devait s'occuper des affaires de son Père. Il savait qui Il était et pourquoi Il était venu : chercher et sauver ce qui était perdu.",
+        "Sa vie montre deux choses dont nous avons besoin : une image claire de qui nous sommes, et une vie qui correspond à ce que nous disons être. Jésus faisait toujours ce qu'Il disait.",
+        "Jean-Baptiste savait aussi qui il était : « la voix de celui qui crie dans le désert ». Et Paul commençait ses lettres en se présentant : serviteur du Christ, appelé à être apôtre. Leur vision venait de leur rencontre avec Dieu.",
+        "Un matin, après une journée de guérisons, les disciples cherchent Jésus : « Tout le monde te cherche ! » Il était parti prier à l'écart. Plutôt que de profiter de sa popularité, Il répond : « Allons ailleurs, c'est pour cela que je suis venu. » La prière Lui montrait le pas suivant.",
+      ],
+      keyTruth: "Comme Jésus, je reçois la direction de ma vie en passant du temps seul avec le Père.",
+      verse: {
+        ref: "Luc 19:10",
+        text: "Car le Fils de l'homme est venu chercher et sauver ce qui était perdu.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c6p2e1",
+          prompt: "Associe chaque homme à la façon dont il se présentait.",
+          pairs: [
+            ["Jésus", "Venu chercher et sauver ce qui était perdu"],
+            ["Jean-Baptiste", "La voix qui crie dans le désert"],
+            ["Paul", "Serviteur du Christ, appelé à être apôtre"],
+          ],
+          explain: "Tous trois savaient qui ils étaient et pourquoi ils vivaient.",
+        },
+        {
+          kind: "choice",
+          id: "c6p2e2",
+          prompt: "Que fait Jésus quand tout le monde le cherche après une journée de succès ?",
+          options: ["Il reste profiter de sa popularité", "Il part prêcher ailleurs, comme la prière le Lui a montré", "Il se repose une semaine"],
+          answer: 1,
+          explain: "Jésus suivait son but, pas les applaudissements : la prière guidait chaque étape.",
+        },
+        {
+          kind: "truefalse",
+          id: "c6p2e3",
+          statement: "Jésus vivait toujours en accord avec ce qu'Il disait être.",
+          answer: true,
+          explain: "Son intégrité était totale : ses actes confirmaient ses paroles.",
+        },
+      ],
+      mirror: {
+        question: "Ta façon de vivre correspond-elle à ce que tu dis croire ?",
+        choices: ["Oui, la plupart du temps", "Pas toujours", "Il y a un grand écart", "Je n'ose pas répondre"],
+      },
+      prayer: "Jésus, apprends-moi à me lever pour prier comme Toi, et à suivre le pas que le Père me montre.",
+    },
+    {
+      id: "c6p3",
+      title: "Le jardin dans ton cœur",
+      reading: [
+        "La Bible dit que le Christ est le chef de tout homme. La chose la plus importante qu'un homme puisse faire, c'est de reconnaître cette autorité et de Le suivre chaque jour. Jésus ne donne pas seulement la vision : Il est la vision.",
+        "Un homme n'accomplit pas pleinement son but tant qu'il n'apprend pas à entendre la voix de Dieu. Adam l'entendait dans le jardin. Aujourd'hui, grâce au Saint-Esprit, le jardin n'est plus un lieu sur la carte : il est dans le cœur de chaque croyant.",
+        "Beaucoup d'hommes pensent que rester proche de Dieu, c'est le travail du pasteur. Mais chaque homme est appelé à être comme un prêtre dans sa maison, capable de dire aux siens : voici ce que Dieu nous dit.",
+        "Certains savent commenter l'économie ou le dernier match pendant des heures, mais n'ont rien à partager de ce que Dieu leur montre. Ta famille n'a pas besoin que le pasteur décide à ta place : elle a besoin que tu cherches Dieu toi-même.",
+      ],
+      keyTruth: "Je n'ai pas à déléguer ma relation avec Dieu : Il veut me parler pour que je guide les miens.",
+      verse: {
+        ref: "Jean 10:27",
+        text: "Mes brebis entendent ma voix ; je les connais, et elles me suivent.",
+      },
+      exercises: [
+        {
+          kind: "fill",
+          id: "c6p3e1",
+          before: "Jésus ne donne pas seulement la vision : Il",
+          after: "la vision.",
+          options: ["est", "vend", "cache"],
+          answer: 0,
+          explain: "Nous sommes appelés à devenir semblables à Lui : Il est le but lui-même.",
+        },
+        {
+          kind: "truefalse",
+          id: "c6p3e2",
+          statement: "Rester proche de Dieu est surtout le travail du pasteur.",
+          answer: false,
+          explain: "Chaque homme est appelé à chercher Dieu pour guider sa propre maison.",
+        },
+        {
+          kind: "choice",
+          id: "c6p3e3",
+          prompt: "Où se trouve aujourd'hui le « jardin » de la présence de Dieu ?",
+          options: ["Seulement dans les églises", "Dans le cœur de chaque croyant, par le Saint-Esprit", "Au Moyen-Orient"],
+          answer: 1,
+          explain: "L'Esprit habite en ceux qui appartiennent au Christ : la communion est possible partout.",
+        },
+      ],
+      mirror: {
+        question: "Qu'est-ce qui t'aide le plus à entendre la voix de Dieu ?",
+        choices: ["La lecture de la Bible", "La prière", "Le silence", "La louange", "Je ne l'entends pas encore"],
+      },
+      prayer: "Seigneur, Tu es mon chef : parle-moi, je T'écoute, et aide-moi à transmettre ta voix à ceux que j'aime.",
+    },
+    {
+      id: "c6p4",
+      title: "Comment Dieu révèle une vision",
+      reading: [
+        "Dieu peut révéler une vision de plusieurs façons. D'abord par la prière et la lecture de sa Parole : ce sont les habitudes les plus importantes. Il parle aussi à travers les conseils de chrétiens de confiance et à travers les dons qu'Il a mis en nous.",
+        "Une idée revient sans cesse, surtout après la prière ? Un domaine t'attire et te fait vibrer ? C'est peut-être la vision que Dieu a pour toi. Et une vision déjà reçue peut grandir : la fidélité dans le petit ouvre la porte au plus grand.",
+        "Une vision peut aussi s'hériter, d'un père ou d'un mentor. Mais celui qui la reçoit doit se l'approprier et la porter vraiment.",
+        "Un homme a besoin de voir clairement trois choses : qui il est en Dieu, quel est son but en tant qu'homme, et quel est son appel personnel. Avec ces trois repères, il sait où il va.",
+      ],
+      keyTruth: "Dieu me révèle ma vision par sa Parole, la prière, des conseils sages et les dons qu'Il a mis en moi.",
+      verse: {
+        ref: "Habacuc 2:2",
+        text: "L'Éternel m'adressa la parole, et il dit : Écris la prophétie : grave-la sur des tables, afin qu'on la lise couramment.",
+      },
+      exercises: [
+        {
+          kind: "order",
+          id: "c6p4e1",
+          prompt: "Range les trois choses qu'un homme a besoin de voir clairement, de la plus large à la plus personnelle.",
+          items: ["Qui il est en Dieu", "Son but en tant qu'homme", "Son appel personnel"],
+          explain: "On part de son identité en Dieu pour arriver à son appel unique.",
+        },
+        {
+          kind: "choice",
+          id: "c6p4e2",
+          prompt: "Lequel de ces moyens n'est PAS cité comme une façon dont Dieu révèle une vision ?",
+          options: ["La lecture de sa Parole", "Les conseils de chrétiens de confiance", "L'horoscope du jour"],
+          answer: 2,
+          explain: "Dieu parle par sa Parole, la prière, des conseils sages et nos dons.",
+        },
+        {
+          kind: "truefalse",
+          id: "c6p4e3",
+          statement: "Une vision héritée d'un père ou d'un mentor doit être faite sienne pour porter du fruit.",
+          answer: true,
+          explain: "On ne vit pas la vision d'un autre par procuration : il faut se l'approprier.",
+        },
+      ],
+      mirror: {
+        question: "Y a-t-il une idée ou un domaine qui revient souvent dans ton cœur ?",
+        choices: ["Oui, depuis longtemps", "Peut-être", "Pas encore", "J'en ai plusieurs"],
+      },
+      prayer: "Père, rends claire la vision que Tu mets dans mon cœur, au point que je puisse l'écrire.",
+    },
+    {
+      id: "c6p5",
+      title: "Une vision qui entraîne les autres",
+      reading: [
+        "Avant de donner une compagne à Adam, Dieu lui a donné une vision. L'ordre compte : quand un homme n'a pas de direction, tous ceux qui le suivent en souffrent. Quand il avance, il entraîne les autres avec lui.",
+        "On ne peut pas demander à quelqu'un de nous aider si on ne fait rien. Beaucoup de femmes débordent de talents et d'énergie, prêtes à s'engager, mais ne trouvent rien à quoi contribuer. Un foyer, une église, une entreprise ont besoin qu'on leur montre où l'on va.",
+        "La vision vaut plus que l'argent. On peut être riche sans savoir pourquoi on vit. Et la discipline naît de la vision : c'est parce qu'on voit le but qu'on accepte les sacrifices pour l'atteindre.",
+        "Et voici une promesse rassurante : Dieu pourvoit toujours à la vision qu'Il donne. Le jardin était la provision pour la mission d'Adam. Ta part est de chercher et de recevoir la vision ; la sienne, de la soutenir.",
+      ],
+      keyTruth: "Dieu pourvoit toujours à la vision qu'Il donne : ma part est de la chercher, la sienne de la soutenir.",
+      verse: {
+        ref: "Philippiens 4:19",
+        text: "Et mon Dieu pourvoira à tous vos besoins selon sa richesse, avec gloire, en Jésus-Christ.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c6p5e1",
+          prompt: "Qu'est-ce que Dieu a donné à Adam avant de lui donner une compagne ?",
+          options: ["Une maison", "Une vision et une mission", "Un troupeau"],
+          answer: 1,
+          explain: "La direction vient d'abord : elle permet ensuite aux autres de s'y associer.",
+        },
+        {
+          kind: "fill",
+          id: "c6p5e2",
+          before: "La discipline naît de la",
+          after: ": on accepte les sacrifices parce qu'on voit le but.",
+          options: ["vision", "fatigue", "peur"],
+          answer: 0,
+          explain: "Sans but, l'effort n'a pas de sens ; avec un but, il devient un choix.",
+        },
+        {
+          kind: "truefalse",
+          id: "c6p5e3",
+          statement: "Avoir beaucoup d'argent, c'est la même chose qu'avoir une vision.",
+          answer: false,
+          explain: "Beaucoup de gens riches n'ont aucune vraie raison de vivre.",
+        },
+      ],
+      mirror: {
+        question: "Les personnes qui comptent sur toi savent-elles où tu vas ?",
+        choices: ["Oui", "Je ne leur en ai jamais parlé", "Je ne le sais pas moi-même", "Personne ne compte sur moi"],
+      },
+      prayer: "Seigneur, merci de pourvoir à tout ce que Tu demandes : donne-moi une vision qui fasse grandir ceux qui me suivent.",
+    },
+    {
+      id: "c6p6",
+      title: "Né pour conduire",
+      reading: [
+        "Une fois la vision reçue, vient la conduite. Mais d'où tirons-nous notre idée du leader ? Des stars, des sportifs, des politiciens. Demande-leur où sont leurs enfants et comment va leur foyer : beaucoup des hommes les plus célèbres ne savent pas garder leur maison unie.",
+        "Certains hommes fuient la responsabilité et laissent tout porter à leur femme. D'autres pensent qu'il faut être riche ou diplômé pour conduire. Ni l'un ni l'autre n'est vrai.",
+        "Une jeune femme brillante avait renoncé à s'acheter une belle voiture pour ne pas intimider les hommes. Mais un homme qui se sent menacé par la réussite d'une femme est un homme peu sûr de lui : il confond sa valeur avec ce qu'il possède.",
+        "Un homme ne décide pas s'il va conduire ou non : c'est son appel. Il ne conduit pas pour devenir responsable ; il conduit parce qu'il est responsable. Et Dieu a déjà mis en lui les qualités qu'il lui faut développer.",
+      ],
+      keyTruth: "Ma valeur ne dépend pas de ce que je possède : Dieu m'a appelé à conduire, et Il m'en donne les moyens.",
+      verse: {
+        ref: "1 Timothée 4:12",
+        text: "Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles, en parole, en conduite, en charité, en foi, en pureté.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c6p6e1",
+          statement: "Les hommes célèbres sont de bons modèles de leadership pour un foyer.",
+          answer: false,
+          explain: "Beaucoup réussissent en public mais n'arrivent pas à garder leur famille unie.",
+        },
+        {
+          kind: "choice",
+          id: "c6p6e2",
+          prompt: "Que révèle un homme qui se sent menacé par la réussite d'une femme ?",
+          options: ["Qu'il est très fort", "Qu'il manque d'assurance et confond sa valeur avec ses biens", "Qu'il a une grande vision"],
+          answer: 1,
+          explain: "Un homme sûr de son identité en Dieu se réjouit des dons des autres.",
+        },
+        {
+          kind: "fill",
+          id: "c6p6e3",
+          before: "Un homme ne conduit pas pour devenir responsable : il conduit parce qu'il",
+          after: "responsable.",
+          options: ["est", "veut être", "fait semblant d'être"],
+          answer: 0,
+          explain: "Sa position découle de son but : ce n'est pas une option qu'on débat.",
+        },
+      ],
+      mirror: {
+        question: "Face aux responsabilités, as-tu tendance à…",
+        choices: ["Les prendre", "Les fuir", "Les laisser aux autres", "Tout contrôler"],
+      },
+      prayer: "Père, délivre-moi de l'insécurité : fais de moi un modèle en parole, en conduite et en amour.",
+    },
+    {
+      id: "c6p7",
+      title: "Courage et sang-froid",
+      reading: [
+        "Dieu confie souvent aux hommes des missions trop grandes pour eux, justement pour qu'ils dépendent de Lui. À Josué, qui devait conduire tout un peuple, Il répète : « Fortifie-toi et prends courage. »",
+        "Mais Il ajoute aussitôt : « en agissant fidèlement selon toute la loi ». La vraie force est soumise à Dieu. Un homme qui n'a de comptes à rendre à personne n'est pas fort : il est dangereux. Le courage sans sagesse fait des dégâts.",
+        "Un leader garde la tête claire. Il identifie le problème, réfléchit, décide, et agit, sans se laisser paralyser par la panique. Ce n'est pas qu'il ne ressent rien : c'est qu'il ne laisse pas ses émotions décider à sa place.",
+        "Devant la mer Rouge, l'armée de Pharaon dans le dos, Moïse dit au peuple : « L'Éternel combattra pour vous. » Juste après, il crie lui-même à Dieu ! Un leader a parfois peur, mais il ne transmet pas sa peur à ceux dont il a la charge.",
+      ],
+      keyTruth: "Un leader peut avoir peur, mais il ne la transmet pas : il s'appuie sur Dieu et garde la tête claire.",
+      verse: {
+        ref: "Josué 1:9",
+        text: "Ne t'ai-je pas donné cet ordre : Fortifie-toi et prends courage ? Ne t'effraie point et ne t'épouvante point, car l'Éternel, ton Dieu, est avec toi dans tout ce que tu entreprendras.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c6p7e1",
+          prompt: "Qu'ajoute Dieu à son ordre « Fortifie-toi et prends courage » donné à Josué ?",
+          options: ["Agis fidèlement selon sa loi", "Fais-toi craindre de tous", "Ne demande conseil à personne"],
+          answer: 0,
+          explain: "La force véritable est soumise à Dieu et à sa Parole.",
+        },
+        {
+          kind: "truefalse",
+          id: "c6p7e2",
+          statement: "Un bon leader ne ressent jamais la peur.",
+          answer: false,
+          explain: "Moïse a crié à Dieu, mais il n'a pas transmis sa peur au peuple.",
+        },
+        {
+          kind: "order",
+          id: "c6p7e3",
+          prompt: "Remets dans l'ordre la façon dont un leader affronte un problème.",
+          items: ["Identifier le problème", "Réfléchir à la solution", "Décider", "Agir"],
+          explain: "Garder la tête claire permet de passer de la panique à l'action.",
+        },
+      ],
+      mirror: {
+        question: "Quand la pression monte, que transmets-tu à ceux qui t'entourent ?",
+        choices: ["Du calme", "Ma peur", "Ma colère", "Je me tais et je m'isole"],
+      },
+      prayer: "Éternel, Tu es avec moi : rends-moi courageux, et que mon calme vienne de ma confiance en Toi.",
+    },
+    {
+      id: "c6p8",
+      title: "Le chef qui sert",
+      reading: [
+        "Jésus l'a dit clairement : chez les puissants de ce monde, on écrase et on commande. Parmi vous, il ne doit pas en être ainsi. Celui qui veut être grand doit se faire serviteur. Lui-même est venu pour servir et donner sa vie.",
+        "Un vrai leader passe les besoins des autres avant les siens. Aimer sa femme comme le Christ a aimé l'Église, c'est renoncer à ses ambitions égoïstes pour servir sa famille.",
+        "Un vrai leader a aussi un cœur prêt à apprendre. Il accepte d'être corrigé, il écoute les idées des autres, en particulier celles de sa femme. Il faut un homme mûr pour accepter de l'aide ; seul un orgueilleux la refuse.",
+        "Et pour les épouses, un conseil précieux : quand ton mari propose une idée, plutôt que « tu n'as jamais rien réussi », dis « essayons ». Il entendra « je te fais confiance ». Et s'il se trompe, rappelle-lui que tout le monde se trompe.",
+      ],
+      keyTruth: "Le vrai chef sert le premier et accepte d'apprendre : c'est ainsi que Jésus a conduit.",
+      verse: {
+        ref: "Marc 10:45",
+        text: "Car le Fils de l'homme est venu, non pour être servi, mais pour servir et donner sa vie comme la rançon de plusieurs.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c6p8e1",
+          prompt: "Associe chaque qualité du leader à ce qu'elle implique.",
+          pairs: [
+            ["Cœur de serviteur", "Passer les besoins des autres avant les siens"],
+            ["Esprit qui apprend", "Accepter d'être corrigé"],
+            ["Obéissance", "Rester soumis à Dieu"],
+          ],
+          explain: "Jésus a conduit en servant, en écoutant le Père et en Lui obéissant.",
+        },
+        {
+          kind: "fill",
+          id: "c6p8e2",
+          before: "Celui qui veut être grand parmi vous doit se faire",
+          after: ".",
+          options: ["serviteur", "craindre", "admirer"],
+          answer: 0,
+          explain: "La grandeur selon Jésus se mesure au service.",
+        },
+        {
+          kind: "truefalse",
+          id: "c6p8e3",
+          statement: "Accepter les conseils de sa femme est un signe de faiblesse.",
+          answer: false,
+          explain: "Il faut un homme mûr pour accepter de l'aide ; seul un orgueilleux la refuse.",
+        },
+      ],
+      mirror: {
+        question: "Cette semaine, qui pourrais-tu servir concrètement ?",
+        choices: ["Ma femme ou ma famille", "Un ami", "Un collègue", "Quelqu'un dans le besoin", "Je vais y réfléchir"],
+      },
+      prayer: "Jésus, Toi qui es venu servir, donne-moi un cœur de serviteur et un esprit prêt à apprendre.",
+    },
+  ],
+};
