@@ -149,7 +149,7 @@ export function Session({ mode, onExit, onFinish }: Props) {
       {step.type === "read" && (
         <footer className="session-foot">
           <button className="btn primary" onClick={next}>
-            J'ai lu — passer à la suite
+            J'ai lu, passer à la suite
           </button>
         </footer>
       )}

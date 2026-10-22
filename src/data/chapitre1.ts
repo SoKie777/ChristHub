@@ -1,6 +1,6 @@
 import type { Chapter } from "./types";
 
-// Chapitre 1 — « Qu'est-ce qu'un vrai homme ? »
+// Chapitre 1 : « Qu'est-ce qu'un vrai homme ? »
 // Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
 // (aucune traduction du texte original). Versets : Louis Segond 1910, domaine public.
 

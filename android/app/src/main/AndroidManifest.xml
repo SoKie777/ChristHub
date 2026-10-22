@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Checks GitHub for a newer version once every available portion is done -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <!-- Short vibrations on right and wrong answers -->
     <uses-permission android:name="android.permission.VIBRATE" />
 

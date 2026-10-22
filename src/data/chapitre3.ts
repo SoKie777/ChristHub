@@ -1,6 +1,6 @@
 import type { Chapter } from "./types";
 
-// Chapitre 3 — « La création de l'homme »
+// Chapitre 3 : « La création de l'homme »
 // Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
 // et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
 

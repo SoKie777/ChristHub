@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { book, credits } from "../data/book";
+import { allPortions, book, credits } from "../data/book";
+import { UpdateCard } from "../components/UpdateCard";
 import type { Chapter, Portion } from "../data/types";
 import {
   BookIcon,
@@ -127,10 +128,12 @@ function PathTab({ progress, onStartPortion, onStartCheckpoint }: Props) {
         <div>
           <strong>Objectif du jour</strong>
           <p>
-            {Math.min(todayXp, goal)} / {goal} XP{todayXp >= goal ? " — atteint, gloire à Dieu !" : ""}
+            {Math.min(todayXp, goal)} / {goal} XP{todayXp >= goal ? " · atteint, gloire à Dieu !" : ""}
           </p>
         </div>
       </section>
+
+      {allPortions.every((p) => progress.portions[p.id]) && <UpdateCard finished />}
 
       <section className="course-head">
         <h1 className="course-title">{book.courseTitle}</h1>
@@ -391,6 +394,7 @@ function ProfileTab({ progress, onUpdate, onReset }: Props) {
             ))}
           </div>
         </div>
+        <UpdateCard finished={false} />
         {!confirmReset ? (
           <button className="btn ghost danger" onClick={() => setConfirmReset(true)}>
             Effacer ma progression

@@ -155,7 +155,7 @@ function StreakPage({ summary, progress }: { summary: EndSummary; progress: Prog
 function TruthPage({ portion }: { portion: Portion }) {
   const [copied, setCopied] = useState(false);
   const share = async () => {
-    const text = `« ${portion.verse.text} » — ${portion.verse.ref}\n\n${portion.keyTruth}\n\nChristHub`;
+    const text = `« ${portion.verse.text} » (${portion.verse.ref})\n\n${portion.keyTruth}\n\nChristHub`;
     try {
       if (navigator.share) await navigator.share({ text });
       else {

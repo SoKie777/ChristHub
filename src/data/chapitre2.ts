@@ -1,6 +1,6 @@
 import type { Chapter } from "./types";
 
-// Chapitre 2 — « Sept principes du but »
+// Chapitre 2 : « Sept principes du but »
 // Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
 // et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
 

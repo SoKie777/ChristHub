@@ -12,7 +12,7 @@ manqués : 1, 3, 7 puis 16 jours).
 
 ## Contenu
 
-Module « Le but et la puissance de l'homme » — MVP : chapitre 1 (« Qu'est-ce qu'un vrai homme ? »), **inspiré du livre
+Module « Le but et la puissance de l'homme » : MVP, chapitre 1 (« Qu'est-ce qu'un vrai homme ? »), **inspiré du livre
 *Understanding the Purpose and Power of Men* de Myles Munroe** (Whitaker House, 2001),
 en **8 portions**, puis chapitres 2 (« Sept principes du but ») et 3 (« La création de l'homme »), 8 portions chacun. Pour aller plus loin, procure-toi le livre officiel.
 

@@ -1,4 +1,4 @@
-# Analyse de Duolingo (APK) — mécaniques à transposer dans ChristHub
+# Analyse de Duolingo (APK) : mécaniques à transposer dans ChristHub
 
 > Analyse statique de `Duolingo.apk` (v6.102.4, build 2481, `com.duolingo`, SHA-256
 > `7f0bbd2e…7f79fc`) faite le 2026-10-22 avec REA (inventaire d'archive, apktool, JADX).
@@ -15,7 +15,7 @@
 
 ## Mécaniques relevées
 
-### 1. Série (streak) — le cœur de la rétention (~250 textes)
+### 1. Série (streak), le cœur de la rétention (~250 textes)
 - Une leçon par jour prolonge la série ; un jour manqué la remet à zéro.
 - **Gel de série** : protège un jour manqué ; offert au retour, aux paliers, ou par un ami.
 - **Série parfaite** : jours enchaînés *sans* gel ; récompense de « Semaine parfaite ».
