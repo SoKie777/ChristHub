@@ -1,0 +1,393 @@
+import type { Chapter } from "./types";
+
+// Chapitre 4 : « Le dessein de Dieu pour l'homme »
+// Paraphrase libre en français des idées du chapitre, écrite avec nos propres mots
+// et nos propres images (aucune traduction du texte original). Versets : Louis Segond 1910.
+
+export const chapitre4: Chapter = {
+  id: "c4",
+  number: 4,
+  title: "Le dessein de Dieu pour l'homme",
+  theme: "Une priorité, une place et une mission : Dieu a tout prévu pour que l'homme accomplisse son but.",
+  portions: [
+    {
+      id: "c4p1",
+      title: "On commence par les fondations",
+      reading: [
+        "Beaucoup d'hommes se demandent encore pourquoi ils existent. Pourtant, Dieu ne nous a pas laissés deviner. Son dessein pour l'homme tient en trois mots : une priorité, une place et une mission.",
+        "La priorité, c'est l'ordre de la création. Dieu a formé l'homme en premier, directement à partir de la terre ; la femme, Il l'a tirée de l'homme. Pourquoi ? Non parce que l'homme vaudrait plus, mais à cause de ce qu'il devait être : la fondation de la famille humaine.",
+        "Aucun maçon ne commence une maison par le toit, et personne n'essaie de faire tenir une fenêtre en l'air au milieu d'un terrain vide. On creuse d'abord, on coule les fondations, puis on monte le reste. Dieu a bâti l'humanité de la même manière.",
+        "Une fondation n'est pas plus importante que le toit : sans toit, on est trempé à la première pluie. Mais tout repose sur elle. Voilà pourquoi une société ne tient que si ses hommes tiennent.",
+      ],
+      keyTruth: "Dieu a formé l'homme en premier, non parce qu'il vaut plus, mais pour qu'il soit une fondation solide.",
+      verse: {
+        ref: "Matthieu 7:24",
+        text: "C'est pourquoi, quiconque entend ces paroles que je dis et les met en pratique, sera semblable à un homme prudent qui a bâti sa maison sur le roc.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "c4p1e1",
+          prompt: "Associe chaque élément du dessein de Dieu à son sens.",
+          pairs: [
+            ["Priorité", "L'ordre de la création"],
+            ["Place", "Le lieu où vivre son but"],
+            ["Mission", "Les tâches confiées"],
+          ],
+          explain: "Le but de l'homme se résume en trois éléments : sa priorité, sa place et sa mission.",
+        },
+        {
+          kind: "choice",
+          id: "c4p1e2",
+          prompt: "Pourquoi Dieu a-t-il formé l'homme en premier ?",
+          options: ["Parce que l'homme vaut plus que la femme", "Pour qu'il soit la fondation de la famille humaine", "Par hasard"],
+          answer: 1,
+          explain: "L'ordre de la création révèle une responsabilité, pas une supériorité.",
+        },
+        {
+          kind: "truefalse",
+          id: "c4p1e3",
+          statement: "Une fondation est plus importante que le reste de la maison.",
+          answer: false,
+          explain: "Elle est indispensable, mais le toit et les murs le sont aussi : chacun a sa fonction.",
+        },
+      ],
+      mirror: {
+        question: "Sur quoi repose ta vie aujourd'hui ?",
+        choices: ["Sur le roc : Dieu", "Sur mon travail", "Sur l'avis des autres", "Sur pas grand-chose", "Je cherche encore"],
+      },
+      prayer: "Seigneur, fais de moi un homme bâti sur le roc, sur qui les miens peuvent s'appuyer.",
+    },
+    {
+      id: "c4p2",
+      title: "Une fondation qu'on ne voit pas",
+      reading: [
+        "Une fondation se fait oublier. Une fois la maison construite, on marche dessus tous les jours sans jamais la voir. Pourtant, c'est elle qui empêche les murs de se fissurer quand l'orage arrive.",
+        "Avant de couler le béton, les ingénieurs calculent le poids que la fondation devra porter : le nombre d'étages, la charge du toit. Plus la maison est haute, plus il faut d'acier dans le béton. Un homme est mesuré de la même façon : à ce qu'on peut faire reposer sur lui.",
+        "Quand le père est absent, de corps ou de cœur, les enfants marchent dans la boue au lieu de marcher sur du béton. Et devenus grands, ils essaient d'être des fondations sans en avoir jamais vu une.",
+        "Ton histoire familiale n'est pas une fatalité. Peu importe ce qu'a fait ton grand-père : la vraie question, c'est ce que tes petits-enfants diront de toi. Avec Dieu, on peut briser le cycle et écrire une nouvelle histoire.",
+      ],
+      keyTruth: "Mon passé familial ne décide pas de mon avenir : avec Dieu, je peux briser le cycle et laisser un héritage.",
+      verse: {
+        ref: "Proverbes 13:22",
+        text: "L'homme de bien a pour héritiers les enfants de ses enfants, mais les richesses du pécheur sont réservées pour le juste.",
+      },
+      exercises: [
+        {
+          kind: "fill",
+          id: "c4p2e1",
+          before: "Une fondation se mesure au",
+          after: "qu'on peut faire reposer sur elle.",
+          options: ["poids", "prix", "nombre de fenêtres"],
+          answer: 0,
+          explain: "Les ingénieurs calculent la charge avant même de creuser.",
+        },
+        {
+          kind: "truefalse",
+          id: "c4p2e2",
+          statement: "Si mon père a abandonné sa famille, je suis condamné à faire pareil.",
+          answer: false,
+          explain: "Un passé négatif n'a pas à dicter l'avenir : on peut créer une nouvelle histoire avec Dieu.",
+        },
+        {
+          kind: "choice",
+          id: "c4p2e3",
+          prompt: "Quelle est la vraie question à se poser sur son héritage ?",
+          options: ["Qui était mon grand-père ?", "Que diront de moi mes petits-enfants ?", "Combien d'argent vais-je laisser ?"],
+          answer: 1,
+          explain: "Un homme de bien regarde vers l'avenir et laisse aux siens un appui solide, pas seulement des biens.",
+        },
+      ],
+      mirror: {
+        question: "Quel héritage aimerais-tu laisser à ceux qui viendront après toi ?",
+        choices: ["Une foi solide", "Une famille unie", "Un exemple d'intégrité", "Je n'y ai jamais pensé"],
+      },
+      prayer: "Père, brise en moi les cycles du passé et fais de ma vie un héritage pour les enfants de mes enfants.",
+    },
+    {
+      id: "c4p3",
+      title: "Un coin de ciel sur la terre",
+      reading: [
+        "Après la priorité vient la place. Dieu n'a pas posé l'homme n'importe où sur la terre : Il l'a placé dans un jardin, en Éden. Le mot « Éden » évoque le délice, le plaisir ; le mot « jardin », un espace clos, protégé.",
+        "Éden était un lieu où le ciel touchait la terre. On peut le comparer à une couveuse : comme un nouveau-né qu'on installe dans un environnement adapté, l'homme a été accueilli dans un endroit imprégné de la présence de Dieu.",
+        "Voici le plus surprenant : Dieu ne voulait pas qu'Adam quitte le jardin pour aller conquérir le monde. Il voulait que le jardin s'étende, par Adam, sur toute la terre. Dominer la terre, c'était y répandre la présence de Dieu.",
+        "C'est toujours son projet aujourd'hui : que la connaissance de Dieu remplisse la terre. Mais on ne peut répandre que ce qu'on porte soi-même.",
+      ],
+      keyTruth: "Dieu ne m'a pas appelé à quitter sa présence pour conquérir le monde, mais à porter sa présence dans le monde.",
+      verse: {
+        ref: "Ésaïe 11:9",
+        text: "Car la terre sera remplie de la connaissance de l'Éternel, comme le fond de la mer par les eaux qui le couvrent.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c4p3e1",
+          prompt: "Quel était le plan de Dieu pour Adam et le jardin ?",
+          options: [
+            "Qu'Adam quitte vite le jardin pour conquérir la terre",
+            "Que le jardin s'étende sur toute la terre à travers Adam",
+            "Qu'Adam reste caché dans le jardin pour toujours",
+          ],
+          answer: 1,
+          explain: "Dominer la terre, c'était y répandre la présence que l'homme vivait en Éden.",
+        },
+        {
+          kind: "match",
+          id: "c4p3e2",
+          prompt: "Associe chaque mot à ce qu'il évoque.",
+          pairs: [
+            ["Éden", "Délice, plaisir"],
+            ["Jardin", "Espace clos et protégé"],
+            ["Couveuse", "Lieu adapté à un nouveau-né"],
+          ],
+          explain: "Éden était un coin de ciel préparé pour accueillir l'homme.",
+        },
+        {
+          kind: "fill",
+          id: "c4p3e3",
+          before: "On ne peut répandre que ce qu'on",
+          after: "soi-même.",
+          options: ["porte", "achète", "imagine"],
+          answer: 0,
+          explain: "Pour remplir la terre de la présence de Dieu, il faut d'abord vivre dans cette présence.",
+        },
+      ],
+      mirror: {
+        question: "Dans ton quotidien, où as-tu l'occasion de porter la présence de Dieu ?",
+        choices: ["À la maison", "Au travail ou à l'école", "Avec mes amis", "Je ne sais pas encore"],
+      },
+      prayer: "Seigneur, que ta présence ne reste pas enfermée en moi : fais-la déborder partout où je vais.",
+    },
+    {
+      id: "c4p4",
+      title: "Le premier cadeau",
+      reading: [
+        "Quelle est la première chose que Dieu a donnée à l'homme ? Ni une femme, ni un travail, ni même un commandement. Il lui a d'abord donné sa présence. Adam pouvait marcher et parler avec Dieu à la fraîcheur du jour.",
+        "Un fabricant place chaque pièce là où elle fonctionne le mieux. En plaçant l'homme dans sa présence, Dieu nous dit quelque chose : l'homme n'est pas conçu pour fonctionner loin de Lui. Sans Dieu, il peut bouger, mais il ne fonctionne pas vraiment.",
+        "Beaucoup d'hommes donnent l'impression de s'en sortir seuls. Souvent, ce n'est qu'une façade. Derrière les voitures, les diplômes, la fierté ou les excès, c'est Dieu qu'ils cherchent sans le savoir. Ce besoin a été mis en eux dès la création.",
+        "Aller à l'église ne suffit pas. Il s'agit de rester en lien avec Lui chaque jour : écouter sa voix, suivre sa direction. Une famille a besoin d'un homme qui sait parler à Dieu.",
+      ],
+      keyTruth: "Avant de me confier quoi que ce soit, Dieu m'a donné sa présence : c'est d'elle que j'ai besoin en premier.",
+      verse: {
+        ref: "Psaume 16:11",
+        text: "Tu me feras connaître le sentier de la vie ; il y a d'abondantes joies devant ta face, des délices éternelles à ta droite.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c4p4e1",
+          prompt: "Quel a été le premier cadeau de Dieu à l'homme ?",
+          options: ["Une femme", "Un travail", "Sa présence"],
+          answer: 2,
+          explain: "Avant toute responsabilité, Dieu a offert à l'homme une relation avec Lui.",
+        },
+        {
+          kind: "truefalse",
+          id: "c4p4e2",
+          statement: "Aller à l'église une fois par semaine suffit pour vivre dans la présence de Dieu.",
+          answer: false,
+          explain: "La présence de Dieu se vit au quotidien, en écoutant sa voix et en suivant sa direction.",
+        },
+        {
+          kind: "fill",
+          id: "c4p4e3",
+          before: "Sans Dieu, un homme peut bouger, mais il ne",
+          after: "pas vraiment.",
+          options: ["fonctionne", "mange", "travaille"],
+          answer: 0,
+          explain: "L'homme a été conçu pour fonctionner dans la présence de son Créateur.",
+        },
+      ],
+      mirror: {
+        question: "Quand as-tu passé un vrai moment seul avec Dieu pour la dernière fois ?",
+        choices: ["Aujourd'hui", "Cette semaine", "Il y a longtemps", "Je ne m'en souviens pas"],
+      },
+      prayer: "Père, Tu es mon premier besoin : attire-moi chaque jour dans ta présence.",
+    },
+    {
+      id: "c4p5",
+      title: "Fidèle dans les petites choses",
+      reading: [
+        "Dieu a confié toute la terre à l'humanité. Pourtant, Il a commencé par placer l'homme dans un jardin. Comme pour lui dire : apprends d'abord à bien gérer cet endroit, et ton domaine grandira.",
+        "Dieu ne nous donne jamais plus que ce que nous pouvons porter. Il nous confie juste assez pour nous préparer à davantage. Nous voudrions tout, tout de suite, mais recevoir trop tôt ce pour quoi on n'est pas prêt peut nous écraser.",
+        "Le fils prodigue en est l'exemple. Il a réclamé sa part avant d'avoir appris à la gérer aux côtés de son père. Il avait tout, mais il n'était pas prêt, et il a tout perdu.",
+        "La bonne prière n'est donc pas : « Seigneur, quand vas-tu m'élever ? » mais plutôt : « Seigneur, suis-je prêt à être élevé ? » Dieu ne fait pas que promouvoir : Il qualifie d'abord.",
+      ],
+      keyTruth: "Dieu me confie un peu pour me préparer à beaucoup : ma fidélité d'aujourd'hui prépare mes responsabilités de demain.",
+      verse: {
+        ref: "Matthieu 25:21",
+        text: "Son maître lui dit : C'est bien, bon et fidèle serviteur ; tu as été fidèle en peu de chose, je te confierai beaucoup ; entre dans la joie de ton maître.",
+      },
+      exercises: [
+        {
+          kind: "order",
+          id: "c4p5e1",
+          prompt: "Remets dans l'ordre la façon dont Dieu fait grandir un homme.",
+          items: ["Il lui confie un petit domaine", "L'homme s'y montre fidèle", "Dieu lui confie davantage"],
+          explain: "La fidélité dans le peu ouvre la porte au beaucoup.",
+        },
+        {
+          kind: "choice",
+          id: "c4p5e2",
+          prompt: "Quelle prière correspond le mieux à cette portion ?",
+          options: ["Seigneur, quand vas-tu m'élever ?", "Seigneur, suis-je prêt à être élevé ?", "Seigneur, donne-moi tout maintenant."],
+          answer: 1,
+          explain: "Dieu qualifie avant de promouvoir : mieux vaut demander à être prêt.",
+        },
+        {
+          kind: "truefalse",
+          id: "c4p5e3",
+          statement: "Le fils prodigue a perdu son héritage parce qu'il l'a réclamé avant d'être prêt.",
+          answer: true,
+          explain: "Il avait tout, mais il n'avait pas appris à le gérer aux côtés de son père.",
+        },
+      ],
+      mirror: {
+        question: "Quel « petit domaine » Dieu t'a-t-il déjà confié ?",
+        choices: ["Ma famille", "Mon travail ou mes études", "Mon argent", "Mon temps", "Ma santé"],
+      },
+      prayer: "Seigneur, rends-moi fidèle dans les petites choses que Tu m'as confiées aujourd'hui.",
+    },
+    {
+      id: "c4p6",
+      title: "Six missions confiées",
+      reading: [
+        "Troisième élément du dessein de Dieu : la mission. Avant même que la femme soit créée, Dieu a montré le jardin à l'homme, lui a donné ses instructions et lui a confié une tâche. L'homme a reçu la vision en premier.",
+        "De ce récit ressortent six missions : être visionnaire, conduire, enseigner, cultiver, pourvoir et protéger. Les femmes aussi peuvent conduire et enseigner, bien sûr. Mais c'est à l'homme que Dieu a d'abord confié son plan, avec la charge de le transmettre.",
+        "Après la chute, c'est vers Adam que Dieu s'est tourné : « Où es-tu ? » Dieu savait où il se cachait. La question portait sur sa place : qu'as-tu fait de ta responsabilité ?",
+        "Être responsable de sa famille n'est pas un titre qu'on gagne par un vote, ni un droit d'écraser les autres. C'est un appel reçu de Dieu. Si on le fuit, il nous rattrape.",
+      ],
+      keyTruth: "Dieu m'a confié six missions : voir loin, conduire, enseigner, cultiver, pourvoir et protéger.",
+      verse: {
+        ref: "Genèse 2:15",
+        text: "L'Éternel Dieu prit l'homme, et le plaça dans le jardin d'Éden pour le cultiver et pour le garder.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c4p6e1",
+          prompt: "Laquelle de ces missions ne fait PAS partie des six ?",
+          options: ["Enseigner", "Protéger", "Dominer sa femme"],
+          answer: 2,
+          explain: "Les six missions sont : visionnaire, leader, enseignant, cultivateur, pourvoyeur et protecteur.",
+        },
+        {
+          kind: "fill",
+          id: "c4p6e2",
+          before: "Quand Dieu demande « Où es-tu ? », la question porte sur la",
+          after: "d'Adam, pas sur sa cachette.",
+          options: ["responsabilité", "maison", "santé"],
+          answer: 0,
+          explain: "Dieu savait où était Adam : Il l'interpellait sur la place qu'il avait désertée.",
+        },
+        {
+          kind: "truefalse",
+          id: "c4p6e3",
+          statement: "Être le responsable de sa famille donne le droit d'imposer sa volonté à tous.",
+          answer: false,
+          explain: "C'est un appel à servir et à rendre des comptes, pas un droit d'écraser.",
+        },
+      ],
+      mirror: {
+        question: "Parmi les six missions, laquelle te semble la plus difficile pour toi aujourd'hui ?",
+        choices: ["Avoir une vision", "Conduire", "Enseigner", "Cultiver", "Pourvoir", "Protéger"],
+      },
+      prayer: "Seigneur, quand Tu me demandes « Où es-tu ? », aide-moi à répondre : me voici, à la place que Tu m'as donnée.",
+    },
+    {
+      id: "c4p7",
+      title: "Le travail, un cadeau",
+      reading: [
+        "Beaucoup pensent que le travail est une punition arrivée avec le péché. C'est faux : Dieu a confié le jardin à l'homme pour qu'il le cultive avant la chute. Le travail n'est pas une malédiction, c'est un cadeau.",
+        "Dieu Lui-même travaille. Il a créé le monde, puis Il s'est reposé. Créés à son image, nous sommes faits pour travailler, mais aussi pour nous arrêter. Le repos fait partie du plan.",
+        "Cultiver, ce n'est pas répéter des gestes vides : c'est faire grandir, rendre fécond, amener quelque chose à sa pleine mesure. Et le travail révèle ce qu'on porte en soi : un potentiel qu'on ne sollicite jamais reste caché.",
+        "« Pourvoir » veut dire, à l'origine, « voir à l'avance ». Celui qui pourvoit anticipe les besoins des siens. Et pourvoir ne se limite pas à l'argent : c'est aussi apporter la sécurité, le réconfort et la connaissance.",
+      ],
+      keyTruth: "Le travail n'est pas une malédiction : c'est le cadeau qui révèle ce que Dieu a mis en moi.",
+      verse: {
+        ref: "Colossiens 3:23",
+        text: "Tout ce que vous faites, faites-le de bon cœur, comme pour le Seigneur et non pour des hommes.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "c4p7e1",
+          statement: "Le travail est apparu comme une punition après la chute.",
+          answer: false,
+          explain: "Dieu a confié le jardin à l'homme pour le cultiver avant la chute.",
+        },
+        {
+          kind: "fill",
+          id: "c4p7e2",
+          before: "« Pourvoir » signifie à l'origine « voir à",
+          after: "».",
+          options: ["l'avance", "la loupe", "moitié"],
+          answer: 0,
+          explain: "Celui qui pourvoit anticipe les besoins de ceux dont il a la charge.",
+        },
+        {
+          kind: "match",
+          id: "c4p7e3",
+          prompt: "Associe chaque idée à ce qu'elle apporte.",
+          pairs: [
+            ["Le travail", "Révèle le potentiel"],
+            ["Le repos", "Fait partie du plan de Dieu"],
+            ["Cultiver", "Faire grandir et porter du fruit"],
+          ],
+          explain: "Dieu a travaillé puis s'est reposé : nous sommes faits à son image.",
+        },
+      ],
+      mirror: {
+        question: "Comment vis-tu ton travail en ce moment ?",
+        choices: ["Comme un cadeau", "Comme une corvée", "Je travaille trop", "Je cherche du travail", "Je ne sais pas"],
+      },
+      prayer: "Seigneur, apprends-moi à travailler de bon cœur pour Toi, et à me reposer quand Tu me le demandes.",
+    },
+    {
+      id: "c4p8",
+      title: "Seul, mais pas solitaire",
+      reading: [
+        "Adam avait la présence de Dieu, une vision, un travail et des responsabilités. Il était occupé à nommer les animaux, à vivre son but. Et pourtant, Dieu a dit : « Il n'est pas bon que l'homme soit seul. »",
+        "Adam ne cherchait pas de femme : c'est Dieu qui en a eu l'idée. Être seul n'est pas la même chose qu'être solitaire. On peut être seul et heureux, ou entouré de monde et se sentir terriblement solitaire. Jésus aussi se retirait pour prier.",
+        "Dieu a tiré la femme de l'homme lui-même : même nature, même dignité. Elle n'est pas une assistante qui aide de temps en temps, mais une partenaire à sa mesure, un vis-à-vis. L'homme a besoin de la femme, dans la famille comme dans la société.",
+        "Donner son nom à quelqu'un, c'est s'engager à l'aimer et à prendre soin de lui. Plutôt que de courir après une épouse, cherche d'abord le Royaume de Dieu : comme Adam, sois occupé à vivre ton but, et tu seras prêt quand Dieu t'amènera la bonne personne.",
+      ],
+      keyTruth: "Je n'ai pas à courir après l'amour : en cherchant d'abord Dieu, je deviens l'homme prêt à le recevoir.",
+      verse: {
+        ref: "Genèse 2:18",
+        text: "L'Éternel Dieu dit : Il n'est pas bon que l'homme soit seul ; je lui ferai une aide semblable à lui.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "c4p8e1",
+          prompt: "Qui a eu l'idée de créer la femme ?",
+          options: ["Adam, qui se sentait seul", "Dieu Lui-même", "Les anges"],
+          answer: 1,
+          explain: "Adam était occupé à vivre son but : c'est Dieu qui a vu qu'il n'était pas bon qu'il soit seul.",
+        },
+        {
+          kind: "truefalse",
+          id: "c4p8e2",
+          statement: "Être seul et être solitaire, c'est la même chose.",
+          answer: false,
+          explain: "On peut être seul et épanoui, ou entouré et pourtant solitaire.",
+        },
+        {
+          kind: "fill",
+          id: "c4p8e3",
+          before: "La femme n'est pas une simple assistante, mais une",
+          after: "à la mesure de l'homme.",
+          options: ["partenaire", "servante", "rivale"],
+          answer: 0,
+          explain: "Tirée de l'homme, elle partage sa nature et sa dignité : c'est un vis-à-vis.",
+        },
+      ],
+      mirror: {
+        question: "Comment vis-tu ta situation affective aujourd'hui ?",
+        choices: ["En paix", "Avec impatience", "Avec solitude", "Avec reconnaissance", "Je préfère ne pas répondre"],
+      },
+      prayer: "Père, que je cherche d'abord ton Royaume, et que je sois prêt pour les personnes que Tu mets sur mon chemin.",
+    },
+  ],
+};
