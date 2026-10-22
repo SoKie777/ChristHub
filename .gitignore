@@ -1,0 +1,20 @@
+node_modules/
+dist/
+*.log
+.playwright-mcp/
+
+# Android build
+android/.gradle/
+android/build/
+android/app/build/
+android/app/src/main/assets/www/
+android/local.properties
+*.jks
+*.keystore
+
+# Sources kept off the public repository (copyright / third party)
+*.pdf
+*.apk
+rea-main/
+rea-main.zip
+sources/

@@ -1,0 +1,93 @@
+name: APK Android
+
+# Each push to main (outside docs) builds the Android app from the web build,
+# then publishes it in the Releases (tag v0.1.N, marked « latest »). Also
+# runnable by hand from the Actions tab.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "**.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Dépendances
+        # npm install (not ci): the lock file made on Windows lacks some Linux-only optional packages.
+        run: npm install --no-audit --no-fund
+
+      - name: Construire l'appli web
+        run: npm run build
+
+      - name: Copier l'appli dans l'APK
+        run: |
+          rm -rf android/app/src/main/assets/www
+          mkdir -p android/app/src/main/assets
+          cp -r dist android/app/src/main/assets/www
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+
+      - name: Clé de signature
+        env:
+          KEYSTORE_B64: ${{ secrets.KEYSTORE_B64 }}
+        run: |
+          # Clé FIXE (secret) : Android n'installe une mise à jour que si elle est signée avec la même clé.
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/christhub.jks"
+            echo "KEYSTORE_FILE=$RUNNER_TEMP/christhub.jks" >> "$GITHUB_ENV"
+          else
+            echo "::warning::Secret KEYSTORE_B64 absent : APK signé avec une clé de débogage, mise à jour impossible sans désinstaller."
+          fi
+
+      - name: Compiler l'APK
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: gradle -p android assembleRelease --no-daemon
+
+      - name: Renommer l'APK
+        run: cp android/app/build/outputs/apk/release/app-release.apk ChristHub.apk
+
+      - name: Vérifier que l'appli web est dans l'APK
+        run: |
+          count=$(unzip -l ChristHub.apk | grep -c "assets/www/assets/")
+          echo "$count fichiers de l'appli web dans l'APK"
+          [ "$count" -gt 0 ] || { echo "::error::assets/www/assets absent de l'APK"; exit 1; }
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ChristHub-apk
+          path: ChristHub.apk
+
+      - name: Publier dans « Releases »
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.1.${{ github.run_number }}
+          name: ChristHub 0.1.${{ github.run_number }}
+          body: |
+            ${{ github.event.head_commit.message }}
+
+            **Android** : télécharge ChristHub.apk et autorise l'installation depuis cette source.
+          make_latest: true
+          files: ChristHub.apk

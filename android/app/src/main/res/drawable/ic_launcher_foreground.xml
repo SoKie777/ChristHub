@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The turquoise cross of the logo, inside the 66dp safe zone of the 108dp icon. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#19E3D3"
+        android:pathData="M48,28h12v14h14v12H60v26H48V54H34V42h14Z" />
+</vector>
