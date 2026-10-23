@@ -7,7 +7,7 @@ import { CrownIcon } from "./icons";
 // « Vérifier les mises à jour » block in the profile (checks on demand).
 // `bookComplete`: the whole book is written, so no more chapters will come for it.
 
-const versionLabel = APP_VERSION === "dev" ? "Version de développement" : APP_VERSION.startsWith("web-") ? `Version web (${APP_VERSION.slice(4)})` : `Version ${APP_VERSION}`;
+const versionLabel = APP_VERSION === "dev" ? "Version de développement" : APP_VERSION.startsWith("web-") ? `Version web du ${APP_VERSION.slice(4)}` : `Version ${APP_VERSION}`;
 
 export function UpdateCard({ finished, bookComplete = false }: { finished: boolean; bookComplete?: boolean }) {
   const [status, setStatus] = useState<UpdateStatus | null>(null);
