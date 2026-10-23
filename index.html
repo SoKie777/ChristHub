@@ -13,6 +13,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="apple-mobile-web-app-title" content="ChristHub" />
     <title>ChristHub</title>
+    <!-- GoatCounter: anonymous visit counts, no cookies. Opens of the Android app
+         are counted under /android, the web version under /web. -->
+    <script>
+      window.goatcounter = {
+        path: function (p) {
+          return (location.hostname === "appassets.androidplatform.net" ? "/android" : "/web") + p;
+        },
+      };
+    </script>
+    <script data-goatcounter="https://christhub.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   </head>
   <body>
     <div id="root"></div>

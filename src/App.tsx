@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { allPortions, findExercise } from "./data/book";
 import type { Book, Chapter, Exercise, Portion } from "./data/types";
 import { dayKey } from "./lib/day";
+import { track } from "./lib/analytics";
 import { setSoundEnabled } from "./lib/feedback";
 import { askNotificationPermission, remindersAvailable, syncReminders } from "./lib/reminders";
 import {
@@ -64,6 +65,7 @@ export default function App() {
 
   const openBook = (book: Book) => {
     setProgress({ ...progress, currentBook: book.id });
+    track(`livre-${book.id}`, book.courseTitle);
     setTab("chemin");
     window.scrollTo(0, 0);
   };
@@ -101,6 +103,7 @@ export default function App() {
     if (result.mode === "learn" && result.portion) {
       const portion = result.portion;
       const perfect = missed.length === 0;
+      track("portion-terminee", "Portion terminée");
       breakdown.push(["Portion terminée", XP.portion]);
       if (perfect) breakdown.push(["Aucune erreur", XP.perfectBonus]);
       if (result.mirror && (result.mirror.choice || result.mirror.note)) breakdown.push(["Face au miroir", XP.mirror]);
