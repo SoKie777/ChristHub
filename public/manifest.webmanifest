@@ -1,0 +1,17 @@
+{
+  "name": "ChristHub",
+  "short_name": "ChristHub",
+  "description": "Méditer des livres chrétiens, une portion par jour : lire, consolider, face au miroir, prier.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06090d",
+  "theme_color": "#06090d",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

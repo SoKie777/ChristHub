@@ -38,6 +38,16 @@ npm run check:content  # vérifie seulement le contenu (identifiants, réponses,
 - `src/screens/` : chemin, séance, écrans de fin.
 - `android/` : l'appli Android (WebView qui embarque `dist/`).
 
+## Version web (iPhone et navigateurs)
+
+La même appli est publiée sur le web pour ceux qui n'ont pas Android. Sur Netlify :
+importer le dépôt GitHub, `netlify.toml` règle tout (build `npm run build`, dossier
+`dist`). Chaque push sur `main` redéploie le site.
+
+Sur iPhone, ouvrir le site dans Safari puis Partager > « Sur l'écran d'accueil » :
+ChristHub s'ouvre en plein écran et fonctionne hors connexion (service worker
+`public/sw.js`). La progression reste dans le navigateur de chaque appareil.
+
 ## APK
 
 Chaque push sur `main` compile l'APK avec GitHub Actions

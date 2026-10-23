@@ -1,0 +1,19 @@
+# Web version of ChristHub (iPhone and any browser). Netlify builds the same
+# Vite app that the Android APK embeds.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# The service worker must always be fetched fresh so updates reach users.
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { APP_VERSION, DOWNLOAD_URL, RELEASES_URL, checkForUpdate, type UpdateStatus } from "../lib/update";
+import { isAndroidApp, isIOS } from "../lib/platform";
 import { CrownIcon } from "./icons";
 
 // « Tu as tout terminé » card on the path (checks right away), or a small
 // « Vérifier les mises à jour » block in the profile (checks on demand).
 // `bookComplete`: the whole book is written, so no more chapters will come for it.
+
+const versionLabel = APP_VERSION === "dev" ? "Version de développement" : APP_VERSION.startsWith("web-") ? `Version web (${APP_VERSION.slice(4)})` : `Version ${APP_VERSION}`;
 
 export function UpdateCard({ finished, bookComplete = false }: { finished: boolean; bookComplete?: boolean }) {
   const [status, setStatus] = useState<UpdateStatus | null>(null);
@@ -15,8 +18,33 @@ export function UpdateCard({ finished, bookComplete = false }: { finished: boole
   };
 
   useEffect(() => {
-    if (finished) check();
+    if (finished && isAndroidApp) check();
   }, [finished]);
+
+  // The web version is always the latest deploy: nothing to download.
+  if (!isAndroidApp)
+    return (
+      <section className={`update-card ${finished ? "finished" : ""}`}>
+        {finished && (
+          <>
+            <CrownIcon size={34} className="gold" />
+            <h3>{bookComplete ? "Tu as terminé tout le livre, gloire à Dieu !" : "Tu as terminé tout ce qui est disponible !"}</h3>
+            <p>
+              {bookComplete
+                ? "D'autres livres rejoindront bientôt la bibliothèque : en attendant, continue de méditer chaque jour pour garder ta lampe allumée !"
+                : "De nouveaux chapitres arrivent bientôt : reviens méditer chaque jour pour garder ta lampe allumée !"}
+            </p>
+          </>
+        )}
+        {!finished && <p className="hint">La version web se met à jour toute seule.</p>}
+        {!finished && !isIOS && (
+          <a className="btn ghost small" href={DOWNLOAD_URL} target="_blank" rel="noopener">
+            Sur Android ? Télécharger l'appli
+          </a>
+        )}
+        <p className="version">{versionLabel}</p>
+      </section>
+    );
 
   return (
     <section className={`update-card ${finished ? "finished" : ""}`}>
@@ -68,7 +96,7 @@ export function UpdateCard({ finished, bookComplete = false }: { finished: boole
           </div>
         </>
       )}
-      <p className="version">Version {APP_VERSION === "dev" ? "de développement" : APP_VERSION}</p>
+      <p className="version">{versionLabel}</p>
     </section>
   );
 }

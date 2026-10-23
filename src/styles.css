@@ -1783,6 +1783,27 @@ button:disabled {
 
 /* ---------- Library ---------- */
 
+.install-card {
+  display: grid;
+  gap: 4px;
+  margin: 10px 0 0;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 2px solid var(--brand-dark);
+  background: rgba(0, 229, 240, 0.08);
+}
+
+.install-card p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+.install-card svg {
+  vertical-align: -3px;
+  color: var(--brand);
+}
+
 .section-title.big {
   font-size: 24px;
   margin-top: 18px;
