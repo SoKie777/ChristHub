@@ -2098,3 +2098,15 @@ button:disabled {
     transition: none !important;
   }
 }
+
+/* Netlify's "Powered by Netlify" badge on the web version: kept visible, but
+   small and just above the tab bar so it no longer covers Méditer and Profil. */
+#nl-badge-frame {
+  top: auto !important;
+  left: auto !important;
+  right: 6px !important;
+  bottom: calc(74px + env(safe-area-inset-bottom)) !important;
+  transform: scale(0.5) !important;
+  transform-origin: bottom right !important;
+  opacity: 0.85;
+}
