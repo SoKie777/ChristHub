@@ -11,6 +11,7 @@ import { chapitre9 } from "./chapitre9";
 import { chapitre10 } from "./chapitre10";
 import { chapitre11 } from "./chapitre11";
 import { chapitre12 } from "./chapitre12";
+import { chapitre1 as femme1 } from "./femme/chapitre1";
 
 // French typography: non-breaking spaces inside « » and before : ; ? !, so that
 // punctuation never starts a line on a narrow phone screen.
@@ -57,8 +58,34 @@ const munroeMen: Book = deepTypo({
   upcoming: [],
 });
 
+// Second book: ids start with « f » (f1, f1p1, f1p1e1) to stay unique across the library.
+const munroeWomen: Book = deepTypo({
+  id: "munroe-purpose-power-woman",
+  courseTitle: "Le but et la puissance de la femme",
+  title: "Understanding the Purpose and Power of Woman",
+  author: "Myles Munroe",
+  publisher: "Whitaker House",
+  year: 2001,
+  blurb: "Découvre qui est la femme dans le plan de Dieu, sa valeur, sa conception unique et la puissance de son influence.",
+  cover: ["#ff8ac6", "#8a3ffc"],
+  chapters: [femme1],
+  upcoming: [
+    "Le dessein de Dieu dans la création",
+    "Le but et la nature de l'humanité",
+    "Égaux et différents",
+    "La singularité de la femme",
+    "La femme qui fait grandir",
+    "La femme qui reflète",
+    "La femme qui donne la vie",
+    "Comprendre la communication de la femme",
+    "Les besoins émotionnels et la sexualité de la femme",
+    "Les femmes doivent-elles diriger ?",
+    "La femme de Proverbes 31",
+  ],
+});
+
 /** Every book of the library. Portion and exercise ids are unique across books. */
-export const books: Book[] = [munroeMen];
+export const books: Book[] = [munroeMen, munroeWomen];
 
 export const findBook = (id: string | null | undefined) => books.find((b) => b.id === id);
 
