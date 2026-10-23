@@ -1,0 +1,387 @@
+import type { Chapter } from "../types";
+
+// Livre « Le but et la puissance de la femme », chapitre 4 : « Égaux et différents »
+// Paraphrase libre en français des idées de l'auteur, écrite avec nos propres mots
+// (aucune traduction du texte original). Versets : Louis Segond 1910.
+
+export const chapitre4: Chapter = {
+  id: "f4",
+  number: 4,
+  title: "Égaux et différents",
+  theme: "La femme a reçu de Dieu la plus haute dignité : égale à l'homme, différente pour son but.",
+  portions: [
+    {
+      id: "f4p1",
+      title: "La plus haute dignité",
+      reading: [
+        "L'homme et la femme sont égaux. Les raisons sont claires : l'humanité a été créée à l'image de Dieu ; elle est esprit ; l'homme et la femme sont tous deux « homme » ; l'esprit habite en chacun ; chacun a un accès direct à Dieu et Lui rend des comptes ; et la domination sur la terre a été donnée aux deux.",
+        "Quoi qu'en disent les cultures, c'est Dieu Lui-même qui a donné à la femme la plus haute valeur et la plus haute dignité, dès la création.",
+        "Le mâle et la femelle ne sont pas différents à cause de la société, de l'éducation ou des opinions des hommes. Ils sont différents parce que Dieu les a conçus ainsi, chacun pour un but précis. Ce que la culture a fait, c'est déformer ces différences pour s'en servir contre les femmes.",
+        "Quand les femmes ont commencé à occuper de nouveaux rôles, beaucoup d'hommes ont découvert, étonnés, qu'elles avaient une immense valeur. Mais Dieu le savait depuis toujours : Il a créé la femme avec valeur, dignité, but et talent.",
+      ],
+      keyTruth: "Ma dignité ne vient pas de ma culture : c'est Dieu Lui-même qui m'a donné la plus haute valeur.",
+      verse: {
+        ref: "Genèse 5:2",
+        text: "Il créa l'homme et la femme, il les bénit, et il les appela du nom d'homme, lorsqu'ils furent créés.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "f4p1e1",
+          prompt: "Pourquoi l'homme et la femme sont-ils différents, selon l'auteur ?",
+          options: ["À cause de la société", "À cause de leur éducation", "Parce que Dieu les a conçus ainsi pour leur but"],
+          answer: 2,
+          explain: "La culture n'a pas créé ces différences : elle les a seulement déformées.",
+        },
+        {
+          kind: "truefalse",
+          id: "f4p1e2",
+          statement: "L'homme et la femme ont chacun un accès direct à Dieu.",
+          answer: true,
+          explain: "C'est l'un des fondements de leur égalité.",
+        },
+        {
+          kind: "fill",
+          id: "f4p1e3",
+          before: "C'est Dieu qui a donné à la femme la plus haute valeur et la plus haute",
+          after: ".",
+          options: ["dignité", "fortune", "autorité"],
+          answer: 0,
+          explain: "Dès la création, quoi qu'en disent les cultures.",
+        },
+      ],
+      mirror: {
+        question: "As-tu déjà eu l'impression de valoir moins parce que tu es une femme ?",
+        choices: ["Oui, souvent", "Parfois", "Rarement", "Jamais"],
+      },
+      prayer: "Père, merci de m'avoir donné une dignité que personne ne peut m'enlever.",
+    },
+    {
+      id: "f4p2",
+      title: "Si tu savais qui te parle",
+      reading: [
+        "Dans ta voiture, tu as le droit de déplacer la batterie dans le coffre : c'est ta voiture. Mais essaie ensuite de démarrer ! Depuis des années, on essaie de modifier la conception des personnes, et ça ne marche pas mieux.",
+        "Au puits, la Samaritaine se méfie de Jésus : « Toi, un Juif, tu me demandes à boire, à moi, une Samaritaine ? » Jésus répond : « Si tu savais qui te parle… » Puis Il lui révèle les secrets de son cœur. Elle court alors dire en ville : « Venez voir un homme qui m'a dit tout ce que j'ai fait. »",
+        "Les gens changent de regard sur toi quand ils comprennent pourquoi tu es là. Souvent, nous détestons ce que nous ne comprenons pas, alors que ces mêmes qualités pourraient nous enrichir. Celui qui n'aime pas l'autre manque surtout de compréhension.",
+        "C'est ce qui s'est passé entre les hommes et les femmes. Les théories des psychologues se démodent à mesure qu'on découvre du nouveau. Dieu, Lui, connaît déjà la nature humaine : c'est Lui qui l'a conçue.",
+      ],
+      keyTruth: "On rejette souvent ce qu'on ne comprend pas : quand on découvre le but de l'autre, le regard change.",
+      verse: {
+        ref: "Jean 4:10",
+        text: "Jésus lui répondit : Si tu connaissais le don de Dieu et qui est celui qui te dit : Donne-moi à boire ! tu lui aurais toi-même demandé à boire, et il t'aurait donné de l'eau vive.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "f4p2e1",
+          prompt: "Que se passe-t-il si on déplace la batterie de sa voiture dans le coffre ?",
+          options: ["La voiture roule mieux", "La voiture ne démarre plus", "Rien ne change"],
+          answer: 1,
+          explain: "Changer la conception voulue par le fabricant empêche de fonctionner.",
+        },
+        {
+          kind: "order",
+          id: "f4p2e2",
+          prompt: "Remets dans l'ordre la rencontre de la Samaritaine.",
+          items: ["Elle se méfie de Jésus", "Jésus lui révèle les secrets de son cœur", "Elle court en parler en ville"],
+          explain: "Quand elle a compris qui Il était, son regard a changé.",
+        },
+        {
+          kind: "truefalse",
+          id: "f4p2e3",
+          statement: "Nous détestons souvent ce que nous ne comprenons pas.",
+          answer: true,
+          explain: "Le manque de compréhension nourrit la méfiance entre hommes et femmes.",
+        },
+      ],
+      mirror: {
+        question: "Y a-t-il quelqu'un que tu rejettes parce que tu ne le comprends pas ?",
+        choices: ["Oui, un homme de mon entourage", "Oui, une femme", "Peut-être", "Non"],
+      },
+      prayer: "Jésus, Toi qui as vu le cœur de la Samaritaine, donne-moi de comprendre avant de juger.",
+    },
+    {
+      id: "f4p3",
+      title: "Même mission, autre exécution",
+      reading: [
+        "Dieu a créé l'homme et la femme, Il les a bénis et Il les a appelés « homme ». C'est l'esprit présent dans les deux qui est en relation avec Dieu et qui domine sur la terre.",
+        "Leur mission de base est la même, mais ils l'exécutent différemment. Parce qu'ils ont des buts particuliers, des conceptions et des corps différents, leur autorité se manifeste de façons différentes.",
+        "Leurs différences sont seulement fonctionnelles : elles ne touchent pas à leur égalité. Il ne peut pas y avoir de vraie domination sur la terre si la conception d'origine n'est pas respectée.",
+        "Retiens ce principe : tu es comme tu es à cause de la raison pour laquelle tu existes. La façon d'être de l'homme et celle de la femme sont directement liées à leur raison d'être.",
+      ],
+      keyTruth: "L'homme et la femme ont la même mission, mais ils l'exécutent différemment : je suis comme je suis à cause de mon but.",
+      verse: {
+        ref: "Ésaïe 46:10",
+        text: "J'annonce dès le commencement ce qui doit arriver, et longtemps d'avance ce qui n'est pas encore accompli ; je dis : Mes arrêts subsisteront, et j'exécuterai toute ma volonté.",
+      },
+      exercises: [
+        {
+          kind: "fill",
+          id: "f4p3e1",
+          before: "La mission est la même, mais",
+          after: "est différente.",
+          options: ["l'exécution", "l'importance", "la récompense"],
+          answer: 0,
+          explain: "Chacun exerce la même domination selon sa conception propre.",
+        },
+        {
+          kind: "truefalse",
+          id: "f4p3e2",
+          statement: "Les différences entre l'homme et la femme remettent en cause leur égalité.",
+          answer: false,
+          explain: "Elles sont seulement fonctionnelles : elles reflètent des buts différents.",
+        },
+        {
+          kind: "choice",
+          id: "f4p3e3",
+          prompt: "Qu'est-ce qui explique la façon d'être de l'homme et de la femme ?",
+          options: ["Leur humeur", "La raison pour laquelle ils existent", "La mode"],
+          answer: 1,
+          explain: "Tu es comme tu es à cause de pourquoi tu es.",
+        },
+      ],
+      mirror: {
+        question: "Comment exerces-tu l'autorité que Dieu t'a confiée ?",
+        choices: ["Par mon influence", "Par mes décisions", "Par mon service", "Je ne sais pas encore"],
+      },
+      prayer: "Seigneur, aide-moi à accomplir ma mission à ma manière, celle que Tu as prévue pour moi.",
+    },
+    {
+      id: "f4p4",
+      title: "Os de mes os",
+      reading: [
+        "Quand Adam a vu la femme, il a dit une chose que les femmes ont oubliée et que les hommes ne veulent pas se rappeler : « Voici celle qui est os de mes os et chair de ma chair. » C'est le plus beau plaidoyer pour l'égalité : elle est faite comme moi, dans sa structure, dans son corps, dans ses capacités émotionnelles et intellectuelles.",
+        "Mais Adam a aussi vu deux différences. La première : la femme a un utérus et peut porter des enfants. Pour faire fonctionner cette partie unique, Dieu a mis en elle des « circuits » un peu différents.",
+        "La seconde : la femme est conçue d'abord pour recevoir, et l'homme d'abord pour donner. Cela ne veut pas dire que la femme ne donne pas ; au contraire, sa nature est de donner encore et encore. Mais elle a été tirée de l'homme et conçue pour recevoir son amour.",
+        "Dans ce rôle, elle possède de nombreuses qualités qui complètent celles de l'homme. Ce sont elles que nous appelons « différences ».",
+      ],
+      keyTruth: "La femme est faite comme l'homme, os de ses os, avec deux différences voulues par Dieu : un utérus, et une nature faite pour recevoir.",
+      verse: {
+        ref: "Psaume 139:13",
+        text: "C'est toi qui as formé mes reins, qui m'as tissé dans le sein de ma mère.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "f4p4e1",
+          prompt: "Associe chaque parole d'Adam à son sens.",
+          pairs: [
+            ["Os de mes os", "Faite comme moi dans sa structure"],
+            ["Chair de ma chair", "Semblable dans son corps et ses capacités"],
+          ],
+          explain: "Le plus beau plaidoyer pour l'égalité vient d'Adam lui-même.",
+        },
+        {
+          kind: "choice",
+          id: "f4p4e2",
+          prompt: "Quelles sont les deux différences qu'Adam a remarquées ?",
+          options: [
+            "La taille et la force",
+            "L'utérus et une nature faite pour recevoir",
+            "La voix et les cheveux",
+          ],
+          answer: 1,
+          explain: "Deux différences voulues par Dieu pour accomplir son but.",
+        },
+        {
+          kind: "truefalse",
+          id: "f4p4e3",
+          statement: "Être conçue pour recevoir signifie que la femme ne donne jamais.",
+          answer: false,
+          explain: "Au contraire, sa nature est de donner encore et encore.",
+        },
+      ],
+      mirror: {
+        question: "Te sens-tu à l'aise avec le fait de recevoir, de l'amour, de l'aide, des compliments ?",
+        choices: ["Oui", "Pas vraiment", "Je préfère donner", "Ça dépend de qui"],
+      },
+      prayer: "Seigneur, merci de m'avoir tissée dans le sein de ma mère : je reçois avec joie la façon dont Tu m'as faite.",
+    },
+    {
+      id: "f4p5",
+      title: "Différente, pas inférieure",
+      reading: [
+        "Nous avons tendance à croire que « différent » veut dire « inférieur » ou « supérieur ». C'est faux. Une femme n'est pas moins qu'un homme parce qu'elle est une femme, et un homme n'est pas plus qu'une femme parce qu'il est un homme. Il faut l'apprendre aux enfants dès le plus jeune âge : « Ta sœur est différente de toi à cause de son but, comme toi. »",
+        "Certaines femmes disent : « Je suis supérieure à l'homme puisque je porte les enfants. » Mais il faut être deux pour concevoir un enfant. Chacun a son rôle.",
+        "Chacun de nous a des empreintes digitales uniques. Dieu nous a faits différents et veut que nous le restions. Essayer de ressembler à quelqu'un d'autre, c'est passer à côté de ce que Dieu a de meilleur pour nous.",
+        "Un jour, en voyant à la télévision la photo d'un enfant « disparu », l'auteur a entendu Dieu lui dire : « J'ai beaucoup d'enfants disparus. » Des personnes présentes dans le monde, mais absentes de leur propre but, parce qu'elles vivent comme quelqu'un d'autre.",
+      ],
+      keyTruth: "Différente ne veut pas dire inférieure : en essayant d'être quelqu'un d'autre, je passerais à côté du meilleur de Dieu.",
+      verse: {
+        ref: "Éphésiens 2:10",
+        text: "Car nous sommes son ouvrage, ayant été créés en Jésus-Christ pour de bonnes œuvres, que Dieu a préparées d'avance, afin que nous les pratiquions.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "f4p5e1",
+          statement: "Porter les enfants rend la femme supérieure à l'homme.",
+          answer: false,
+          explain: "Il faut être deux pour concevoir un enfant : chacun a son rôle.",
+        },
+        {
+          kind: "fill",
+          id: "f4p5e2",
+          before: "Dieu a dit : « J'ai beaucoup d'enfants",
+          after: "», présents dans le monde mais absents de leur but.",
+          options: ["disparus", "parfaits", "riches"],
+          answer: 0,
+          explain: "Vivre comme quelqu'un d'autre, c'est disparaître de son propre but.",
+        },
+        {
+          kind: "choice",
+          id: "f4p5e3",
+          prompt: "Que montrent nos empreintes digitales uniques ?",
+          options: ["Que Dieu nous a faits différents et veut que nous le restions", "Que nous sommes tous pareils", "Rien de spirituel"],
+          answer: 0,
+          explain: "Même dans l'unité, Dieu veut que chacun reste lui-même.",
+        },
+      ],
+      mirror: {
+        question: "À qui essaies-tu parfois de ressembler ?",
+        choices: ["Une amie", "Une influenceuse", "Ma mère", "Une femme de l'Église", "À personne"],
+      },
+      prayer: "Père, je veux être celle que Tu as créée, et non une copie d'une autre : aide-moi à ne pas disparaître de mon propre but.",
+    },
+    {
+      id: "f4p6",
+      title: "On ne refait pas l'autre",
+      reading: [
+        "Paul dit : « Soyez mes imitateurs, comme je le suis de Christ. » La seule chose à imiter chez les autres, c'est la vie du Christ. Pour le reste, chacun doit être lui-même.",
+        "Les ennuis commencent quand on veut transformer les autres à notre image. C'est fréquent dans le mariage : après la lune de miel, chacun essaie de faire penser et agir l'autre comme lui. Le plus grand problème du couple, c'est de vouloir refaire l'autre. Mais il est déjà fait !",
+        "Ta femme est comme elle est à cause de la raison pour laquelle elle existe. Ton mari est comme il est à cause de la raison pour laquelle il existe. Essayer de faire d'une femme un homme, ou d'un homme une femme, c'est tenter l'impossible.",
+        "Si tu dois vivre avec une femme ou travailler avec elle, découvre ce que Dieu voulait en créant la femme ; sinon, tu manipules quelque chose que tu ne comprends pas. Et c'est vrai aussi pour l'homme. Célébrons nos différences comme complémentaires.",
+      ],
+      keyTruth: "Je n'ai pas à refaire l'autre à mon image : il est déjà fait, selon le but de Dieu.",
+      verse: {
+        ref: "1 Corinthiens 11:1",
+        text: "Soyez mes imitateurs, comme je le suis moi-même de Christ.",
+      },
+      exercises: [
+        {
+          kind: "choice",
+          id: "f4p6e1",
+          prompt: "Quel est le plus grand problème du couple selon l'auteur ?",
+          options: ["Le manque d'argent", "Vouloir refaire l'autre à son image", "Les belles-familles"],
+          answer: 1,
+          explain: "L'autre est déjà fait, selon le but de Dieu.",
+        },
+        {
+          kind: "fill",
+          id: "f4p6e2",
+          before: "La seule chose à imiter chez les autres, c'est la vie du",
+          after: ".",
+          options: ["Christ", "plus fort", "plus riche"],
+          answer: 0,
+          explain: "1 Corinthiens 11:1 : imitez-moi comme j'imite le Christ.",
+        },
+        {
+          kind: "truefalse",
+          id: "f4p6e3",
+          statement: "On peut transformer un homme en femme, ou une femme en homme, si on insiste assez.",
+          answer: false,
+          explain: "C'est tenter l'impossible : personne ne peut changer le but de Dieu.",
+        },
+      ],
+      mirror: {
+        question: "Y a-t-il quelqu'un que tu essaies de changer à ton image ?",
+        choices: ["Mon conjoint", "Un enfant", "Un ami", "Un collègue", "Personne"],
+      },
+      prayer: "Seigneur, apprends-moi à accueillir les autres tels que Tu les as faits, et à n'imiter que Toi.",
+    },
+    {
+      id: "f4p7",
+      title: "La femme a-t-elle été maudite ?",
+      reading: [
+        "En mangeant le fruit défendu, Adam et Ève ont rejeté le plan de Dieu par un choix de leur volonté. Ils voulaient un but pour lequel ils n'avaient pas été créés : être comme Dieu. Ils n'étaient plus satisfaits de leur place.",
+        "Les conséquences : la communion avec Dieu a été rompue, leur esprit est mort et leur corps a commencé à mourir, et ils ont perdu l'équilibre parfait de leur relation.",
+        "Beaucoup ont appris que Dieu avait maudit Ève. C'est faux. La Bible ne dit pas que Dieu a maudit l'homme ou la femme : Il a dit « le sol est maudit ». Dieu a expliqué à Ève les conséquences naturelles de son choix.",
+        "Avoir des enfants n'est pas une malédiction : c'est accomplir une partie du but de Dieu, et cette capacité existait avant la chute. C'est la douleur qui vient de la chute. Et Dieu a dit aux deux « soyez féconds » : les enfants appartiennent aux deux, et doivent être élevés à deux. Une des conséquences de la chute est peut-être que cette charge est trop retombée sur la femme, pendant que l'homme était occupé à « dominer ». Certaines femmes, elles aussi, se soucient davantage du monde que de leurs enfants.",
+      ],
+      keyTruth: "Dieu n'a pas maudit la femme : porter des enfants est une bénédiction, et ils doivent être élevés à deux.",
+      verse: {
+        ref: "Genèse 1:28",
+        text: "Dieu les bénit, et Dieu leur dit : Soyez féconds, multipliez, remplissez la terre, et l'assujettissez.",
+      },
+      exercises: [
+        {
+          kind: "truefalse",
+          id: "f4p7e1",
+          statement: "Selon la Bible, Dieu a maudit Ève.",
+          answer: false,
+          explain: "Dieu a dit « le sol est maudit » ; Il a expliqué à Ève les conséquences de son choix.",
+        },
+        {
+          kind: "choice",
+          id: "f4p7e2",
+          prompt: "Qu'est-ce qui vient de la chute : avoir des enfants, ou la douleur ?",
+          options: ["Avoir des enfants", "La douleur", "Les deux"],
+          answer: 1,
+          explain: "La capacité d'avoir des enfants existait avant la chute : c'est une bénédiction.",
+        },
+        {
+          kind: "fill",
+          id: "f4p7e3",
+          before: "Dieu a dit aux deux « soyez féconds » : les enfants doivent être élevés à",
+          after: ".",
+          options: ["deux", "l'école", "la crèche"],
+          answer: 0,
+          explain: "La charge des enfants n'appartient pas à la femme seule.",
+        },
+      ],
+      mirror: {
+        question: "As-tu grandi en pensant que la femme était maudite ?",
+        choices: ["Oui", "On me l'a laissé entendre", "Non", "Je ne m'étais jamais posé la question"],
+      },
+      prayer: "Père, merci : Tu ne m'as pas maudite, Tu m'as bénie. Libère-moi de tout mensonge sur ma condition de femme.",
+    },
+    {
+      id: "f4p8",
+      title: "Désir, domination et rédemption",
+      reading: [
+        "Dieu a dit à Ève : « Tes désirs se porteront vers ton mari, et il dominera sur toi. » Cela montre qu'à l'origine, l'homme et la femme devaient régner ensemble, à égalité. Après la chute, ils règnent encore, mais leur relation est faussée.",
+        "La femme a désormais un désir profond pour son mari, souvent caché, qui peut devenir dominant. Des conseillers conjugaux l'ont constaté : des femmes battues, trompées, humiliées, continuent de cuisiner, laver et pardonner. C'est ce désir de le garder à tout prix.",
+        "Cette capacité à supporter n'est pas entièrement due à la chute : elle reflète aussi l'image de Dieu, qui est patient. Mais Dieu est patient, pas éternellement souffrant ; il vient un moment où Il dit « ça suffit ». Beaucoup de femmes aussi finissent par dire : « Ça suffit. »",
+        "L'homme, lui, croit avoir le droit de dominer la femme. Ce n'était pas le plan de Dieu : l'homme et la femme devaient dominer la terre, pas l'un l'autre. Mais au moment même de la chute, Dieu a promis un Rédempteur. En Jésus, l'homme et la femme peuvent revenir au plan d'origine et retrouver leur partenariat. Cela commence en revenant à Dieu Lui-même.",
+      ],
+      keyTruth: "La chute a faussé la relation entre l'homme et la femme, mais en Jésus, Dieu restaure leur partenariat d'origine.",
+      verse: {
+        ref: "Genèse 3:16",
+        text: "Il dit à la femme : J'augmenterai la souffrance de tes grossesses, tu enfanteras avec douleur, et tes désirs se porteront vers ton mari, mais il dominera sur toi.",
+      },
+      exercises: [
+        {
+          kind: "match",
+          id: "f4p8e1",
+          prompt: "Associe à chacun la tendance née de la chute.",
+          pairs: [
+            ["La femme", "Un désir de garder son mari à tout prix"],
+            ["L'homme", "Une envie de dominer la femme"],
+          ],
+          explain: "Ce n'était pas le plan d'origine, mais la conséquence du péché.",
+        },
+        {
+          kind: "fill",
+          id: "f4p8e2",
+          before: "Dieu est patient, mais pas éternellement",
+          after: ".",
+          options: ["souffrant", "présent", "fidèle"],
+          answer: 0,
+          explain: "Il vient un moment où Il dit « ça suffit ».",
+        },
+        {
+          kind: "truefalse",
+          id: "f4p8e3",
+          statement: "En Jésus, l'homme et la femme peuvent retrouver le partenariat voulu à l'origine.",
+          answer: true,
+          explain: "Le Rédempteur promis dès la chute restaure la relation entre l'homme et la femme.",
+        },
+      ],
+      mirror: {
+        question: "Y a-t-il une relation où tu supportes trop, par peur de perdre l'autre ?",
+        choices: ["Oui", "Peut-être", "Plus maintenant", "Non"],
+      },
+      prayer: "Jésus, mon Rédempteur, restaure en moi et dans mes relations le plan d'origine du Père.",
+    },
+  ],
+};
