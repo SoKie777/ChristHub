@@ -781,6 +781,39 @@ button:disabled {
   gap: 4px;
 }
 
+.setting.column {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.setting.column .seg button {
+  flex: 1;
+  padding: 6px 4px;
+}
+
+.seg button small {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+.setting .hint {
+  margin: 0;
+  font-weight: 600;
+}
+
+.hint.warn {
+  color: var(--xp);
+}
+
 .seg button {
   min-width: 40px;
   padding: 4px 8px;

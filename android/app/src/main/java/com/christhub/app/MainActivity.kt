@@ -1,11 +1,16 @@
 package com.christhub.app
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
+import android.webkit.JavascriptInterface
 import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
 import android.webkit.WebView
+import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
@@ -66,8 +71,31 @@ class MainActivity : Activity() {
             }
         }
 
+        // The only bridge to native code: daily reminders. Only our own pages are
+        // loaded in this WebView (other links open in the browser).
+        webView.addJavascriptInterface(ReminderBridge(), "ChristHubAndroid")
+
         if (savedInstanceState != null) webView.restoreState(savedInstanceState)
         else webView.loadUrl("https://${WebViewAssetLoader.DEFAULT_DOMAIN}/")
+    }
+
+    inner class ReminderBridge {
+        @JavascriptInterface
+        fun configure(enabled: Boolean, hour: Int, minute: Int, lastDay: String, streak: Int) =
+            Reminders.configure(applicationContext, enabled, hour, minute, lastDay, streak)
+
+        @JavascriptInterface
+        fun notificationsAllowed(): Boolean = NotificationManagerCompat.from(applicationContext).areNotificationsEnabled()
+
+        /** Android 13+ asks the user once; older versions allow notifications by default. */
+        @JavascriptInterface
+        fun requestPermission() {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+                checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED
+            ) {
+                runOnUiThread { requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 1) }
+            }
+        }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

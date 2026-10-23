@@ -20,6 +20,7 @@ import {
 import { WEEKDAY_LETTERS, addDays, dayKey } from "../lib/day";
 import { sfx } from "../lib/feedback";
 import { MAX_GRACES, dueReviews, lampLevel, type Progress } from "../lib/progress";
+import { REMINDER_TIMES, askNotificationPermission, notificationsBlocked, remindersAvailable } from "../lib/reminders";
 
 // Home: the library (Livres), the book path (Chemin), spaced review (Méditer)
 // and the profile.
@@ -464,6 +465,43 @@ function ProfileTab({ progress, onUpdate, onReset }: Props) {
           <span>Sons</span>
           <input type="checkbox" checked={progress.soundOn} onChange={(e) => onUpdate({ ...progress, soundOn: e.target.checked })} />
         </label>
+        {remindersAvailable ? (
+          <div className="setting column">
+            <label className="setting-row">
+              <span>Rappel quotidien</span>
+              <input
+                type="checkbox"
+                checked={progress.reminders.enabled}
+                onChange={(e) => {
+                  if (e.target.checked) askNotificationPermission();
+                  onUpdate({ ...progress, reminders: { ...progress.reminders, enabled: e.target.checked, asked: true } });
+                }}
+              />
+            </label>
+            {progress.reminders.enabled && (
+              <>
+                <div className="seg">
+                  {REMINDER_TIMES.map((r) => (
+                    <button
+                      key={r.time}
+                      className={progress.reminders.time === r.time ? "on" : ""}
+                      onClick={() => onUpdate({ ...progress, reminders: { ...progress.reminders, time: r.time } })}
+                    >
+                      {r.label}
+                      <small>{r.display}</small>
+                    </button>
+                  ))}
+                </div>
+                <p className="hint">Si ta série est en danger, Biblo te fait aussi signe à 21 h.</p>
+                {notificationsBlocked() && (
+                  <p className="hint warn">Les notifications sont bloquées : autorise-les pour ChristHub dans les réglages de ton téléphone.</p>
+                )}
+              </>
+            )}
+          </div>
+        ) : (
+          <p className="hint">Les rappels quotidiens sont disponibles dans l'appli Android.</p>
+        )}
         <div className="setting">
           <span>Objectif quotidien</span>
           <div className="seg">

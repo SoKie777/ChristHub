@@ -46,6 +46,8 @@ export interface Progress {
   soundOn: boolean;
   /** Book open on the path; null until the learner picks one in the library. */
   currentBook: string | null;
+  /** Daily reminder (Android app). `asked`: notification permission already requested. */
+  reminders: { enabled: boolean; time: string; asked: boolean };
 }
 
 export const MAX_GRACES = 2;
@@ -78,6 +80,7 @@ export const emptyProgress = (): Progress => ({
   dailyGoal: 20,
   soundOn: true,
   currentBook: null,
+  reminders: { enabled: true, time: "19:00", asked: false },
 });
 
 export const loadProgress = (): Progress => {

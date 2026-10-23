@@ -3,6 +3,7 @@ import { allPortions, findExercise } from "./data/book";
 import type { Book, Chapter, Exercise, Portion } from "./data/types";
 import { dayKey } from "./lib/day";
 import { setSoundEnabled } from "./lib/feedback";
+import { askNotificationPermission, remindersAvailable, syncReminders } from "./lib/reminders";
 import {
   XP,
   creditDay,
@@ -43,6 +44,7 @@ export default function App() {
   useEffect(() => {
     saveProgress(progress);
     setSoundEnabled(progress.soundOn);
+    syncReminders(progress);
   }, [progress]);
 
   // Android back button / browser back: leave a session instead of the app.
@@ -140,6 +142,12 @@ export default function App() {
       const best = p.checkpoints[result.chapterId];
       if (passed && (!best || best.score < score))
         p = { ...p, checkpoints: { ...p.checkpoints, [result.chapterId]: { passedAt: dayKey(), score } } };
+    }
+
+    // Like Duolingo: notifications are asked for right after the first session.
+    if (remindersAvailable && p.reminders.enabled && !p.reminders.asked) {
+      askNotificationPermission();
+      p = { ...p, reminders: { ...p.reminders, asked: true } };
     }
 
     const xp = breakdown.reduce((sum, [, n]) => sum + n, 0);
