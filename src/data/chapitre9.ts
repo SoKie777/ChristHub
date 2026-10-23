@@ -109,7 +109,7 @@ export const chapitre9: Chapter = {
       title: "Une alliance, pas une expérience",
       reading: [
         "Dieu a placé l'union sexuelle dans le mariage pour trois raisons : donner la vie, sceller une alliance entre un homme et une femme, et permettre de vivre ce don pleinement, sans regrets ni blessures.",
-        "« Ils deviendront une seule chair. » L'union du corps n'est pas un simple moment : c'est un engagement. Dans la Bible, l'alliance la plus forte est scellée par le sang, et Dieu a inscrit cette notion d'alliance jusque dans le corps humain. Voilà pourquoi ce don est réservé à l'engagement solennel du mariage.",
+        "« Ils deviendront une seule chair. » L'union du corps n'est pas un simple moment : c'est un engagement. Dans la Bible, l'alliance la plus forte est l'alliance du sang. Or la fine membrane qui ferme le corps de la femme, l'hymen, n'a aucune utilité biologique connue, mais elle est très riche en vaisseaux sanguins : lors de la première union, le sang scelle l'alliance. Dieu a fait de l'union sexuelle une alliance de sang. Voilà pourquoi elle est réservée à l'engagement solennel du mariage, et pourquoi celui qui s'unit à une prostituée reste lié à elle, même après être parti.",
         "Dans la loi de Moïse, un jeune marié était dispensé d'armée et de toute charge pendant un an. Sa seule mission : rendre heureuse sa femme. Dieu a pris soin que l'amour des jeunes couples ait de la place !",
         "Remarque : le texte ne dit pas « se faire plaisir », mais « rendre heureuse sa femme ». La convoitise pense à elle-même ; l'amour pense à l'autre. Et quand on donne, les deux reçoivent.",
       ],
@@ -157,6 +157,7 @@ export const chapitre9: Chapter = {
         "Dieu ne pose pas des barrières pour nous gâcher la vie. Ses limites sont là pour nous préserver, comme la rambarde d'un pont n'empêche pas de traverser mais de tomber.",
         "La première limite, c'est l'alliance du mariage entre un homme et une femme. Pas de période d'essai : la Bible parle de se réjouir de « la femme de sa jeunesse ». À l'intérieur de cette alliance, on peut vivre ce don sans honte, sans peur d'être découvert, en paix.",
         "Paul l'écrit ainsi : tout m'est permis, mais tout n'est pas utile. La vraie question n'est pas « ai-je le droit ? » mais « est-ce bon pour moi ? ». Le corps est fait pour la sexualité, mais pas pour l'impureté.",
+        "Dieu a créé l'homme et la femme pour vivre leur sexualité d'une manière précise. Il n'a pas donné un homme à Adam, Il lui a donné une femme. Le dessein de Dieu, c'est l'homme et la femme ; pas l'homme avec l'homme, ni la femme avec la femme. On sait que l'homosexualité n'est pas le plan de Dieu parce qu'elle ne correspond pas à son dessein.",
         "Quand on franchit ces limites, la première chose qu'on perd, c'est la paix. La culpabilité pèse sur le corps et l'âme. Et rien d'humain ne peut l'effacer : seul le pardon de Jésus en libère.",
       ],
       keyTruth: "Les limites de Dieu ne sont pas là pour me priver, mais pour me protéger et me garder en paix.",
@@ -188,6 +189,13 @@ export const chapitre9: Chapter = {
           options: ["Son argent", "Sa paix", "Ses amis"],
           answer: 1,
           explain: "La culpabilité s'installe, et seul le pardon de Jésus en libère.",
+        },
+        {
+          kind: "truefalse",
+          id: "c9p4e4",
+          statement: "Le dessein de Dieu pour la sexualité, c'est l'homme et la femme.",
+          answer: true,
+          explain: "Dieu n'a pas donné un homme à Adam, mais une femme : l'homosexualité ne correspond pas à son dessein.",
         },
       ],
       mirror: {

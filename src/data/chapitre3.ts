@@ -158,7 +158,7 @@ export const chapitre3: Chapter = {
       id: "c3p4",
       title: "Refléter sa lumière",
       reading: [
-        "Créé à l'image de Dieu, l'être humain est aussi appelé à refléter son caractère. Physiquement, nous sommes des enfants d'hommes ; spirituellement, nous sommes appelés enfants du Très-Haut, porteurs de sa nature.",
+        "Créé à l'image de Dieu, l'être humain est aussi appelé à refléter son caractère. Le Psaume 82 va jusqu'à dire : « Vous êtes des dieux, vous êtes tous des fils du Très-Haut. » Pourquoi sommes-nous appelés de « petits dieux » ? Parce qu'en tant qu'enfants du Dieu Très-Haut, nous portons sa nature et partageons ses projets. Physiquement, nous sommes des enfants d'hommes ; spirituellement, nous sommes enfants de Dieu.",
         "Deux traits du caractère de Dieu sont au cœur de cet appel : l'amour et la lumière. Nous sommes faits pour les manifester.",
         "Mais il y a une condition : on ne peut pas refléter Dieu en étant coupé de Lui. Comme une lampe qui ne brille que branchée, l'être humain ne révèle la lumière de Dieu que lorsqu'il reste en communion avec Lui. Celui qui demeure dans l'amour demeure en Dieu.",
         "Ta lampe de fidélité dans ChristHub n'est qu'une image. La vraie lumière, c'est celle de Dieu en toi, qui brille quand tu restes près de Lui.",
@@ -208,7 +208,7 @@ export const chapitre3: Chapter = {
       reading: [
         "« Faisons l'homme à notre image, et qu'il domine… » Dieu n'a jamais voulu régner seul. L'amour ne pense pas ainsi : l'égoïste veut toute la gloire, tout le pouvoir ; celui qui aime veut partager.",
         "Cette domination a été confiée à l'être humain en tant qu'esprit, avant même la distinction entre homme et femme. Spirituellement, l'homme et la femme ont donc la même responsabilité envers la terre.",
-        "Un détail qu'on oublie souvent : Dieu n'a pas créé l'être humain pour le ciel, mais pour la terre. Comme Dieu règne sur l'invisible, l'être humain devait gérer le visible, en communion constante avec Lui.",
+        "Un détail qu'on oublie souvent : Dieu n'a pas créé l'être humain pour le ciel, mais pour la terre. Comme Dieu règne sur l'invisible, l'être humain devait régner sur le visible, en communion constante avec Lui. Dieu lui dit en substance : laisse-moi régner à travers toi, pour que tu saches ce que c'est que d'être de « petits dieux ».",
         "Adorer Dieu est essentiel. Mais la louange ne doit pas devenir une excuse pour négliger le reste. Il vient un moment où il faut sortir et montrer, dans le travail, la famille et la société, ce que notre relation avec Dieu change concrètement.",
       ],
       keyTruth: "Dieu partage son règne avec l'être humain : ma foi doit se voir dans la façon dont je prends soin de la terre et des autres.",

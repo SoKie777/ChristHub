@@ -299,7 +299,7 @@ export const chapitre5: Chapter = {
         "Beaucoup d'hommes brandissent le verset : « Femmes, soyez soumises à vos maris. » Mais être soumis, c'est choisir librement de suivre. La soumission est un acte de celui qui se soumet, jamais un ordre arraché par la force ou la peur.",
         "Le verset dit : « comme au Seigneur ». Jésus n'a jamais frappé, humilié ni menacé personne pour qu'on le suive. Il nous a attendus, patiemment, et nous L'avons suivi parce que son amour nous a conquis. Il dit simplement : « Suis-moi. »",
         "Pense à un guide dans une grotte : on le suit parce qu'il connaît le chemin dans le noir, et on reste libre de faire demi-tour. Un mari qui vit comme le Christ n'a pas besoin d'exiger quoi que ce soit : on a envie de le suivre.",
-        "Et soyons clairs : la soumission ne veut jamais dire subir des coups. Face à la violence, il faut se mettre à l'abri et demander de l'aide. Le respect ne s'exige pas : il se gagne, en aimant, en pardonnant et en écoutant comme Jésus.",
+        "La femme est donc soumise à son mari quand il agit comme le Seigneur. Le Seigneur ne lui a jamais demandé d'acheter ce qui le détruirait : par amour, elle peut refuser. Et la soumission n'a jamais voulu dire se laisser battre : une femme battue doit quitter les lieux tant qu'elle ne voit pas le Seigneur dans la maison. Le respect ne s'exige pas : il se gagne, en aimant, en pardonnant et en écoutant comme Jésus.",
       ],
       keyTruth: "Le respect ne s'exige pas, il se gagne : on suit volontiers celui qui aime comme Jésus.",
       verse: {
@@ -320,7 +320,7 @@ export const chapitre5: Chapter = {
           id: "c5p7e2",
           statement: "Une femme frappée par son mari doit rester et subir pour être « soumise ».",
           answer: false,
-          explain: "Jamais. Face à la violence, il faut se protéger et demander de l'aide.",
+          explain: "Jamais. Une femme battue doit quitter les lieux : se laisser frapper n'est pas de la soumission.",
         },
         {
           kind: "fill",
@@ -342,9 +342,9 @@ export const chapitre5: Chapter = {
       id: "c5p8",
       title: "Égaux et différents",
       reading: [
-        "L'homme et la femme ont reçu la même mission : régner. Mais parce que leurs corps et leurs rôles diffèrent, ils l'exercent de façons différentes. La place de chacun vient du but de Dieu, pas du diplôme ni du salaire.",
+        "L'homme et la femme ont reçu la même mission : régner. Mais parce que leurs corps et leurs rôles diffèrent, ils l'exercent de façons différentes. L'homme a été fait en premier pour être responsable de tout ce qui viendrait après lui, et Dieu ne lui retire pas cette responsabilité ; la femme doit comprendre son but d'aide. Même si le mari est moins diplômé ou gagne moins que sa femme, cela ne change rien : « je gagne plus que toi, je n'ai pas besoin de toi » n'est pas le bon esprit. C'est le but de Dieu, et non l'évolution de la société, qui détermine la position.",
         "On confond souvent « différent » et « inférieur ». Une femme n'est pas moins qu'un homme parce qu'elle est une femme, et un homme n'est pas plus qu'une femme parce qu'il est un homme. Différent veut simplement dire différent.",
-        "Paul l'exprime ainsi : dans le Seigneur, la femme n'est pas sans l'homme, ni l'homme sans la femme. La femme a été tirée de l'homme, et tout homme naît d'une femme. Chacun a besoin de l'autre.",
+        "Paul rappelle l'ordre de la création : l'homme est l'image et la gloire de Dieu, la femme est la gloire de l'homme ; la femme a été tirée de l'homme et créée pour l'homme. Mais il ajoute aussitôt : dans le Seigneur, la femme n'est pas sans l'homme, ni l'homme sans la femme, car tout homme naît d'une femme. Chacun a besoin de l'autre, et Paul demande aussi de se soumettre les uns aux autres dans la crainte de Christ.",
         "Retenons cinq vérités : régner n'est pas dominer ; on règne sur le monde, pas sur les personnes ; le respect se gagne ; l'homme et la femme sont égaux et différents ; ils ont besoin l'un de l'autre.",
       ],
       keyTruth: "Différent ne veut pas dire inférieur : l'homme et la femme sont égaux, différents, et ont besoin l'un de l'autre.",

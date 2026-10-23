@@ -152,7 +152,7 @@ export const chapitre11: Chapter = {
       id: "c11p4",
       title: "Présent et responsable",
       reading: [
-        "Une idée répandue voudrait que les enfants s'élèvent presque seuls, comme de petits adultes. Mais un enfant n'est pas un adulte. Dieu n'a confié l'éducation de tes enfants ni à eux-mêmes, ni à la société : Il te l'a confiée.",
+        "Une idée répandue veut que l'enfant ait les mêmes droits qu'un adulte : un parent ne pourrait plus lui donner la fessée, et l'enfant pourrait même « divorcer » de ses parents. Autrement dit, les enfants s'élèveraient eux-mêmes. C'est absurde : un enfant n'est pas un adulte. Dieu n'a confié l'éducation de tes enfants ni à eux-mêmes, ni à la société : Il te l'a confiée.",
         "Combien de temps passes-tu avec tes enfants ? Si d'autres s'en occupent toute la journée, ce qu'ils sont passera en eux : leur vision de Dieu, d'eux-mêmes et de la vie. Choisis avec soin qui les accompagne.",
         "Les enfants ne sont pas une ligne de plus sur la liste des tâches, ni un obstacle à écarter. Après ta femme, ils viennent en tête de tes priorités.",
         "Être responsable, c'est aussi les instruire. Dieu a lié les promesses faites à Abraham au fait qu'il enseignerait ses voies à sa maison. L'enseignement d'un père, dit Proverbes, est comme une couronne posée sur la tête de son enfant.",
@@ -198,8 +198,8 @@ export const chapitre11: Chapter = {
       title: "Corriger, pas seulement punir",
       reading: [
         "Dieu dit en parlant de son peuple : « C'est moi qui ai appris à marcher à Éphraïm. » Il le tenait par les bras et le relevait. C'est le cœur d'un père : former son enfant personnellement, avec patience.",
-        "Beaucoup de pères laissent la discipline à la mère, de peur de ne plus être aimés. Pourtant, la Bible confie cette responsabilité aux pères. Un enfant laissé à lui-même finit souvent par se perdre. Corriger, c'est donner de l'espoir.",
-        "Attention : punir et corriger ne sont pas la même chose. Une punition sans explication ne transmet aucune valeur. Corriger, c'est s'asseoir avec l'enfant et lui dire : voilà pourquoi, et voilà où ce chemin te mènerait. Et cela se fait toujours avec calme, jamais sous le coup de la colère.",
+        "Beaucoup de pères laissent la discipline à la mère, de peur de ne plus être aimés. Pourtant, la Bible confie cette responsabilité aux pères. Un enfant laissé à lui-même finit souvent par se perdre. Corriger, c'est donner de l'espoir ; ne pas le faire, dit la Bible, c'est se rendre complice de sa perte. « Instruis l'enfant » signifie le conditionner : il naît avec un esprit rebelle, et personne n'a besoin de lui apprendre à mentir.",
+        "Attention : punir et corriger ne sont pas la même chose. Une punition sans explication ne transmet aucune valeur. Corriger, c'est s'asseoir avec l'enfant et lui dire : voilà pourquoi, et voilà où ce chemin te mènerait.",
         "Aux parents seuls, un encouragement : ne laisse pas tes enfants te diriger. Tu n'as pas toutes les réponses, mais tu en sais plus qu'eux, et c'est toi qui poses le cadre. Sur le moment, la discipline n'est pas agréable, mais elle porte plus tard un fruit de paix.",
       ],
       keyTruth: "Corriger avec amour, c'est expliquer le pourquoi et donner de l'espoir : la discipline porte un fruit de paix.",

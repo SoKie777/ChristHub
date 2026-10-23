@@ -60,8 +60,8 @@ export const chapitre8: Chapter = {
       reading: [
         "Dieu a confié à l'homme la responsabilité première de pourvoir aux besoins de sa famille. Dans l'Ancien Testament, un homme qui voulait se marier devait montrer au père de la jeune femme qu'il était capable de subvenir à ses besoins.",
         "Jacob a travaillé sept ans pour épouser Rachel, puis sept de plus. Et la Bible dit que ces années lui ont paru quelques jours, tant il l'aimait. Un homme qui travaille sept ans pour une femme a peu de chances de la quitter ensuite.",
-        "Certaines femmes portent seules la charge du foyer parce qu'elles ont rencontré un profiteur plutôt qu'un pourvoyeur. Et beaucoup de familles courent tellement qu'on finit par se croiser comme des bateaux dans la nuit : plus de confort, mais moins de temps ensemble.",
-        "Il ne s'agit pas d'empêcher une femme de développer ses talents, ni de culpabiliser les couples qui ont besoin de deux salaires. Si c'est ton cas, pas de honte : avance simplement vers ce qui est le meilleur pour ta famille, pas à pas, avec Dieu.",
+        "Dieu n'a jamais dit à la femme de travailler : c'est à l'homme, et non à la femme, qu'Il a confié la charge principale de pourvoir. Une femme devrait épouser un homme déjà capable de subvenir à ses besoins. Certaines portent seules la charge du foyer parce qu'elles ont rencontré un profiteur plutôt qu'un pourvoyeur.",
+        "On appelle progrès le fait que les deux époux travaillent hors de la maison, mais regarde les symptômes : des maisons plus grandes mais moins de vrais foyers, des époux qui se croisent comme des bateaux dans la nuit, des enfants livrés à eux-mêmes. Il faut revoir l'idée que la femme doit travailler. Étudier et développer ses talents est une bonne chose pour elle, mais dans la joie, pas sous la contrainte ; beaucoup de femmes aimeraient être à la maison avec leurs enfants. Si ta femme doit travailler aujourd'hui pour boucler le mois, ne te décourage pas : dis-lui « mon objectif est de gagner assez pour que tu n'aies plus à travailler », et commence dès maintenant.",
       ],
       keyTruth: "Pourvoir aux besoins des miens est une responsabilité que Dieu m'a confiée, et l'amour la rend légère.",
       verse: {
@@ -81,9 +81,9 @@ export const chapitre8: Chapter = {
         {
           kind: "truefalse",
           id: "c8p2e2",
-          statement: "Un couple qui a besoin de deux salaires est en faute devant Dieu.",
-          answer: false,
-          explain: "Pas de honte : il s'agit d'avancer pas à pas vers ce qui est le meilleur pour la famille.",
+          statement: "Dieu a confié la charge principale de pourvoir à l'homme, et non à la femme.",
+          answer: true,
+          explain: "Dieu n'a jamais dit à la femme de travailler : c'est l'homme qu'Il a chargé de pourvoir.",
         },
         {
           kind: "choice",
@@ -151,7 +151,8 @@ export const chapitre8: Chapter = {
       title: "Le besoin de donner",
       reading: [
         "Au cœur du désir de pourvoir, il y a un besoin profond : celui de donner. Un homme a besoin de quelqu'un à qui offrir ce qu'il a. Quand on l'en empêche, c'est une partie de lui qui s'éteint.",
-        "Perdre son travail n'est donc pas, pour un homme, qu'un souci financier. C'est comme si on lui retirait une part de sa raison d'être. Certains s'effondrent, d'autres fuient leurs responsabilités. C'est mal, mais cela révèle une blessure profonde.",
+        "L'homme a été conçu essentiellement pour donner, la femme pour recevoir. Beaucoup de femmes se veulent indépendantes, mais elles doivent apprendre à recevoir de leur mari et à le laisser donner. Une femme qui fait comprendre à son mari qu'elle n'a besoin de rien venant de lui frappe une part essentielle de son être. Même si elle gagne plus que lui, qu'elle continue de l'encourager comme pourvoyeur, si discrètement qu'il ne s'en aperçoive pas.",
+        "Perdre son travail n'est donc pas, pour un homme, qu'un souci financier. C'est comme si on lui retirait une part de sa raison d'être. La femme ne peut pas pleinement le comprendre, car elle n'a pas été conçue pour pourvoir, mais pour produire. Certains s'effondrent, d'autres fuient leurs responsabilités. C'est mal, mais cela révèle une blessure profonde.",
         "Imagine un homme qui appelle sa femme pour lui annoncer son licenciement. Si elle répond « Je m'y attendais, de toute façon c'est moi qui porte tout », il n'aura plus envie de rentrer.",
         "Mais si elle répond : « Dieu est notre source. Je t'aime pour qui tu es, pas pour ce que tu m'achètes », elle lui rend sa dignité. Le lendemain, il sera prêt à accepter n'importe quel travail pour se relever.",
       ],
@@ -197,9 +198,9 @@ export const chapitre8: Chapter = {
       title: "Le gardien du jardin",
       reading: [
         "Dieu a demandé à Adam de cultiver le jardin, mais aussi de le garder. Garder les plantes, les animaux, la femme qui allait venir, et surtout la présence de Dieu qui remplissait ce lieu. L'homme est comme un gardien : quand il arrive, chacun devrait se sentir en sécurité.",
-        "Pas besoin d'être marié pour cela. Toute femme qui croise ton chemin devrait se sentir en sécurité avec toi. Si l'une d'elles se confie à toi, abattue et vulnérable, ton rôle est de la conduire vers Dieu et de la traiter comme une sœur, jamais de profiter de sa fragilité.",
+        "Paul dit que la tête de la femme, c'est l'homme : pas besoin d'être marié pour être responsable des femmes. Toute femme qui croise ton chemin devrait se sentir en sécurité avec toi. Si l'une d'elles se confie à toi, abattue et vulnérable, ton rôle est de la conduire vers Dieu et de la traiter comme une sœur, jamais de profiter de sa fragilité.",
         "Quand tu fréquentes quelqu'un, protéger, ce n'est pas l'emmener la nuit dans un endroit isolé. Garde les choses dans la lumière. Il faut un homme fort pour garder ses mains pour lui ; n'importe quel homme faible peut se laisser mener par ses pulsions.",
-        "Dans une famille, la présence du père et du mari devrait apaiser. Quand il parle, tout le monde se sent rassuré : « Ça va aller, Dieu est avec nous, et je suis là. »",
+        "Une fois mariée, la femme a pour protecteur son mari, comme elle avait son père : par nature, elle a besoin de cette couverture. Dans une famille, la présence du père et du mari devrait apaiser. Quand il parle, tout le monde se sent rassuré : « Ça va aller, Dieu est avec nous, et je suis là. »",
       ],
       keyTruth: "Partout où je vais, ceux qui m'entourent devraient se sentir en sécurité, et la présence de Dieu protégée.",
       verse: {
@@ -243,7 +244,7 @@ export const chapitre8: Chapter = {
       title: "Une force pour protéger",
       reading: [
         "Dieu a donné à l'homme une force physique pour défendre et protéger. Le lieu le plus sûr pour une femme devrait être les bras de son mari. Pourtant, certains retournent cette force contre ceux qu'ils devraient protéger.",
-        "Frapper une femme ou un enfant, c'est trahir la raison même pour laquelle Dieu a donné cette force. Imagine-t-on Jésus gifler son Église ? Celui qui maltraite les siens abuse de ce que Dieu lui a confié. Si tu subis des violences, parle-en et mets-toi à l'abri : ce n'est jamais la volonté de Dieu.",
+        "Frapper une femme ou un enfant, c'est trahir la raison même pour laquelle Dieu a donné cette force. Imagine-t-on Jésus gifler son Église ? Celui qui maltraite les siens abuse de ce que Dieu lui a confié. Un conseil à qui est tenté de frapper une femme : fais-toi d'abord la même chose ; après deux coups, tu ne frapperas plus personne. Certains vont jusqu'à abuser de leurs propres enfants. Voilà pourquoi tant de femmes ont peur de la force des hommes : elles l'ont vue utilisée contre elles ou contre leur mère, au lieu de les protéger.",
         "L'homme a aussi un instinct protecteur. Jésus le décrit avec l'image d'une poule qui rassemble ses poussins sous ses ailes et se dresse face au danger. Dieu défend les siens avec cette ardeur.",
         "Mal orienté, cet instinct devient jalousie maladive, contrôle ou rivalité de quartier. Bien orienté, il se tourne contre le vrai ennemi : le mal, le péché, l'œuvre du diable. On ne se bat pas contre les gens, mais pour eux.",
       ],
@@ -274,9 +275,9 @@ export const chapitre8: Chapter = {
         {
           kind: "truefalse",
           id: "c8p6e3",
-          statement: "Subir des violences dans son foyer peut être la volonté de Dieu.",
-          answer: false,
-          explain: "Jamais. Il faut en parler et se mettre à l'abri.",
+          statement: "Beaucoup de femmes ont peur de la force des hommes parce qu'elles l'ont vue utilisée contre elles.",
+          answer: true,
+          explain: "Cette force, donnée pour protéger, a trop souvent été retournée contre elles ou contre leur mère.",
         },
       ],
       mirror: {
@@ -290,7 +291,7 @@ export const chapitre8: Chapter = {
       title: "Regarder le problème en face",
       reading: [
         "Dieu a aussi donné à l'homme une capacité à réfléchir posément face au danger. Il observe avant de s'engager, il analyse ce qu'il voit, il planifie avec précision et il pèse les conséquences de chaque choix.",
-        "C'est pour cela que beaucoup d'hommes s'assoient au fond de l'église pendant des semaines avant de s'engager : ils vérifient que tout cela est vrai. Ce n'est pas de la froideur, c'est de la prudence.",
+        "C'est pour cela que beaucoup d'hommes s'assoient au fond de l'église pendant des semaines avant de s'engager, pour vérifier que tout cela est vrai, alors que les femmes acceptent les choses plus vite. Devant une guérison, la femme dit « c'est un miracle », l'homme se demande si la personne était vraiment malade. Les femmes peuvent être spontanées ; l'homme pèse tout avant d'avancer.",
         "Face aux dettes ou à une perte d'emploi, un homme ne devrait ni s'effondrer, ni noyer ses soucis dans l'alcool, ni fuir. Il peut regarder chaque problème en face : celui-ci, je le règle en trois semaines ; celui-là en trois mois ; pour cet autre, je vais négocier avec la banque.",
         "Cette assurance ne vient pas de l'orgueil. Elle est solide parce qu'elle repose sur la Parole de Dieu.",
       ],

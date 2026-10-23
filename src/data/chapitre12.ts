@@ -343,7 +343,8 @@ export const chapitre12: Chapter = {
       reading: [
         "Neuvième clé : un vrai homme cherche d'abord le Royaume de Dieu. Les vies brisées le touchent, et il se réjouit quand quelqu'un est libéré. Quand ses disciples sont revenus de mission, Jésus a tressailli de joie : leurs noms étaient inscrits dans les cieux.",
         "Dixième clé : un vrai homme se garde en Dieu. Il ne prend pas sa présence pour acquise, il veille sur son cœur, et il s'appuie de tout son poids sur Celui qui peut le préserver de toute chute.",
-        "Dieu cherche des hommes qui se tiennent à la brèche pour leur pays, leur ville, leur famille. Il veut restaurer des couples brisés et des familles blessées, et Il attend des hommes comme toi. Peu importe ton histoire ou celle de ton peuple : ton passé n'est pas ton avenir.",
+        "Dieu cherche des hommes qui se tiennent à la brèche pour leur pays, leur ville, leur famille. Il veut restaurer des couples brisés et des familles blessées, et Il attend des hommes comme toi.",
+        "L'auteur s'adresse aussi aux hommes de ce qu'on appelle le tiers-monde, dont l'histoire est marquée par l'esclavage, la colonisation et l'oppression, qui ont arraché à tant d'hommes leur dignité et le sens de leur virilité. Ton passé n'est pas ton avenir, et tu n'es pas victime de ton histoire. L'homme du premier monde, puis celui du deuxième, n'ont pas su montrer le vrai visage de l'homme selon Dieu : c'est maintenant ton tour de le redécouvrir et de le montrer, pour nos enfants.",
         "Tu as parcouru tout ce livre, portion après portion. Que ceux qui regardent ta vie puissent dire un jour : « Maintenant, je sais à quoi ressemble un vrai homme. » Continue de méditer, et pour aller plus loin, procure-toi le livre original.",
       ],
       keyTruth: "Dieu cherche des hommes qui se tiennent à la brèche : avec Lui, je peux être l'un d'eux.",

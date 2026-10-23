@@ -17,7 +17,7 @@ export const chapitre7: Chapter = {
         "Dans le jardin, Dieu a donné ses instructions à Adam et lui a laissé le soin de les transmettre à Ève. Dès le départ, Il a fait de l'homme le premier enseignant de sa famille.",
         "Attention au contresens : enseigner ne veut pas dire être plus intelligent. Si c'était une question d'intelligence, beaucoup de femmes nous dépasseraient largement ! C'est une question de mission : transmettre la Parole et la volonté de Dieu.",
         "Trop souvent, les pères laissent l'éducation spirituelle des enfants à la mère seule. Pourtant, la Bible s'adresse d'abord aux pères : élevez vos enfants en les instruisant selon le Seigneur. Les adolescents, surtout, ont besoin de voir un père solide dans la foi.",
-        "L'homme a ce désir naturel de donner son avis, d'expliquer comment mieux faire. C'est sa fibre d'enseignant. Elle a besoin d'apprendre la douceur, et elle s'épanouit quand on l'encourage : « Dis-m'en plus. »",
+        "La Bible dit que si une femme a une question pendant l'assemblée, elle la posera à son mari à la maison : il est censé connaître la Parole. Et l'homme a ce désir naturel de donner son avis, même sur l'organisation de la cuisine ! C'est sa fibre d'enseignant. Sa femme peut lui répondre sincèrement « merci pour ta suggestion », puis faire ce qu'elle juge le mieux : il a surtout besoin de se sentir écouté. L'une des plus belles phrases qu'elle puisse lui dire est : « Dis-m'en plus. »",
       ],
       keyTruth: "Enseigner ne veut pas dire être plus intelligent : c'est ma mission de transmettre la Parole de Dieu aux miens.",
       verse: {
@@ -109,7 +109,7 @@ export const chapitre7: Chapter = {
         "Comment enseigner la Parole de Dieu si on ne la connaît pas ? Certains hommes connaissent par cœur les joueurs de leur équipe préférée, mais seraient incapables d'expliquer un passage de la Bible à leur fils.",
         "Un jeune homme raconte que, pour ses seize ans, son père l'a emmené au bar pour lui « apprendre à être un homme » : tenir l'alcool et regarder les filles. Voilà ce que beaucoup transmettent quand la Parole manque.",
         "Être un homme ne s'apprend ni au bar ni dans les tribunes. Il faut un homme pour enseigner à un garçon les valeurs qui durent bien après la fin du match.",
-        "Si tu ne connais pas encore bien la Bible, ce n'est pas une honte : c'est un chantier. Lis-la, trouve une église où on l'enseigne vraiment. Tu ne peux pas donner une eau que tu n'as pas puisée.",
+        "Aux yeux de Dieu, un homme n'est pas prêt à se marier parce qu'il a passé la puberté, obtenu un diplôme ou trouvé un travail : il est prêt quand il est capable d'enseigner la Parole de Dieu à sa famille. Si tu ne connais pas encore bien la Bible, mets-toi au travail sans attendre. Lis-la, trouve une église où on l'enseigne vraiment. Tu ne peux pas donner une eau que tu n'as pas puisée.",
       ],
       keyTruth: "Je ne peux transmettre que ce que je connais : la Parole doit d'abord remplir ma vie.",
       verse: {
@@ -199,7 +199,7 @@ export const chapitre7: Chapter = {
         "Dieu ne demande pas seulement d'enseigner sa Parole, Il explique comment : en parler à la maison, sur la route, au coucher et au lever. Autrement dit, la foi se transmet dans la vie de tous les jours.",
         "À la maison : de quoi parle-t-on à table ? Des derniers potins, ou de la bonté de Dieu ? Sur la route : en conduisant les enfants à l'école, insulte-t-on les autres conducteurs ? Et au travail, cache-t-on sa foi sous sa pile de dossiers ?",
         "Au coucher : quels mots laisse-t-on à ses enfants avant qu'ils s'endorment ? Ce qu'on médite le soir revient souvent en premier au réveil. Au lever : avec quelle armure spirituelle les envoie-t-on affronter la journée ?",
-        "Enfin, Dieu parle des montants de porte. Ils tenaient la charpente de la maison, et quiconque entrait passait par eux. Que toute ta maison repose sur la Parole, et que tout ce qui y entre passe par elle.",
+        "Enfin, Dieu parle des montants de porte. Ils tenaient la charpente de la maison, et quiconque entrait passait par eux. Que toute ta maison repose sur la Parole, et que tout ce qui y entre passe par elle. Si une femme veut t'épouser sans connaître Dieu et sa Parole, peu importe sa beauté ou ce qu'elle peut t'apporter : refuse. Dieu cherche des hommes qui ne transigent pas sur leurs valeurs.",
       ],
       keyTruth: "La foi se transmet du matin au soir, dans les gestes et les paroles de tous les jours.",
       verse: {
@@ -289,7 +289,7 @@ export const chapitre7: Chapter = {
       title: "Le jardinier de son foyer",
       reading: [
         "Beaucoup d'hommes ont en tête une image de l'épouse idéale : elle chanterait parce qu'il est musicien, connaîtrait la finance parce qu'il est banquier. Et quand la réalité ne correspond pas, ils l'accusent. Mais la femme « parfaite » n'existe pas.",
-        "Le rôle du mari n'est pas d'exiger, mais de cultiver : arroser, éclairer, nourrir, pour que sa femme s'épanouisse et devienne tout ce que Dieu a prévu pour elle. Si l'arbre ressemble à un vieux buisson après douze ans, il faut aussi regarder du côté du jardinier.",
+        "Le rôle du mari n'est pas d'exiger, mais de cultiver : arroser, tailler, éclairer, nourrir, pour que sa femme s'épanouisse et devienne tout ce que Dieu a prévu pour elle. Si l'arbre ressemble à un vieux buisson après douze ans, il faut aussi regarder du côté du jardinier.",
         "Pas de jardin qui pousse dans un sol acide : les critiques permanentes brûlent les racines. Tu veux qu'elle se sente belle ? Dis-le-lui. Tu veux une vie plus saine ? Proposez de faire du sport ensemble. Un leader ne montre pas le chemin du doigt : il le prend le premier.",
         "Aux jeunes hommes : une jeune femme devrait toujours repartir de ta présence meilleure qu'elle n'est venue, avec sa dignité intacte. Ne la tire pas vers le bas, et ne te laisse pas entraîner. C'est ça, être un vrai homme.",
       ],

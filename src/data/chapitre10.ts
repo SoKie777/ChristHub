@@ -64,7 +64,7 @@ export const chapitre10: Chapter = {
       id: "c10p2",
       title: "Respect et amour",
       reading: [
-        "Les besoins premiers d'un homme sont souvent le respect, la complicité dans les activités et l'intimité physique. Ceux d'une femme sont souvent l'amour, la conversation et la tendresse.",
+        "Les besoins premiers d'un homme sont le respect, la complicité dans les loisirs et la sexualité. Ceux d'une femme sont l'amour, la conversation et la tendresse.",
         "Un homme n'a pas seulement envie de respect : il en a besoin, comme d'air. C'est au cœur de son estime de lui. Une épouse qui lui rappelle sincèrement ce qu'il sait faire et qui est fière de lui le fait grandir.",
         "Une femme a besoin de se sentir aimée, précieuse, choisie. Quand un homme prend du temps pour elle et veille à ce qu'elle ne manque de rien, elle sait qu'elle compte vraiment pour lui.",
         "Paul résume tout cela en une phrase : que le mari aime sa femme, et que la femme respecte son mari. Et ces besoins existent aussi chez les célibataires : un frère, une sœur, un ami peuvent les honorer.",
@@ -157,7 +157,7 @@ export const chapitre10: Chapter = {
       id: "c10p4",
       title: "La tendresse avant tout",
       reading: [
-        "L'homme a un fort besoin d'intimité physique. La femme, elle, a un fort besoin de tendresse. Mal compris, ces deux besoins peuvent provoquer parmi les pires conflits d'un couple.",
+        "Le besoin sexuel de l'homme est l'un des plus forts qui soient, et la femme doit y être sensible. Certaines le négligent parce qu'elles s'investissent plus dans les activités de l'église que dans leur mari, ou parce qu'elles pensent que ce n'est pas « spirituel » : c'est une erreur, et un mauvais témoignage. Entre mari et femme, la sexualité est sainte. La femme, elle, a un fort besoin de tendresse. Mal compris, ces deux besoins peuvent provoquer parmi les pires conflits d'un couple.",
         "Il faut retenir ceci : la tendresse crée le climat, l'intimité est l'événement. Beaucoup d'hommes foncent vers l'événement sans avoir créé le climat. Or c'est à l'homme de prendre l'initiative de la tendresse.",
         "Être tendre, c'est s'asseoir près d'elle, lui tenir la main, la prendre dans ses bras sans arrière-pensée, lui écrire un mot, lui offrir une fleur, la traiter avec égards. Si tu ne sais pas comment faire, demande-lui simplement, avec douceur.",
         "La Bible demande aux époux de prendre soin des besoins l'un de l'autre, et au mari de vivre avec sa femme avec sagesse et respect. Chacun pense d'abord à l'autre, et tous deux sont comblés.",
@@ -204,7 +204,7 @@ export const chapitre10: Chapter = {
       id: "c10p5",
       title: "La ligne droite et la grille",
       reading: [
-        "En général, l'homme réagit d'abord par la réflexion, puis ressent. La femme ressent d'abord, puis réfléchit. Ni l'un ni l'autre n'est meilleur : ce sont deux façons de voir le monde.",
+        "L'homme est naturellement un « penseur logique », la femme une « sensible émotionnelle » : lui réagit d'abord par la réflexion puis ressent, elle ressent d'abord puis réfléchit. Il y a une explication physiologique : chez l'homme, les deux hémisphères du cerveau sont reliés par moins de connexions. Il doit « changer de vitesse » pour passer de la logique à l'émotion, alors que chez la femme les deux côtés travaillent ensemble. Ni l'un ni l'autre n'est meilleur.",
         "L'homme pense souvent en ligne droite : il voit le but et cherche le chemin le plus direct pour l'atteindre. C'est précieux pour avancer vers une vision.",
         "La femme pense plutôt comme une grille : elle perçoit en même temps les détails, les personnes, les motivations, les émotions. C'est pour cela qu'elle peut mener plusieurs choses de front.",
         "Ensemble, c'est une force. Sa vision large évite à l'homme de foncer droit dans un nid-de-poule qu'il n'avait pas vu. Sa ligne droite aide la femme à ne pas se perdre dans toutes les couches de la situation. Au lieu de se traiter de « froid » ou d'« émotive », on peut se remercier.",

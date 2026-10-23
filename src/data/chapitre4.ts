@@ -253,9 +253,9 @@ export const chapitre4: Chapter = {
       title: "Six missions confiées",
       reading: [
         "Troisième élément du dessein de Dieu : la mission. Avant même que la femme soit créée, Dieu a montré le jardin à l'homme, lui a donné ses instructions et lui a confié une tâche. L'homme a reçu la vision en premier.",
-        "De ce récit ressortent six missions : être visionnaire, conduire, enseigner, cultiver, pourvoir et protéger. Les femmes aussi peuvent conduire et enseigner, bien sûr. Mais c'est à l'homme que Dieu a d'abord confié son plan, avec la charge de le transmettre.",
+        "De ce récit ressortent six missions : être visionnaire, conduire, enseigner, cultiver, pourvoir et protéger. Cela ne veut pas dire que les femmes ne peuvent pas conduire ou enseigner, mais c'est à l'homme que Dieu a d'abord confié son plan, avec la charge de le transmettre. Dieu a donné son commandement à Adam seul, avant la création d'Ève : c'était donc à l'homme d'enseigner la Parole de Dieu à la femme.",
         "Après la chute, c'est vers Adam que Dieu s'est tourné : « Où es-tu ? » Dieu savait où il se cachait. La question portait sur sa place : qu'as-tu fait de ta responsabilité ?",
-        "Être responsable de sa famille n'est pas un titre qu'on gagne par un vote, ni un droit d'écraser les autres. C'est un appel reçu de Dieu. Si on le fuit, il nous rattrape.",
+        "Le chef de famille n'est pas élu : on ne fait pas campagne chez soi pour obtenir des voix. Si tu es un homme, tu es la tête de ta famille, que tu le veuilles ou non. Ce n'est pas un simple rôle, c'est un but donné par Dieu : si tu le fuis, il te rattrape. Il faut seulement le comprendre selon la Parole de Dieu, et non selon la définition qu'en donne la société.",
       ],
       keyTruth: "Dieu m'a confié six missions : voir loin, conduire, enseigner, cultiver, pourvoir et protéger.",
       verse: {
@@ -349,8 +349,8 @@ export const chapitre4: Chapter = {
       reading: [
         "Adam avait la présence de Dieu, une vision, un travail et des responsabilités. Il était occupé à nommer les animaux, à vivre son but. Et pourtant, Dieu a dit : « Il n'est pas bon que l'homme soit seul. »",
         "Adam ne cherchait pas de femme : c'est Dieu qui en a eu l'idée. Être seul n'est pas la même chose qu'être solitaire. On peut être seul et heureux, ou entouré de monde et se sentir terriblement solitaire. Jésus aussi se retirait pour prier.",
-        "Dieu a tiré la femme de l'homme lui-même : même nature, même dignité. Elle n'est pas une assistante qui aide de temps en temps, mais une partenaire à sa mesure, un vis-à-vis. L'homme a besoin de la femme, dans la famille comme dans la société.",
-        "Donner son nom à quelqu'un, c'est s'engager à l'aimer et à prendre soin de lui. Plutôt que de courir après une épouse, cherche d'abord le Royaume de Dieu : comme Adam, sois occupé à vivre ton but, et tu seras prêt quand Dieu t'amènera la bonne personne.",
+        "Dieu a tiré la femme de l'homme lui-même : même nature, même substance. L'homme a été « formé » de la poussière, comme un potier modèle l'argile ; la femme a été « bâtie » à partir de lui. L'homme est essentiellement celui qui donne, la femme celle qui reçoit : elle a été créée d'abord pour recevoir l'amour de l'homme, comme l'homme a été créé pour recevoir l'amour de Dieu. Elle est son aide semblable à lui : non une subordonnée, mais une partenaire égale, dont tout l'être est conçu pour aider l'homme. L'homme a besoin de la femme, dans la famille comme dans la société.",
+        "Dieu n'a pas nommé la femme : Il a laissé Adam le faire, car Il voulait que l'homme soit entièrement responsable d'elle. Nommer, c'est revendiquer, et ce qu'on revendique, on en répond. C'est pourquoi, dans le mariage, la femme prenait traditionnellement le nom de son mari. Jeune homme, ne donne pas ton nom trop vite ; jeune femme, vérifie que celui qui te l'offre peut te soutenir. Plutôt que de courir après une épouse, cherche d'abord le Royaume de Dieu : comme Adam, sois occupé à vivre ton but, et tu seras prêt quand Dieu t'amènera la bonne personne.",
       ],
       keyTruth: "Je n'ai pas à courir après l'amour : en cherchant d'abord Dieu, je deviens l'homme prêt à le recevoir.",
       verse: {

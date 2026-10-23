@@ -18,6 +18,7 @@ export const chapitre6: Chapter = {
         "Avoir une vision est devenu rare. Beaucoup d'hommes avancent sans but, ou courent avec acharnement après une vision empruntée à la société, à la mode du moment, ou à ce que d'autres attendent d'eux.",
         "Dans la Bible, la vision est une révélation : on ne l'invente pas, on la reçoit de Dieu. Avoir une vision, c'est voir déjà où mène son but et avancer vers lui. Un homme qui se marie et dit « on verra bien où on arrivera » n'a pas de vision.",
         "Abraham ne connaissait pas tout le chemin vers le pays promis. Mais il savait où Dieu l'envoyait, et chaque pas l'en rapprochait. On n'a pas besoin de voir tout l'itinéraire pour connaître la destination.",
+        "Le prophète Joël annonce : vos fils et vos filles prophétiseront, vos vieillards auront des songes, vos jeunes gens des visions. Ce sont les hommes qui reçoivent les visions, et les femmes qui prophétisent, c'est-à-dire qui proclament ce que les hommes voient. Dans le plan de Dieu, l'homme reçoit la vision, et la femme veille à ce qu'il l'accomplisse. Il est conçu pour voir l'ensemble et planifier chaque étape, de A à Z.",
       ],
       keyTruth: "Une vraie vision ne s'invente pas : elle se reçoit de Dieu, et elle me fait avancer vers mon but.",
       verse: {
@@ -203,7 +204,7 @@ export const chapitre6: Chapter = {
       title: "Une vision qui entraîne les autres",
       reading: [
         "Avant de donner une compagne à Adam, Dieu lui a donné une vision. L'ordre compte : quand un homme n'a pas de direction, tous ceux qui le suivent en souffrent. Quand il avance, il entraîne les autres avec lui.",
-        "On ne peut pas demander à quelqu'un de nous aider si on ne fait rien. Beaucoup de femmes débordent de talents et d'énergie, prêtes à s'engager, mais ne trouvent rien à quoi contribuer. Un foyer, une église, une entreprise ont besoin qu'on leur montre où l'on va.",
+        "Un homme ne peut pas demander à une femme de le suivre et de l'aider s'il ne fait rien : où irait-elle, et à quoi aiderait-elle ? Dieu a créé la femme pour permettre à l'homme d'accomplir la vision ; tout ce qu'elle possède a été conçu pour l'aider. Son but à elle ne peut donc s'accomplir pleinement sans la vision d'un homme, et inversement. Beaucoup de femmes pleines de talents attendent des années un homme qui fasse quelque chose à quoi elles puissent contribuer, à la maison, à l'église ou au travail. Et quand un mari demande à sa femme « qu'est-ce qu'on fait ? », cela paraît démocratique, mais cela l'insécurise : c'est à lui de donner la direction. Il est dangereux pour une femme d'épouser un homme qui ne connaît pas Dieu, car elle ne saura pas où il l'emmène.",
         "La vision vaut plus que l'argent. On peut être riche sans savoir pourquoi on vit. Et la discipline naît de la vision : c'est parce qu'on voit le but qu'on accepte les sacrifices pour l'atteindre.",
         "Et voici une promesse rassurante : Dieu pourvoit toujours à la vision qu'Il donne. Le jardin était la provision pour la mission d'Adam. Ta part est de chercher et de recevoir la vision ; la sienne, de la soutenir.",
       ],
@@ -296,7 +297,7 @@ export const chapitre6: Chapter = {
       reading: [
         "Dieu confie souvent aux hommes des missions trop grandes pour eux, justement pour qu'ils dépendent de Lui. À Josué, qui devait conduire tout un peuple, Il répète : « Fortifie-toi et prends courage. »",
         "Mais Il ajoute aussitôt : « en agissant fidèlement selon toute la loi ». La vraie force est soumise à Dieu. Un homme qui n'a de comptes à rendre à personne n'est pas fort : il est dangereux. Le courage sans sagesse fait des dégâts.",
-        "Un leader garde la tête claire. Il identifie le problème, réfléchit, décide, et agit, sans se laisser paralyser par la panique. Ce n'est pas qu'il ne ressent rien : c'est qu'il ne laisse pas ses émotions décider à sa place.",
+        "Un leader garde la tête claire. Il identifie le problème, réfléchit, décide, et agit, sans se laisser paralyser par la panique. L'homme a des émotions, mais il n'est pas guidé par elles comme la femme l'est souvent. La femme intègre ses émotions à tout ce qu'elle voit et pense : ce n'est pas un défaut, c'est le don de Dieu qui lui permet de compatir. L'homme, lui, est conduit d'abord par sa pensée ; il n'est pas froid, il est simplement moins influencé par ses émotions.",
         "Devant la mer Rouge, l'armée de Pharaon dans le dos, Moïse dit au peuple : « L'Éternel combattra pour vous. » Juste après, il crie lui-même à Dieu ! Un leader a parfois peur, mais il ne transmet pas sa peur à ceux dont il a la charge.",
       ],
       keyTruth: "Un leader peut avoir peur, mais il ne la transmet pas : il s'appuie sur Dieu et garde la tête claire.",
