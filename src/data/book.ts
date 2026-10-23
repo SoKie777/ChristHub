@@ -19,6 +19,7 @@ import { chapitre5 as femme5 } from "./femme/chapitre5";
 import { chapitre6 as femme6 } from "./femme/chapitre6";
 import { chapitre7 as femme7 } from "./femme/chapitre7";
 import { chapitre8 as femme8 } from "./femme/chapitre8";
+import { chapitre9 as femme9 } from "./femme/chapitre9";
 
 // French typography: non-breaking spaces inside « » and before : ; ? !, so that
 // punctuation never starts a line on a narrow phone screen.
@@ -75,9 +76,8 @@ const munroeWomen: Book = deepTypo({
   year: 2001,
   blurb: "Découvre qui est la femme dans le plan de Dieu, sa valeur, sa conception unique et la puissance de son influence.",
   cover: ["#ff8ac6", "#8a3ffc"],
-  chapters: [femme1, femme2, femme3, femme4, femme5, femme6, femme7, femme8],
+  chapters: [femme1, femme2, femme3, femme4, femme5, femme6, femme7, femme8, femme9],
   upcoming: [
-    "Comprendre la communication de la femme",
     "Les besoins émotionnels et la sexualité de la femme",
     "Les femmes doivent-elles diriger ?",
     "La femme de Proverbes 31",
