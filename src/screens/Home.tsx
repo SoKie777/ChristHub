@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { bookPortions, books, creditsFor, findBook } from "../data/book";
 import { Mascot, MascotSays } from "../components/Mascots";
+import { GetAppCard } from "../components/GetAppCard";
 import { UpdateCard } from "../components/UpdateCard";
-import { isIOS, isStandalone } from "../lib/platform";
 import type { Book, Chapter, Portion } from "../data/types";
 import {
   BookIcon,
@@ -13,7 +13,6 @@ import {
   LampIcon,
   LockIcon,
   PathIcon,
-  ShareIcon,
   StarIcon,
   UserIcon,
   XpIcon,
@@ -114,15 +113,7 @@ function LibraryTab({ progress, onOpenBook }: Props) {
       <MascotSays who="biblo" mood="happy" size={92}>
         Quel livre veux-tu méditer aujourd'hui ?
       </MascotSays>
-      {isIOS && !isStandalone && (
-        <section className="install-card">
-          <strong>Installe ChristHub sur ton iPhone</strong>
-          <p>
-            Touche <ShareIcon size={16} /> <b>Partager</b> en bas de Safari, puis <b>{"« Sur l'écran d'accueil »"}</b>. L'appli
-            s'ouvrira en plein écran et ta progression sera bien gardée.
-          </p>
-        </section>
-      )}
+      <GetAppCard />
       <h1 className="section-title big">Bibliothèque</h1>
       <div className="books">
         {books.map((book) => {

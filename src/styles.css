@@ -1793,6 +1793,12 @@ button:disabled {
   background: rgba(0, 229, 240, 0.08);
 }
 
+.install-card .btn {
+  justify-self: start;
+  margin: 4px 0;
+  text-decoration: none;
+}
+
 .install-card p {
   margin: 0;
   font-size: 14.5px;

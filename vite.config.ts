@@ -14,5 +14,6 @@ export default defineConfig({
   base: "./",
   plugins: [react()],
   define: { __APP_VERSION__: JSON.stringify(version) },
-  build: { outDir: "dist", assetsInlineLimit: 0 },
+  // The whole book ships with the app (offline): a bundle above 500 kB is expected.
+  build: { outDir: "dist", assetsInlineLimit: 0, chunkSizeWarningLimit: 1500 },
 });
